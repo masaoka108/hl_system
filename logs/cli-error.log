@@ -1,0 +1,22 @@
+2016-08-23 05:38:14 Error: [Cake\Database\Exception] SQLSTATE[42S02]: Base table or view not found: 1146 Table 'hl_system.logins' doesn't exist
+Stack Trace:
+#0 C:\Apache24\htdocs\hl_system\vendor\cakephp\cakephp\src\Database\Schema\Collection.php(97): Cake\Database\Schema\Collection->_reflect('Column', 'logins', Array, Object(Cake\Database\Schema\Table))
+#1 C:\Apache24\htdocs\hl_system\vendor\cakephp\cakephp\src\Database\Schema\CachedCollection.php(63): Cake\Database\Schema\Collection->describe('logins', Array)
+#2 C:\Apache24\htdocs\hl_system\vendor\cakephp\cakephp\src\ORM\Table.php(434): Cake\Database\Schema\CachedCollection->describe('logins')
+#3 C:\Apache24\htdocs\hl_system\vendor\cakephp\cakephp\src\ORM\Table.php(512): Cake\ORM\Table->schema()
+#4 C:\Apache24\htdocs\hl_system\vendor\cakephp\bake\src\Shell\Task\ModelTask.php(210): Cake\ORM\Table->primaryKey()
+#5 C:\Apache24\htdocs\hl_system\vendor\cakephp\bake\src\Shell\Task\ModelTask.php(127): Bake\Shell\Task\ModelTask->getAssociations(Object(Cake\ORM\Table))
+#6 C:\Apache24\htdocs\hl_system\vendor\cakephp\bake\src\Shell\Task\ModelTask.php(110): Bake\Shell\Task\ModelTask->getTableContext(Object(Cake\ORM\Table), 'logins', 'Logins')
+#7 C:\Apache24\htdocs\hl_system\vendor\cakephp\bake\src\Shell\Task\ModelTask.php(97): Bake\Shell\Task\ModelTask->bake('Logins')
+#8 C:\Apache24\htdocs\hl_system\vendor\cakephp\bake\src\Shell\BakeShell.php(257): Bake\Shell\Task\ModelTask->main('Logins')
+#9 C:\Apache24\htdocs\hl_system\vendor\cakephp\cakephp\src\Collection\CollectionTrait.php(51): Bake\Shell\BakeShell->Bake\Shell\{closure}('logins', 0)
+#10 C:\Apache24\htdocs\hl_system\vendor\cakephp\bake\src\Shell\BakeShell.php(260): Cake\Collection\Collection->each(Object(Closure))
+#11 [internal function]: Bake\Shell\BakeShell->all('logins')
+#12 C:\Apache24\htdocs\hl_system\vendor\cakephp\cakephp\src\Console\Shell.php(452): call_user_func_array(Array, Array)
+#13 C:\Apache24\htdocs\hl_system\vendor\cakephp\cakephp\src\Console\ShellDispatcher.php(227): Cake\Console\Shell->runCommand(Array, true, Array)
+#14 C:\Apache24\htdocs\hl_system\vendor\cakephp\cakephp\src\Console\ShellDispatcher.php(182): Cake\Console\ShellDispatcher->_dispatch(Array)
+#15 C:\Apache24\htdocs\hl_system\vendor\cakephp\cakephp\src\Console\ShellDispatcher.php(128): Cake\Console\ShellDispatcher->dispatch(Array)
+#16 C:\Apache24\htdocs\hl_system\bin\cake.php(33): Cake\Console\ShellDispatcher::run(Array)
+#17 {main}
+
+

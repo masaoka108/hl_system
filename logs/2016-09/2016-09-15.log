@@ -1,0 +1,63 @@
+2016-09-15 01:20:49 Debug: duration=0 rows=0 BEGIN
+2016-09-15 01:20:49 Debug: duration=4 rows=0 SELECT 1 AS `existing` FROM users Users WHERE Users.username = 'root' LIMIT 1
+2016-09-15 01:20:49 Debug: duration=14 rows=1 INSERT INTO users (username, password, del_flg) VALUES ('root', 'y$/LT9ukjirOhO/yaVFLi3iu/VDTjVaTyEH96tSLnnKASshgwJV4Gei', 1)
+2016-09-15 01:20:49 Debug: duration=0 rows=0 COMMIT
+2016-09-15 01:28:53 Debug: duration=0 rows=0 BEGIN
+2016-09-15 01:28:53 Debug: duration=1 rows=0 SELECT 1 AS `existing` FROM users Users WHERE Users.username = 'root' LIMIT 1
+2016-09-15 01:28:53 Debug: duration=27 rows=1 INSERT INTO users (username, password, del_flg) VALUES ('root', 'y$ytLeL16XCQqViF1WTTAt.OfyJwWCfrMTtW13IcOecGPu/URmCbNt6', 1)
+2016-09-15 01:28:53 Debug: duration=0 rows=0 COMMIT
+2016-09-15 01:31:55 Debug: duration=0 rows=0 BEGIN
+2016-09-15 01:31:55 Debug: duration=2 rows=0 SELECT 1 AS `existing` FROM users Users WHERE Users.username = 'root' LIMIT 1
+2016-09-15 01:31:55 Debug: duration=31 rows=1 INSERT INTO users (username, password, del_flg) VALUES ('root', 'y$UyqHBl48TZxniQlBzxJDFeuK26XBMrawjk/EDHCTfpH2V9.5lOaXS', 1)
+2016-09-15 01:31:55 Debug: duration=0 rows=0 COMMIT
+2016-09-15 01:39:26 Debug: duration=3 rows=1 SELECT MCustomers.id AS `MCustomers__id`, MCustomers.name_sei AS `MCustomers__name_sei`, MCustomers.name_mei AS `MCustomers__name_mei`, MCustomers.mail_address AS `MCustomers__mail_address`, MCustomers.zip_code AS `MCustomers__zip_code`, MCustomers.address AS `MCustomers__address`, MCustomers.tel AS `MCustomers__tel`, MCustomers.del_flg AS `MCustomers__del_flg`, MCustomers.ins_date AS `MCustomers__ins_date`, MCustomers.ins_person AS `MCustomers__ins_person`, MCustomers.edt_date AS `MCustomers__edt_date`, MCustomers.edt_person AS `MCustomers__edt_person` FROM m_customers MCustomers WHERE MCustomers.id = 2 LIMIT 1
+2016-09-15 01:39:27 Debug: duration=17 rows=0 DELETE FROM m_customers WHERE id = 2
+2016-09-15 01:39:27 Debug: duration=0 rows=0 ROLLBACK
+2016-09-15 01:41:51 Debug: duration=3 rows=1 SELECT MCustomers.id AS `MCustomers__id`, MCustomers.name_sei AS `MCustomers__name_sei`, MCustomers.name_mei AS `MCustomers__name_mei`, MCustomers.mail_address AS `MCustomers__mail_address`, MCustomers.zip_code AS `MCustomers__zip_code`, MCustomers.address AS `MCustomers__address`, MCustomers.tel AS `MCustomers__tel`, MCustomers.del_flg AS `MCustomers__del_flg`, MCustomers.ins_date AS `MCustomers__ins_date`, MCustomers.ins_person AS `MCustomers__ins_person`, MCustomers.edt_date AS `MCustomers__edt_date`, MCustomers.edt_person AS `MCustomers__edt_person` FROM m_customers MCustomers WHERE MCustomers.id = 2 LIMIT 1
+2016-09-15 01:41:51 Debug: duration=14 rows=0 DELETE FROM m_customers WHERE id = 2
+2016-09-15 01:41:51 Debug: duration=0 rows=0 ROLLBACK
+2016-09-15 01:42:14 Debug: duration=3 rows=1 SELECT MCustomers.id AS `MCustomers__id`, MCustomers.name_sei AS `MCustomers__name_sei`, MCustomers.name_mei AS `MCustomers__name_mei`, MCustomers.mail_address AS `MCustomers__mail_address`, MCustomers.zip_code AS `MCustomers__zip_code`, MCustomers.address AS `MCustomers__address`, MCustomers.tel AS `MCustomers__tel`, MCustomers.del_flg AS `MCustomers__del_flg`, MCustomers.ins_date AS `MCustomers__ins_date`, MCustomers.ins_person AS `MCustomers__ins_person`, MCustomers.edt_date AS `MCustomers__edt_date`, MCustomers.edt_person AS `MCustomers__edt_person` FROM m_customers MCustomers WHERE MCustomers.id = 2 LIMIT 1
+2016-09-15 01:42:14 Debug: duration=29 rows=0 DELETE FROM m_customers WHERE id = 2
+2016-09-15 01:42:14 Debug: duration=0 rows=0 ROLLBACK
+2016-09-15 01:42:53 Debug: duration=3 rows=1 SELECT MCustomers.id AS `MCustomers__id`, MCustomers.name_sei AS `MCustomers__name_sei`, MCustomers.name_mei AS `MCustomers__name_mei`, MCustomers.mail_address AS `MCustomers__mail_address`, MCustomers.zip_code AS `MCustomers__zip_code`, MCustomers.address AS `MCustomers__address`, MCustomers.tel AS `MCustomers__tel`, MCustomers.del_flg AS `MCustomers__del_flg`, MCustomers.ins_date AS `MCustomers__ins_date`, MCustomers.ins_person AS `MCustomers__ins_person`, MCustomers.edt_date AS `MCustomers__edt_date`, MCustomers.edt_person AS `MCustomers__edt_person` FROM m_customers MCustomers WHERE MCustomers.id = 2 LIMIT 1
+2016-09-15 01:42:53 Debug: duration=2 rows=1 DELETE FROM m_customers WHERE id = 2
+2016-09-15 01:42:53 Debug: duration=0 rows=0 COMMIT
+2016-09-15 01:44:05 Debug: duration=3 rows=1 SELECT MCustomers.id AS `MCustomers__id`, MCustomers.name_sei AS `MCustomers__name_sei`, MCustomers.name_mei AS `MCustomers__name_mei`, MCustomers.mail_address AS `MCustomers__mail_address`, MCustomers.zip_code AS `MCustomers__zip_code`, MCustomers.address AS `MCustomers__address`, MCustomers.tel AS `MCustomers__tel`, MCustomers.del_flg AS `MCustomers__del_flg`, MCustomers.ins_date AS `MCustomers__ins_date`, MCustomers.ins_person AS `MCustomers__ins_person`, MCustomers.edt_date AS `MCustomers__edt_date`, MCustomers.edt_person AS `MCustomers__edt_person` FROM m_customers MCustomers WHERE MCustomers.id = 4 LIMIT 1
+2016-09-15 01:44:05 Debug: duration=32 rows=1 DELETE FROM m_customers WHERE id = 4
+2016-09-15 01:44:05 Debug: duration=0 rows=0 COMMIT
+2016-09-15 01:46:13 Debug: duration=4 rows=12 SHOW FULL COLUMNS FROM `m_customers`
+2016-09-15 01:46:13 Debug: duration=1 rows=1 SHOW INDEXES FROM `m_customers`
+2016-09-15 01:46:13 Debug: duration=3 rows=0 SELECT * FROM information_schema.key_column_usage AS kcu
+            INNER JOIN information_schema.referential_constraints AS rc
+            ON (
+                kcu.CONSTRAINT_NAME = rc.CONSTRAINT_NAME
+                AND kcu.CONSTRAINT_SCHEMA = rc.CONSTRAINT_SCHEMA
+            )
+            WHERE kcu.TABLE_SCHEMA = 'hl_system' AND kcu.TABLE_NAME = 'm_customers' AND rc.TABLE_NAME = 'm_customers'
+2016-09-15 01:46:13 Debug: duration=2 rows=1 SHOW TABLE STATUS WHERE Name = 'm_customers'
+2016-09-15 01:46:14 Debug: duration=1 rows=1 SELECT 1 AS `existing` FROM m_customers m_customers WHERE m_customers.id = 3 LIMIT 1
+2016-09-15 01:46:14 Debug: duration=11 rows=1 INSERT INTO orders (order_date, m_customers_id, name_sei, name_mei, mail_address, zip_code, address, tel, note, delivery_fee, order_amount, profit, delivery_date, works_on) VALUES ('2016/02/02', 3, '安岡', '太郎', 'yasu@aaaaaa.com', '147-9874', '大阪府大阪市大阪1-1-1', '090-9999-9999', '', 1500, 89000, 70000, '2016/02/20', 1)
+2016-09-15 01:46:14 Debug: duration=35 rows=12 SHOW FULL COLUMNS FROM `orders_details`
+2016-09-15 01:46:14 Debug: duration=1 rows=3 SHOW INDEXES FROM `orders_details`
+2016-09-15 01:46:14 Debug: duration=2 rows=2 SELECT * FROM information_schema.key_column_usage AS kcu
+            INNER JOIN information_schema.referential_constraints AS rc
+            ON (
+                kcu.CONSTRAINT_NAME = rc.CONSTRAINT_NAME
+                AND kcu.CONSTRAINT_SCHEMA = rc.CONSTRAINT_SCHEMA
+            )
+            WHERE kcu.TABLE_SCHEMA = 'hl_system' AND kcu.TABLE_NAME = 'orders_details' AND rc.TABLE_NAME = 'orders_details'
+2016-09-15 01:46:14 Debug: duration=2 rows=1 SHOW TABLE STATUS WHERE Name = 'orders_details'
+2016-09-15 01:46:14 Debug: duration=1 rows=1 INSERT INTO orders_details (orders_id, m_record_types_id, qty, rpm, artist_name, title, track_list) VALUES (107, 2, 10, 33, '1111', '1111', '')
+2016-09-15 01:46:14 Debug: duration=0 rows=0 COMMIT
+2016-09-15 01:46:58 Debug: duration=16 rows=1 UPDATE orders SET order_date = '2016/06/01' , delivery_date = '2016/11/01' WHERE id = 104
+2016-09-15 01:46:58 Debug: duration=1 rows=1 DELETE FROM orders_details WHERE orders_id = 104
+2016-09-15 01:46:58 Debug: duration=1 rows=1 INSERT INTO orders_details (orders_id, m_record_types_id, qty, rpm, artist_name, title, track_list) VALUES (104, 1, 10, 45, 'TEST ARTIST', 'TEST ARTIST', 'TEST ARTIST')
+2016-09-15 01:46:58 Debug: duration=0 rows=0 COMMIT
+2016-09-15 01:47:38 Debug: duration=11 rows=1 UPDATE orders SET order_date = '2016/11/01' , desired_delivery_date = '2016/11/01' , estimated_delivery_date = '2016/11/01' , delivery_date = '2016/11/01' WHERE id = 104
+2016-09-15 01:47:38 Debug: duration=1 rows=1 DELETE FROM orders_details WHERE orders_id = 104
+2016-09-15 01:47:38 Debug: duration=3 rows=1 INSERT INTO orders_details (orders_id, m_record_types_id, qty, rpm, artist_name, title, track_list) VALUES (104, 1, 10, 45, 'TEST ARTIST', 'TEST ARTIST', 'TEST ARTIST')
+2016-09-15 01:47:38 Debug: duration=0 rows=0 COMMIT
+2016-09-15 01:52:42 Debug: duration=11 rows=1 UPDATE orders SET order_date = '2016/11/01' , profit = 8000 , desired_delivery_date = '2016/11/01' , estimated_delivery_date = '2016/11/01' , delivery_date = '2016/11/01' WHERE id = 104
+2016-09-15 01:52:42 Debug: duration=1 rows=1 DELETE FROM orders_details WHERE orders_id = 104
+2016-09-15 01:52:42 Debug: duration=4 rows=1 INSERT INTO orders_details (orders_id, m_record_types_id, qty, rpm, artist_name, title, track_list) VALUES (104, 1, 10, 45, 'TEST ARTIST', 'TEST ARTIST', 'TEST ARTIST')
+2016-09-15 01:52:42 Debug: duration=0 rows=0 COMMIT

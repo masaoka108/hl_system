@@ -1,0 +1,217 @@
+2016-08-31 06:56:36 Debug: duration=41 rows=1 INSERT INTO orders (order_date, name_sei, name_mei, mail_address, zip_code, address, tel, note) VALUES ('2016-08-31', '', '', '', '', '', '', '')
+2016-08-31 06:58:39 Debug: duration=3 rows=22 SHOW FULL COLUMNS FROM `orders`
+2016-08-31 06:58:39 Debug: duration=0 rows=2 SHOW INDEXES FROM `orders`
+2016-08-31 06:58:39 Debug: duration=1 rows=1 SELECT * FROM information_schema.key_column_usage AS kcu
+            INNER JOIN information_schema.referential_constraints AS rc
+            ON (
+                kcu.CONSTRAINT_NAME = rc.CONSTRAINT_NAME
+                AND kcu.CONSTRAINT_SCHEMA = rc.CONSTRAINT_SCHEMA
+            )
+            WHERE kcu.TABLE_SCHEMA = 'hl_system' AND kcu.TABLE_NAME = 'orders' AND rc.TABLE_NAME = 'orders'
+2016-08-31 06:58:39 Debug: duration=1 rows=1 SHOW TABLE STATUS WHERE Name = 'orders'
+2016-08-31 06:58:39 Debug: duration=1 rows=1 INSERT INTO orders (order_date, name_sei, name_mei, mail_address, zip_code, address, tel, note) VALUES ('2016-08-31', '', '', '', '', '', '', '')
+2016-08-31 06:59:35 Debug: duration=2 rows=1 INSERT INTO orders (order_date, name_sei, name_mei, mail_address, zip_code, address, tel, note) VALUES ('2016-08-31', '', '', '', '', '', '', '')
+2016-08-31 06:59:35 Debug: duration=3 rows=12 SHOW FULL COLUMNS FROM `orders_details`
+2016-08-31 06:59:35 Debug: duration=30 rows=3 SHOW INDEXES FROM `orders_details`
+2016-08-31 06:59:35 Debug: duration=206 rows=2 SELECT * FROM information_schema.key_column_usage AS kcu
+            INNER JOIN information_schema.referential_constraints AS rc
+            ON (
+                kcu.CONSTRAINT_NAME = rc.CONSTRAINT_NAME
+                AND kcu.CONSTRAINT_SCHEMA = rc.CONSTRAINT_SCHEMA
+            )
+            WHERE kcu.TABLE_SCHEMA = 'hl_system' AND kcu.TABLE_NAME = 'orders_details' AND rc.TABLE_NAME = 'orders_details'
+2016-08-31 06:59:35 Debug: duration=11 rows=1 SHOW TABLE STATUS WHERE Name = 'orders_details'
+2016-08-31 06:59:35 Debug: duration=1 rows=2 INSERT INTO orders_details (orders_id, m_record_types_id, qty, rpm, artist_name, title, track_list) VALUES (73, 1, 1, 33, '1', '1', '1'), (73, 2, 2, 45, '2', '2', '2')
+2016-08-31 06:59:35 Debug: duration=0 rows=0 COMMIT
+2016-08-31 07:02:31 Debug: duration=1 rows=1 SELECT 1 AS `existing` FROM m_customers m_customers WHERE m_customers.id = 1 LIMIT 1
+2016-08-31 07:02:31 Debug: duration=13 rows=1 INSERT INTO orders (order_date, m_customers_id, name_sei, name_mei, mail_address, zip_code, address, tel, note) VALUES ('2016-08-31', 1, '', '', '', '', '', '', '')
+2016-08-31 07:02:31 Debug: duration=2 rows=12 SHOW FULL COLUMNS FROM `orders_details`
+2016-08-31 07:02:31 Debug: duration=0 rows=3 SHOW INDEXES FROM `orders_details`
+2016-08-31 07:02:31 Debug: duration=2 rows=2 SELECT * FROM information_schema.key_column_usage AS kcu
+            INNER JOIN information_schema.referential_constraints AS rc
+            ON (
+                kcu.CONSTRAINT_NAME = rc.CONSTRAINT_NAME
+                AND kcu.CONSTRAINT_SCHEMA = rc.CONSTRAINT_SCHEMA
+            )
+            WHERE kcu.TABLE_SCHEMA = 'hl_system' AND kcu.TABLE_NAME = 'orders_details' AND rc.TABLE_NAME = 'orders_details'
+2016-08-31 07:02:31 Debug: duration=1 rows=1 SHOW TABLE STATUS WHERE Name = 'orders_details'
+2016-08-31 07:02:31 Debug: duration=0 rows=1 INSERT INTO orders_details (orders_id, m_record_types_id, qty, rpm, artist_name, title, track_list) VALUES (74, 5, 1, 33, '1111', '1111', '1111')
+2016-08-31 07:02:31 Debug: duration=0 rows=0 COMMIT
+2016-08-31 07:05:00 Debug: duration=2 rows=22 SHOW FULL COLUMNS FROM `orders`
+2016-08-31 07:05:00 Debug: duration=0 rows=2 SHOW INDEXES FROM `orders`
+2016-08-31 07:05:00 Debug: duration=14 rows=1 SELECT * FROM information_schema.key_column_usage AS kcu
+            INNER JOIN information_schema.referential_constraints AS rc
+            ON (
+                kcu.CONSTRAINT_NAME = rc.CONSTRAINT_NAME
+                AND kcu.CONSTRAINT_SCHEMA = rc.CONSTRAINT_SCHEMA
+            )
+            WHERE kcu.TABLE_SCHEMA = 'hl_system' AND kcu.TABLE_NAME = 'orders' AND rc.TABLE_NAME = 'orders'
+2016-08-31 07:05:00 Debug: duration=1 rows=1 SHOW TABLE STATUS WHERE Name = 'orders'
+2016-08-31 07:05:00 Debug: duration=14 rows=1 INSERT INTO orders (order_date, name_sei, name_mei, mail_address, zip_code, address, tel, note) VALUES ('2016-08-31', '', '', '', '', '', '', '')
+2016-08-31 07:05:00 Debug: duration=113 rows=12 SHOW FULL COLUMNS FROM `orders_details`
+2016-08-31 07:05:01 Debug: duration=0 rows=3 SHOW INDEXES FROM `orders_details`
+2016-08-31 07:05:01 Debug: duration=1 rows=2 SELECT * FROM information_schema.key_column_usage AS kcu
+            INNER JOIN information_schema.referential_constraints AS rc
+            ON (
+                kcu.CONSTRAINT_NAME = rc.CONSTRAINT_NAME
+                AND kcu.CONSTRAINT_SCHEMA = rc.CONSTRAINT_SCHEMA
+            )
+            WHERE kcu.TABLE_SCHEMA = 'hl_system' AND kcu.TABLE_NAME = 'orders_details' AND rc.TABLE_NAME = 'orders_details'
+2016-08-31 07:05:01 Debug: duration=1 rows=1 SHOW TABLE STATUS WHERE Name = 'orders_details'
+2016-08-31 07:05:01 Debug: duration=66 rows=6 INSERT INTO orders_details (orders_id, m_record_types_id, qty, rpm, artist_name, title, track_list) VALUES (75, 1, 1, 33, '1', '1', '1'), (75, 2, 2, 33, '2', '2', '2'), (75, 3, 3, 45, '3', '3', '3'), (75, 4, 4, 45, '4', '4', '4'), (75, 5, 5, 33, '5', '5', '5'), (75, 1, 6, 45, '6', '6', '6')
+2016-08-31 07:05:01 Debug: duration=0 rows=0 COMMIT
+2016-08-31 07:25:57 Debug: duration=1 rows=0 SELECT Orders_Details.id AS `Orders_Details__id`, Orders_Details.orders_id AS `Orders_Details__orders_id`, Orders_Details.m_record_types_id AS `Orders_Details__m_record_types_id`, Orders_Details.qty AS `Orders_Details__qty`, Orders_Details.rpm AS `Orders_Details__rpm`, Orders_Details.artist_name AS `Orders_Details__artist_name`, Orders_Details.title AS `Orders_Details__title`, Orders_Details.track_list AS `Orders_Details__track_list`, Orders_Details.ins_date AS `Orders_Details__ins_date`, Orders_Details.ins_person AS `Orders_Details__ins_person`, Orders_Details.edt_date AS `Orders_Details__edt_date`, Orders_Details.edt_person AS `Orders_Details__edt_person` FROM orders_details Orders_Details WHERE Orders_Details.id = 75 LIMIT 1
+2016-08-31 07:26:23 Debug: duration=1 rows=12 SHOW FULL COLUMNS FROM `orders_details`
+2016-08-31 07:26:23 Debug: duration=0 rows=3 SHOW INDEXES FROM `orders_details`
+2016-08-31 07:26:23 Debug: duration=1 rows=2 SELECT * FROM information_schema.key_column_usage AS kcu
+            INNER JOIN information_schema.referential_constraints AS rc
+            ON (
+                kcu.CONSTRAINT_NAME = rc.CONSTRAINT_NAME
+                AND kcu.CONSTRAINT_SCHEMA = rc.CONSTRAINT_SCHEMA
+            )
+            WHERE kcu.TABLE_SCHEMA = 'hl_system' AND kcu.TABLE_NAME = 'orders_details' AND rc.TABLE_NAME = 'orders_details'
+2016-08-31 07:26:23 Debug: duration=0 rows=1 SHOW TABLE STATUS WHERE Name = 'orders_details'
+2016-08-31 07:26:23 Debug: duration=0 rows=0 SELECT Orders_Details.id AS `Orders_Details__id`, Orders_Details.orders_id AS `Orders_Details__orders_id`, Orders_Details.m_record_types_id AS `Orders_Details__m_record_types_id`, Orders_Details.qty AS `Orders_Details__qty`, Orders_Details.rpm AS `Orders_Details__rpm`, Orders_Details.artist_name AS `Orders_Details__artist_name`, Orders_Details.title AS `Orders_Details__title`, Orders_Details.track_list AS `Orders_Details__track_list`, Orders_Details.ins_date AS `Orders_Details__ins_date`, Orders_Details.ins_person AS `Orders_Details__ins_person`, Orders_Details.edt_date AS `Orders_Details__edt_date`, Orders_Details.edt_person AS `Orders_Details__edt_person` FROM orders_details Orders_Details WHERE Orders_Details.id = 75 LIMIT 1
+2016-08-31 07:28:19 Debug: duration=1 rows=0 SELECT Orders_Details.id AS `Orders_Details__id`, Orders_Details.orders_id AS `Orders_Details__orders_id`, Orders_Details.m_record_types_id AS `Orders_Details__m_record_types_id`, Orders_Details.qty AS `Orders_Details__qty`, Orders_Details.rpm AS `Orders_Details__rpm`, Orders_Details.artist_name AS `Orders_Details__artist_name`, Orders_Details.title AS `Orders_Details__title`, Orders_Details.track_list AS `Orders_Details__track_list`, Orders_Details.ins_date AS `Orders_Details__ins_date`, Orders_Details.ins_person AS `Orders_Details__ins_person`, Orders_Details.edt_date AS `Orders_Details__edt_date`, Orders_Details.edt_person AS `Orders_Details__edt_person` FROM orders_details Orders_Details WHERE Orders_Details.id = 75 LIMIT 1
+2016-08-31 07:28:39 Debug: duration=2 rows=12 SHOW FULL COLUMNS FROM `orders_details`
+2016-08-31 07:28:39 Debug: duration=1 rows=3 SHOW INDEXES FROM `orders_details`
+2016-08-31 07:28:39 Debug: duration=2 rows=2 SELECT * FROM information_schema.key_column_usage AS kcu
+            INNER JOIN information_schema.referential_constraints AS rc
+            ON (
+                kcu.CONSTRAINT_NAME = rc.CONSTRAINT_NAME
+                AND kcu.CONSTRAINT_SCHEMA = rc.CONSTRAINT_SCHEMA
+            )
+            WHERE kcu.TABLE_SCHEMA = 'hl_system' AND kcu.TABLE_NAME = 'orders_details' AND rc.TABLE_NAME = 'orders_details'
+2016-08-31 07:28:39 Debug: duration=1 rows=1 SHOW TABLE STATUS WHERE Name = 'orders_details'
+2016-08-31 07:28:39 Debug: duration=0 rows=0 SELECT Orders_Details.id AS `Orders_Details__id`, Orders_Details.orders_id AS `Orders_Details__orders_id`, Orders_Details.m_record_types_id AS `Orders_Details__m_record_types_id`, Orders_Details.qty AS `Orders_Details__qty`, Orders_Details.rpm AS `Orders_Details__rpm`, Orders_Details.artist_name AS `Orders_Details__artist_name`, Orders_Details.title AS `Orders_Details__title`, Orders_Details.track_list AS `Orders_Details__track_list`, Orders_Details.ins_date AS `Orders_Details__ins_date`, Orders_Details.ins_person AS `Orders_Details__ins_person`, Orders_Details.edt_date AS `Orders_Details__edt_date`, Orders_Details.edt_person AS `Orders_Details__edt_person` FROM orders_details Orders_Details WHERE Orders_Details.id = 75 LIMIT 1
+2016-08-31 07:29:49 Debug: duration=1 rows=0 SELECT Orders_Details.id AS `Orders_Details__id`, Orders_Details.orders_id AS `Orders_Details__orders_id`, Orders_Details.m_record_types_id AS `Orders_Details__m_record_types_id`, Orders_Details.qty AS `Orders_Details__qty`, Orders_Details.rpm AS `Orders_Details__rpm`, Orders_Details.artist_name AS `Orders_Details__artist_name`, Orders_Details.title AS `Orders_Details__title`, Orders_Details.track_list AS `Orders_Details__track_list`, Orders_Details.ins_date AS `Orders_Details__ins_date`, Orders_Details.ins_person AS `Orders_Details__ins_person`, Orders_Details.edt_date AS `Orders_Details__edt_date`, Orders_Details.edt_person AS `Orders_Details__edt_person` FROM orders_details Orders_Details WHERE Orders_Details.id = 75 LIMIT 1
+2016-08-31 07:32:07 Debug: duration=1 rows=12 SHOW FULL COLUMNS FROM `orders_details`
+2016-08-31 07:32:07 Debug: duration=1 rows=3 SHOW INDEXES FROM `orders_details`
+2016-08-31 07:32:07 Debug: duration=1 rows=2 SELECT * FROM information_schema.key_column_usage AS kcu
+            INNER JOIN information_schema.referential_constraints AS rc
+            ON (
+                kcu.CONSTRAINT_NAME = rc.CONSTRAINT_NAME
+                AND kcu.CONSTRAINT_SCHEMA = rc.CONSTRAINT_SCHEMA
+            )
+            WHERE kcu.TABLE_SCHEMA = 'hl_system' AND kcu.TABLE_NAME = 'orders_details' AND rc.TABLE_NAME = 'orders_details'
+2016-08-31 07:32:07 Debug: duration=0 rows=1 SHOW TABLE STATUS WHERE Name = 'orders_details'
+2016-08-31 07:32:17 Debug: duration=31 rows=0 DELETE FROM orders_details WHERE (SELECT Orders_Details.id AS `Orders_Details__id`, Orders_Details.orders_id AS `Orders_Details__orders_id`, Orders_Details.m_record_types_id AS `Orders_Details__m_record_types_id`, Orders_Details.qty AS `Orders_Details__qty`, Orders_Details.rpm AS `Orders_Details__rpm`, Orders_Details.artist_name AS `Orders_Details__artist_name`, Orders_Details.title AS `Orders_Details__title`, Orders_Details.track_list AS `Orders_Details__track_list`, Orders_Details.ins_date AS `Orders_Details__ins_date`, Orders_Details.ins_person AS `Orders_Details__ins_person`, Orders_Details.edt_date AS `Orders_Details__edt_date`, Orders_Details.edt_person AS `Orders_Details__edt_person` FROM orders_details Orders_Details WHERE orders_id = 75)
+2016-08-31 07:32:33 Debug: duration=2 rows=0 DELETE FROM orders_details WHERE (SELECT Orders_Details.id AS `Orders_Details__id`, Orders_Details.orders_id AS `Orders_Details__orders_id`, Orders_Details.m_record_types_id AS `Orders_Details__m_record_types_id`, Orders_Details.qty AS `Orders_Details__qty`, Orders_Details.rpm AS `Orders_Details__rpm`, Orders_Details.artist_name AS `Orders_Details__artist_name`, Orders_Details.title AS `Orders_Details__title`, Orders_Details.track_list AS `Orders_Details__track_list`, Orders_Details.ins_date AS `Orders_Details__ins_date`, Orders_Details.ins_person AS `Orders_Details__ins_person`, Orders_Details.edt_date AS `Orders_Details__edt_date`, Orders_Details.edt_person AS `Orders_Details__edt_person` FROM orders_details Orders_Details WHERE orders_id = 75)
+2016-08-31 07:33:16 Debug: duration=2 rows=0 DELETE FROM orders_details WHERE (SELECT Orders_Details.id AS `Orders_Details__id`, Orders_Details.orders_id AS `Orders_Details__orders_id`, Orders_Details.m_record_types_id AS `Orders_Details__m_record_types_id`, Orders_Details.qty AS `Orders_Details__qty`, Orders_Details.rpm AS `Orders_Details__rpm`, Orders_Details.artist_name AS `Orders_Details__artist_name`, Orders_Details.title AS `Orders_Details__title`, Orders_Details.track_list AS `Orders_Details__track_list`, Orders_Details.ins_date AS `Orders_Details__ins_date`, Orders_Details.ins_person AS `Orders_Details__ins_person`, Orders_Details.edt_date AS `Orders_Details__edt_date`, Orders_Details.edt_person AS `Orders_Details__edt_person` FROM orders_details Orders_Details WHERE orders_id = 75)
+2016-08-31 07:33:38 Debug: duration=2 rows=0 DELETE FROM orders_details WHERE (SELECT Orders_Details.id AS `Orders_Details__id`, Orders_Details.orders_id AS `Orders_Details__orders_id`, Orders_Details.m_record_types_id AS `Orders_Details__m_record_types_id`, Orders_Details.qty AS `Orders_Details__qty`, Orders_Details.rpm AS `Orders_Details__rpm`, Orders_Details.artist_name AS `Orders_Details__artist_name`, Orders_Details.title AS `Orders_Details__title`, Orders_Details.track_list AS `Orders_Details__track_list`, Orders_Details.ins_date AS `Orders_Details__ins_date`, Orders_Details.ins_person AS `Orders_Details__ins_person`, Orders_Details.edt_date AS `Orders_Details__edt_date`, Orders_Details.edt_person AS `Orders_Details__edt_person` FROM orders_details Orders_Details WHERE orders_id = 75)
+2016-08-31 07:34:02 Debug: duration=2 rows=0 DELETE FROM orders_details WHERE (SELECT Orders_Details.id AS `Orders_Details__id`, Orders_Details.orders_id AS `Orders_Details__orders_id`, Orders_Details.m_record_types_id AS `Orders_Details__m_record_types_id`, Orders_Details.qty AS `Orders_Details__qty`, Orders_Details.rpm AS `Orders_Details__rpm`, Orders_Details.artist_name AS `Orders_Details__artist_name`, Orders_Details.title AS `Orders_Details__title`, Orders_Details.track_list AS `Orders_Details__track_list`, Orders_Details.ins_date AS `Orders_Details__ins_date`, Orders_Details.ins_person AS `Orders_Details__ins_person`, Orders_Details.edt_date AS `Orders_Details__edt_date`, Orders_Details.edt_person AS `Orders_Details__edt_person` FROM orders_details Orders_Details WHERE orders_id = 75)
+2016-08-31 07:34:19 Debug: duration=2 rows=0 DELETE FROM orders_details WHERE (SELECT Orders_Details.id AS `Orders_Details__id`, Orders_Details.orders_id AS `Orders_Details__orders_id`, Orders_Details.m_record_types_id AS `Orders_Details__m_record_types_id`, Orders_Details.qty AS `Orders_Details__qty`, Orders_Details.rpm AS `Orders_Details__rpm`, Orders_Details.artist_name AS `Orders_Details__artist_name`, Orders_Details.title AS `Orders_Details__title`, Orders_Details.track_list AS `Orders_Details__track_list`, Orders_Details.ins_date AS `Orders_Details__ins_date`, Orders_Details.ins_person AS `Orders_Details__ins_person`, Orders_Details.edt_date AS `Orders_Details__edt_date`, Orders_Details.edt_person AS `Orders_Details__edt_person` FROM orders_details Orders_Details WHERE orders_id = 75)
+2016-08-31 07:37:29 Debug: duration=2 rows=12 SHOW FULL COLUMNS FROM `orders_details`
+2016-08-31 07:37:29 Debug: duration=0 rows=3 SHOW INDEXES FROM `orders_details`
+2016-08-31 07:37:29 Debug: duration=1 rows=2 SELECT * FROM information_schema.key_column_usage AS kcu
+            INNER JOIN information_schema.referential_constraints AS rc
+            ON (
+                kcu.CONSTRAINT_NAME = rc.CONSTRAINT_NAME
+                AND kcu.CONSTRAINT_SCHEMA = rc.CONSTRAINT_SCHEMA
+            )
+            WHERE kcu.TABLE_SCHEMA = 'hl_system' AND kcu.TABLE_NAME = 'orders_details' AND rc.TABLE_NAME = 'orders_details'
+2016-08-31 07:37:29 Debug: duration=1 rows=1 SHOW TABLE STATUS WHERE Name = 'orders_details'
+2016-08-31 07:37:29 Debug: duration=37 rows=6 DELETE FROM orders_details WHERE orders_id = 75
+2016-08-31 07:37:48 Debug: duration=16 rows=6 DELETE FROM orders_details WHERE orders_id = 75
+2016-08-31 07:37:48 Debug: duration=7 rows=6 INSERT INTO orders_details (orders_id, m_record_types_id, qty, rpm, artist_name, title, track_list) VALUES (75, 1, 1, 33, '1', '1', '1'), (75, 2, 2, 33, '2', '2', '2'), (75, 3, 3, 45, '3', '3', '3'), (75, 4, 4, 45, '4', '4', '4'), (75, 5, 5, 33, '5', '5', '5'), (75, 1, 6, 45, '6', '6', '6')
+2016-08-31 07:38:01 Debug: duration=1 rows=6 DELETE FROM orders_details WHERE orders_id = 75
+2016-08-31 07:38:01 Debug: duration=1 rows=6 INSERT INTO orders_details (orders_id, m_record_types_id, qty, rpm, artist_name, title, track_list) VALUES (75, 1, 1, 33, '1', '1', '1'), (75, 2, 2, 33, '2', '2', '2'), (75, 3, 3, 45, '3', '3', '3'), (75, 4, 4, 45, '4', '4', '4'), (75, 5, 5, 33, '5', '5', '5'), (75, 1, 6, 45, '6', '6', '6')
+2016-08-31 07:38:13 Debug: duration=0 rows=6 DELETE FROM orders_details WHERE orders_id = 75
+2016-08-31 07:38:13 Debug: duration=1 rows=2 INSERT INTO orders_details (orders_id, m_record_types_id, qty, rpm, artist_name, title, track_list) VALUES (75, 1, 1, 33, '1', '1', '1'), (75, 1, 6, 45, '6', '6', '6')
+2016-08-31 07:38:37 Debug: duration=20 rows=6 DELETE FROM orders_details WHERE orders_id = 75
+2016-08-31 07:41:45 Debug: duration=1 rows=12 SHOW FULL COLUMNS FROM `orders_details`
+2016-08-31 07:41:45 Debug: duration=1 rows=3 SHOW INDEXES FROM `orders_details`
+2016-08-31 07:41:45 Debug: duration=2 rows=2 SELECT * FROM information_schema.key_column_usage AS kcu
+            INNER JOIN information_schema.referential_constraints AS rc
+            ON (
+                kcu.CONSTRAINT_NAME = rc.CONSTRAINT_NAME
+                AND kcu.CONSTRAINT_SCHEMA = rc.CONSTRAINT_SCHEMA
+            )
+            WHERE kcu.TABLE_SCHEMA = 'hl_system' AND kcu.TABLE_NAME = 'orders_details' AND rc.TABLE_NAME = 'orders_details'
+2016-08-31 07:41:45 Debug: duration=0 rows=1 SHOW TABLE STATUS WHERE Name = 'orders_details'
+2016-08-31 07:41:45 Debug: duration=0 rows=6 DELETE FROM orders_details WHERE orders_id = 75
+2016-08-31 07:47:28 Debug: duration=2 rows=12 SHOW FULL COLUMNS FROM `orders_details`
+2016-08-31 07:47:28 Debug: duration=0 rows=3 SHOW INDEXES FROM `orders_details`
+2016-08-31 07:47:28 Debug: duration=1 rows=2 SELECT * FROM information_schema.key_column_usage AS kcu
+            INNER JOIN information_schema.referential_constraints AS rc
+            ON (
+                kcu.CONSTRAINT_NAME = rc.CONSTRAINT_NAME
+                AND kcu.CONSTRAINT_SCHEMA = rc.CONSTRAINT_SCHEMA
+            )
+            WHERE kcu.TABLE_SCHEMA = 'hl_system' AND kcu.TABLE_NAME = 'orders_details' AND rc.TABLE_NAME = 'orders_details'
+2016-08-31 07:47:28 Debug: duration=1 rows=1 SHOW TABLE STATUS WHERE Name = 'orders_details'
+2016-08-31 07:47:28 Debug: duration=0 rows=1 SELECT Orders_Details.id AS `Orders_Details__id`, Orders_Details.orders_id AS `Orders_Details__orders_id`, Orders_Details.m_record_types_id AS `Orders_Details__m_record_types_id`, Orders_Details.qty AS `Orders_Details__qty`, Orders_Details.rpm AS `Orders_Details__rpm`, Orders_Details.artist_name AS `Orders_Details__artist_name`, Orders_Details.title AS `Orders_Details__title`, Orders_Details.track_list AS `Orders_Details__track_list`, Orders_Details.ins_date AS `Orders_Details__ins_date`, Orders_Details.ins_person AS `Orders_Details__ins_person`, Orders_Details.edt_date AS `Orders_Details__edt_date`, Orders_Details.edt_person AS `Orders_Details__edt_person` FROM orders_details Orders_Details WHERE Orders_Details.id = 22 LIMIT 1
+2016-08-31 07:47:28 Debug: duration=14 rows=1 DELETE FROM orders_details WHERE id = 22
+2016-08-31 07:47:54 Debug: duration=1 rows=1 SELECT Orders_Details.id AS `Orders_Details__id`, Orders_Details.orders_id AS `Orders_Details__orders_id`, Orders_Details.m_record_types_id AS `Orders_Details__m_record_types_id`, Orders_Details.qty AS `Orders_Details__qty`, Orders_Details.rpm AS `Orders_Details__rpm`, Orders_Details.artist_name AS `Orders_Details__artist_name`, Orders_Details.title AS `Orders_Details__title`, Orders_Details.track_list AS `Orders_Details__track_list`, Orders_Details.ins_date AS `Orders_Details__ins_date`, Orders_Details.ins_person AS `Orders_Details__ins_person`, Orders_Details.edt_date AS `Orders_Details__edt_date`, Orders_Details.edt_person AS `Orders_Details__edt_person` FROM orders_details Orders_Details WHERE Orders_Details.id = 22 LIMIT 1
+2016-08-31 07:47:54 Debug: duration=0 rows=1 DELETE FROM orders_details WHERE id = 22
+2016-08-31 07:48:22 Debug: duration=1 rows=1 SELECT Orders_Details.id AS `Orders_Details__id`, Orders_Details.orders_id AS `Orders_Details__orders_id`, Orders_Details.m_record_types_id AS `Orders_Details__m_record_types_id`, Orders_Details.qty AS `Orders_Details__qty`, Orders_Details.rpm AS `Orders_Details__rpm`, Orders_Details.artist_name AS `Orders_Details__artist_name`, Orders_Details.title AS `Orders_Details__title`, Orders_Details.track_list AS `Orders_Details__track_list`, Orders_Details.ins_date AS `Orders_Details__ins_date`, Orders_Details.ins_person AS `Orders_Details__ins_person`, Orders_Details.edt_date AS `Orders_Details__edt_date`, Orders_Details.edt_person AS `Orders_Details__edt_person` FROM orders_details Orders_Details WHERE Orders_Details.id = 22 LIMIT 1
+2016-08-31 07:48:22 Debug: duration=1 rows=1 DELETE FROM orders_details WHERE id = 22
+2016-08-31 07:51:16 Debug: duration=14 rows=4 DELETE FROM orders_details WHERE orders_id = 75
+2016-08-31 07:51:16 Debug: duration=0 rows=0 COMMIT
+2016-08-31 07:51:33 Debug: duration=1 rows=0 DELETE FROM orders_details WHERE orders_id = 75
+2016-08-31 07:54:46 Debug: duration=1 rows=12 SHOW FULL COLUMNS FROM `orders_details`
+2016-08-31 07:54:46 Debug: duration=0 rows=3 SHOW INDEXES FROM `orders_details`
+2016-08-31 07:54:46 Debug: duration=2 rows=2 SELECT * FROM information_schema.key_column_usage AS kcu
+            INNER JOIN information_schema.referential_constraints AS rc
+            ON (
+                kcu.CONSTRAINT_NAME = rc.CONSTRAINT_NAME
+                AND kcu.CONSTRAINT_SCHEMA = rc.CONSTRAINT_SCHEMA
+            )
+            WHERE kcu.TABLE_SCHEMA = 'hl_system' AND kcu.TABLE_NAME = 'orders_details' AND rc.TABLE_NAME = 'orders_details'
+2016-08-31 07:54:46 Debug: duration=1 rows=1 SHOW TABLE STATUS WHERE Name = 'orders_details'
+2016-08-31 07:54:46 Debug: duration=0 rows=0 DELETE FROM orders_details WHERE orders_id = 75
+2016-08-31 07:55:03 Debug: duration=1 rows=0 DELETE FROM orders_details WHERE orders_id = 75
+2016-08-31 07:55:03 Debug: duration=14 rows=3 INSERT INTO orders_details (orders_id, m_record_types_id, qty, rpm, artist_name, title, track_list) VALUES (75, 1, 1, 33, '1', '1', '1'), (75, 5, 5, 33, '5', '5', '5'), (75, 1, 6, 45, '6', '6', '6')
+2016-08-31 07:55:50 Debug: duration=1 rows=0 DELETE FROM orders_details WHERE orders_id = 75
+2016-08-31 07:55:50 Debug: duration=16 rows=2 INSERT INTO orders_details (orders_id, m_record_types_id, qty, rpm, artist_name, title, track_list) VALUES (75, 1, 1, NULL, '', '', ''), (75, 2, 2, NULL, '', '', '')
+2016-08-31 07:56:14 Debug: duration=0 rows=0 DELETE FROM orders_details WHERE orders_id = 75
+2016-08-31 07:56:53 Debug: duration=2 rows=12 SHOW FULL COLUMNS FROM `orders_details`
+2016-08-31 07:56:53 Debug: duration=0 rows=3 SHOW INDEXES FROM `orders_details`
+2016-08-31 07:56:53 Debug: duration=2 rows=2 SELECT * FROM information_schema.key_column_usage AS kcu
+            INNER JOIN information_schema.referential_constraints AS rc
+            ON (
+                kcu.CONSTRAINT_NAME = rc.CONSTRAINT_NAME
+                AND kcu.CONSTRAINT_SCHEMA = rc.CONSTRAINT_SCHEMA
+            )
+            WHERE kcu.TABLE_SCHEMA = 'hl_system' AND kcu.TABLE_NAME = 'orders_details' AND rc.TABLE_NAME = 'orders_details'
+2016-08-31 07:56:53 Debug: duration=0 rows=1 SHOW TABLE STATUS WHERE Name = 'orders_details'
+2016-08-31 07:56:53 Debug: duration=0 rows=0 DELETE FROM orders_details WHERE orders_id = 75
+2016-08-31 07:58:42 Debug: duration=0 rows=0 DELETE FROM orders_details WHERE orders_id = 75
+2016-08-31 07:59:37 Debug: duration=1 rows=12 SHOW FULL COLUMNS FROM `orders_details`
+2016-08-31 07:59:37 Debug: duration=1 rows=3 SHOW INDEXES FROM `orders_details`
+2016-08-31 07:59:37 Debug: duration=2 rows=2 SELECT * FROM information_schema.key_column_usage AS kcu
+            INNER JOIN information_schema.referential_constraints AS rc
+            ON (
+                kcu.CONSTRAINT_NAME = rc.CONSTRAINT_NAME
+                AND kcu.CONSTRAINT_SCHEMA = rc.CONSTRAINT_SCHEMA
+            )
+            WHERE kcu.TABLE_SCHEMA = 'hl_system' AND kcu.TABLE_NAME = 'orders_details' AND rc.TABLE_NAME = 'orders_details'
+2016-08-31 07:59:37 Debug: duration=0 rows=1 SHOW TABLE STATUS WHERE Name = 'orders_details'
+2016-08-31 07:59:37 Debug: duration=0 rows=0 DELETE FROM orders_details WHERE orders_id = 75
+2016-08-31 07:59:37 Debug: duration=37 rows=1 INSERT INTO orders_details (orders_id, m_record_types_id, qty, rpm, artist_name, title, track_list) VALUES (75, 1, 1, 33, '1', '1', '11')
+2016-08-31 07:59:48 Debug: duration=5 rows=0 DELETE FROM orders_details WHERE orders_id = 75
+2016-08-31 07:59:48 Debug: duration=1 rows=1 INSERT INTO orders_details (orders_id, m_record_types_id, qty, rpm, artist_name, title, track_list) VALUES (75, 1, 1, 33, '1', '1', '11')
+2016-08-31 07:59:48 Debug: duration=0 rows=0 COMMIT
+2016-08-31 08:00:07 Debug: duration=1 rows=1 DELETE FROM orders_details WHERE orders_id = 75
+2016-08-31 08:00:07 Debug: duration=0 rows=0 COMMIT
+2016-08-31 08:00:07 Debug: duration=234 rows=3 INSERT INTO orders_details (orders_id, m_record_types_id, qty, rpm, artist_name, title, track_list) VALUES (75, 1, 1, 33, '1', '1', '11'), (75, 2, 2, 45, '2', '2', '2'), (75, 4, 3, 33, '3', '3', '3')
+2016-08-31 08:00:25 Debug: duration=1 rows=3 DELETE FROM orders_details WHERE orders_id = 75
+2016-08-31 08:00:25 Debug: duration=0 rows=0 COMMIT
+2016-08-31 08:00:25 Debug: duration=21 rows=2 INSERT INTO orders_details (orders_id, m_record_types_id, qty, rpm, artist_name, title, track_list) VALUES (75, 1, 1, 33, '1', '1', '11'), (75, 2, 4, 45, '4', '4', '4')
+2016-08-31 08:01:42 Debug: duration=23 rows=1 UPDATE orders SET name_sei = '' , name_mei = '' WHERE id = 2
+2016-08-31 08:01:42 Debug: duration=1 rows=12 SHOW FULL COLUMNS FROM `orders_details`
+2016-08-31 08:01:42 Debug: duration=0 rows=3 SHOW INDEXES FROM `orders_details`
+2016-08-31 08:01:42 Debug: duration=2 rows=2 SELECT * FROM information_schema.key_column_usage AS kcu
+            INNER JOIN information_schema.referential_constraints AS rc
+            ON (
+                kcu.CONSTRAINT_NAME = rc.CONSTRAINT_NAME
+                AND kcu.CONSTRAINT_SCHEMA = rc.CONSTRAINT_SCHEMA
+            )
+            WHERE kcu.TABLE_SCHEMA = 'hl_system' AND kcu.TABLE_NAME = 'orders_details' AND rc.TABLE_NAME = 'orders_details'
+2016-08-31 08:01:42 Debug: duration=1 rows=1 SHOW TABLE STATUS WHERE Name = 'orders_details'
+2016-08-31 08:01:42 Debug: duration=5 rows=1 DELETE FROM orders_details WHERE orders_id = 2
+2016-08-31 08:01:42 Debug: duration=0 rows=0 COMMIT
+2016-08-31 08:01:42 Debug: duration=129 rows=4 INSERT INTO orders_details (orders_id, m_record_types_id, qty, rpm, artist_name, title, track_list) VALUES (2, 2, NULL, NULL, '', '', 'aaaaaaa'), (2, 1, NULL, NULL, '', '', ''), (2, 1, NULL, NULL, '', '', ''), (2, 1, NULL, NULL, '', '', '')
+2016-08-31 08:02:00 Debug: duration=1 rows=4 DELETE FROM orders_details WHERE orders_id = 2
+2016-08-31 08:02:00 Debug: duration=0 rows=0 COMMIT
+2016-08-31 08:02:00 Debug: duration=29 rows=4 INSERT INTO orders_details (orders_id, m_record_types_id, qty, rpm, artist_name, title, track_list) VALUES (2, 1, NULL, NULL, '', '', 'aaaaaaa'), (2, 1, NULL, NULL, '', '', ''), (2, 1, NULL, NULL, '', '', ''), (2, 1, NULL, NULL, '', '', '')

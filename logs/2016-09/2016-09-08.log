@@ -1,0 +1,250 @@
+2016-09-08 02:48:02 Debug: duration=44 rows=0 UPDATE orders SET order_date = '2016/09/07' , desired_delivery_date = '2016/09/30' , estimated_delivery_date = '2016/09/23' WHERE id = 98
+2016-09-08 02:48:02 Debug: duration=3 rows=12 SHOW FULL COLUMNS FROM `orders_details`
+2016-09-08 02:48:02 Debug: duration=1 rows=3 SHOW INDEXES FROM `orders_details`
+2016-09-08 02:48:02 Debug: duration=2 rows=2 SELECT * FROM information_schema.key_column_usage AS kcu
+            INNER JOIN information_schema.referential_constraints AS rc
+            ON (
+                kcu.CONSTRAINT_NAME = rc.CONSTRAINT_NAME
+                AND kcu.CONSTRAINT_SCHEMA = rc.CONSTRAINT_SCHEMA
+            )
+            WHERE kcu.TABLE_SCHEMA = 'hl_system' AND kcu.TABLE_NAME = 'orders_details' AND rc.TABLE_NAME = 'orders_details'
+2016-09-08 02:48:02 Debug: duration=1 rows=1 SHOW TABLE STATUS WHERE Name = 'orders_details'
+2016-09-08 02:48:02 Debug: duration=2 rows=1 DELETE FROM orders_details WHERE orders_id = 98
+2016-09-08 02:48:02 Debug: duration=7 rows=1 INSERT INTO orders_details (orders_id, m_record_types_id, qty, rpm, artist_name, title, track_list) VALUES (98, 1, 10, 33, 'ｔｔｔ', 'ｔｔｔ', 'ｔｔｔｔ')
+2016-09-08 02:48:02 Debug: duration=0 rows=0 COMMIT
+2016-09-08 02:52:58 Debug: duration=18 rows=0 UPDATE orders SET order_date = '2016/09/06' , desired_delivery_date = '2016/09/01' , estimated_delivery_date = '2016/09/02' , delivery_date = '2016/07/03' WHERE id = 74
+2016-09-08 02:52:58 Debug: duration=2 rows=2 DELETE FROM orders_details WHERE orders_id = 74
+2016-09-08 02:52:58 Debug: duration=41 rows=2 INSERT INTO orders_details (orders_id, m_record_types_id, qty, rpm, artist_name, title, track_list) VALUES (74, 5, 1, 33, '1111', '1111', '1111'), (74, 1, 50, 45, '２２２２', '２２２', '２２２２')
+2016-09-08 02:52:58 Debug: duration=0 rows=0 COMMIT
+2016-09-08 02:53:38 Debug: duration=12 rows=0 UPDATE orders SET order_date = '2016/09/06' , desired_delivery_date = '2016/09/01' , estimated_delivery_date = '2016/09/02' , delivery_date = '2016/07/03' WHERE id = 74
+2016-09-08 02:53:38 Debug: duration=3 rows=2 DELETE FROM orders_details WHERE orders_id = 74
+2016-09-08 02:53:38 Debug: duration=76 rows=2 INSERT INTO orders_details (orders_id, m_record_types_id, qty, rpm, artist_name, title, track_list) VALUES (74, 5, 1, 33, '1111', '1111', '1111'), (74, 1, 50, 45, '２２２２', '２２２', '２２２２')
+2016-09-08 02:53:38 Debug: duration=0 rows=0 COMMIT
+2016-09-08 02:57:13 Debug: duration=20 rows=0 UPDATE orders SET order_date = '2016/09/06' , desired_delivery_date = '2016/09/01' , estimated_delivery_date = '2016/09/02' , delivery_date = '2016/07/03' WHERE id = 74
+2016-09-08 02:57:13 Debug: duration=2 rows=2 DELETE FROM orders_details WHERE orders_id = 74
+2016-09-08 02:57:13 Debug: duration=38 rows=2 INSERT INTO orders_details (orders_id, m_record_types_id, qty, rpm, artist_name, title, track_list) VALUES (74, 5, 1, 33, '1111', '1111', '1111'), (74, 1, 50, 45, '２２２２', '２２２', '２２２２')
+2016-09-08 02:57:13 Debug: duration=0 rows=0 COMMIT
+2016-09-08 02:58:44 Debug: duration=15 rows=0 UPDATE orders SET order_date = '2016/09/06' , desired_delivery_date = '2016/09/01' , estimated_delivery_date = '2016/09/02' , delivery_date = '2016/07/03' WHERE id = 74
+2016-09-08 02:58:44 Debug: duration=2 rows=2 DELETE FROM orders_details WHERE orders_id = 74
+2016-09-08 02:58:44 Debug: duration=24 rows=2 INSERT INTO orders_details (orders_id, m_record_types_id, qty, rpm, artist_name, title, track_list) VALUES (74, 5, 1, 33, '1111', '1111', '1111'), (74, 1, 50, 45, '２２２２', '２２２', '２２２２')
+2016-09-08 02:58:44 Debug: duration=0 rows=0 COMMIT
+2016-09-08 03:03:55 Debug: duration=13 rows=0 UPDATE orders SET order_date = '2016/09/06' , desired_delivery_date = '2016/09/01' , estimated_delivery_date = '2016/09/02' , delivery_date = '2016/07/03' WHERE id = 74
+2016-09-08 03:03:55 Debug: duration=1 rows=2 DELETE FROM orders_details WHERE orders_id = 74
+2016-09-08 03:03:55 Debug: duration=77 rows=2 INSERT INTO orders_details (orders_id, m_record_types_id, qty, rpm, artist_name, title, track_list) VALUES (74, 5, 1, 33, '1111', '1111', '1111'), (74, 1, 50, 45, '２２２２', '２２２', '２２２２')
+2016-09-08 03:03:55 Debug: duration=0 rows=0 COMMIT
+2016-09-08 03:05:28 Debug: duration=16 rows=0 UPDATE orders SET order_date = '2016/09/06' , desired_delivery_date = '2016/09/01' , estimated_delivery_date = '2016/09/02' , delivery_date = '2016/07/03' WHERE id = 74
+2016-09-08 03:05:28 Debug: duration=2 rows=2 DELETE FROM orders_details WHERE orders_id = 74
+2016-09-08 03:05:28 Debug: duration=128 rows=2 INSERT INTO orders_details (orders_id, m_record_types_id, qty, rpm, artist_name, title, track_list) VALUES (74, 5, 1, 33, '1111', '1111', '1111'), (74, 1, 50, 45, '２２２２', '２２２', '２２２２')
+2016-09-08 03:05:28 Debug: duration=0 rows=0 COMMIT
+2016-09-08 03:07:25 Debug: duration=4 rows=0 UPDATE orders SET order_date = '2016/09/06' , desired_delivery_date = '2016/09/01' , estimated_delivery_date = '2016/09/02' , delivery_date = '2016/07/03' WHERE id = 74
+2016-09-08 03:07:25 Debug: duration=2 rows=2 DELETE FROM orders_details WHERE orders_id = 74
+2016-09-08 03:07:25 Debug: duration=10 rows=2 INSERT INTO orders_details (orders_id, m_record_types_id, qty, rpm, artist_name, title, track_list) VALUES (74, 5, 1, 33, '1111', '1111', '1111'), (74, 1, 50, 45, '２２２２', '２２２', '２２２２')
+2016-09-08 03:07:25 Debug: duration=0 rows=0 COMMIT
+2016-09-08 03:07:58 Debug: duration=3 rows=0 UPDATE orders SET order_date = '2016/09/06' , desired_delivery_date = '2016/09/01' , estimated_delivery_date = '2016/09/02' , delivery_date = '2016/07/03' WHERE id = 74
+2016-09-08 03:07:58 Debug: duration=1 rows=2 DELETE FROM orders_details WHERE orders_id = 74
+2016-09-08 03:07:58 Debug: duration=93 rows=2 INSERT INTO orders_details (orders_id, m_record_types_id, qty, rpm, artist_name, title, track_list) VALUES (74, 5, 1, 33, '1111', '1111', '1111'), (74, 1, 50, 45, '２２２２', '２２２', '２２２２')
+2016-09-08 03:07:58 Debug: duration=0 rows=0 COMMIT
+2016-09-08 03:08:36 Debug: duration=3 rows=0 UPDATE orders SET order_date = '2016/09/06' , desired_delivery_date = '2016/09/01' , estimated_delivery_date = '2016/09/02' , delivery_date = '2016/07/03' WHERE id = 74
+2016-09-08 03:08:36 Debug: duration=2 rows=2 DELETE FROM orders_details WHERE orders_id = 74
+2016-09-08 03:08:36 Debug: duration=54 rows=2 INSERT INTO orders_details (orders_id, m_record_types_id, qty, rpm, artist_name, title, track_list) VALUES (74, 5, 1, 33, '1111', '1111', '1111'), (74, 1, 50, 45, '２２２２', '２２２', '２２２２')
+2016-09-08 03:08:36 Debug: duration=0 rows=0 COMMIT
+2016-09-08 03:11:26 Debug: duration=8 rows=0 UPDATE orders SET order_date = '2016/09/06' , desired_delivery_date = '2016/09/01' , estimated_delivery_date = '2016/09/02' , delivery_date = '2016/07/03' WHERE id = 74
+2016-09-08 03:11:26 Debug: duration=2 rows=2 DELETE FROM orders_details WHERE orders_id = 74
+2016-09-08 03:11:26 Debug: duration=75 rows=2 INSERT INTO orders_details (orders_id, m_record_types_id, qty, rpm, artist_name, title, track_list) VALUES (74, 5, 1, 33, '1111', '1111', '1111'), (74, 1, 50, 45, '２２２２', '２２２', '２２２２')
+2016-09-08 03:11:26 Debug: duration=0 rows=0 COMMIT
+2016-09-08 03:12:25 Debug: duration=4 rows=0 UPDATE orders SET order_date = '2016/09/06' , desired_delivery_date = '2016/09/01' , estimated_delivery_date = '2016/09/02' , delivery_date = '2016/07/03' WHERE id = 74
+2016-09-08 03:12:25 Debug: duration=1 rows=2 DELETE FROM orders_details WHERE orders_id = 74
+2016-09-08 03:12:25 Debug: duration=12 rows=2 INSERT INTO orders_details (orders_id, m_record_types_id, qty, rpm, artist_name, title, track_list) VALUES (74, 5, 1, 33, '1111', '1111', '1111'), (74, 1, 50, 45, '２２２２', '２２２', '２２２２')
+2016-09-08 03:12:25 Debug: duration=0 rows=0 COMMIT
+2016-09-08 03:14:53 Debug: duration=9 rows=0 UPDATE orders SET order_date = '2016/09/06' , desired_delivery_date = '2016/09/01' , estimated_delivery_date = '2016/09/02' , delivery_date = '2016/07/03' WHERE id = 74
+2016-09-08 03:14:53 Debug: duration=2 rows=2 DELETE FROM orders_details WHERE orders_id = 74
+2016-09-08 03:14:53 Debug: duration=52 rows=2 INSERT INTO orders_details (orders_id, m_record_types_id, qty, rpm, artist_name, title, track_list) VALUES (74, 5, 1, 33, '1111', '1111', '1111'), (74, 1, 50, 45, '２２２２', '２２２', '２２２２')
+2016-09-08 03:14:53 Debug: duration=0 rows=0 COMMIT
+2016-09-08 03:20:18 Debug: duration=3 rows=0 UPDATE orders SET order_date = '2016/09/06' , desired_delivery_date = '2016/09/01' , estimated_delivery_date = '2016/09/02' , delivery_date = '2016/07/03' WHERE id = 74
+2016-09-08 03:20:18 Debug: duration=2 rows=2 DELETE FROM orders_details WHERE orders_id = 74
+2016-09-08 03:20:19 Debug: duration=56 rows=2 INSERT INTO orders_details (orders_id, m_record_types_id, qty, rpm, artist_name, title, track_list) VALUES (74, 5, 1, 33, '1111', '1111', '1111'), (74, 1, 50, 45, '２２２２', '２２２', '２２２２')
+2016-09-08 03:20:19 Debug: duration=0 rows=0 COMMIT
+2016-09-08 03:21:25 Debug: duration=3 rows=0 UPDATE orders SET order_date = '2016/09/06' , desired_delivery_date = '2016/09/01' , estimated_delivery_date = '2016/09/02' , delivery_date = '2016/07/03' WHERE id = 74
+2016-09-08 03:21:25 Debug: duration=1 rows=2 DELETE FROM orders_details WHERE orders_id = 74
+2016-09-08 03:21:25 Debug: duration=50 rows=2 INSERT INTO orders_details (orders_id, m_record_types_id, qty, rpm, artist_name, title, track_list) VALUES (74, 5, 1, 33, '1111', '1111', '1111'), (74, 1, 50, 45, '２２２２', '２２２', '２２２２')
+2016-09-08 03:21:25 Debug: duration=0 rows=0 COMMIT
+2016-09-08 03:21:45 Debug: duration=3 rows=0 UPDATE orders SET order_date = '2016/09/06' , desired_delivery_date = '2016/09/01' , estimated_delivery_date = '2016/09/02' , delivery_date = '2016/07/03' WHERE id = 74
+2016-09-08 03:21:45 Debug: duration=1 rows=2 DELETE FROM orders_details WHERE orders_id = 74
+2016-09-08 03:21:46 Debug: duration=5 rows=2 INSERT INTO orders_details (orders_id, m_record_types_id, qty, rpm, artist_name, title, track_list) VALUES (74, 5, 1, 33, '1111', '1111', '1111'), (74, 1, 50, 45, '２２２２', '２２２', '２２２２')
+2016-09-08 03:21:46 Debug: duration=0 rows=0 COMMIT
+2016-09-08 03:22:36 Debug: duration=4 rows=0 UPDATE orders SET order_date = '2016/09/06' , desired_delivery_date = '2016/09/01' , estimated_delivery_date = '2016/09/02' , delivery_date = '2016/07/03' WHERE id = 74
+2016-09-08 03:22:36 Debug: duration=1 rows=2 DELETE FROM orders_details WHERE orders_id = 74
+2016-09-08 03:22:37 Debug: duration=68 rows=2 INSERT INTO orders_details (orders_id, m_record_types_id, qty, rpm, artist_name, title, track_list) VALUES (74, 5, 1, 33, '1111', '1111', '1111'), (74, 1, 50, 45, '２２２２', '２２２', '２２２２')
+2016-09-08 03:22:37 Debug: duration=0 rows=0 COMMIT
+2016-09-08 03:23:12 Debug: duration=2 rows=0 UPDATE orders SET order_date = '2016/09/06' , desired_delivery_date = '2016/09/01' , estimated_delivery_date = '2016/09/02' , delivery_date = '2016/07/03' WHERE id = 74
+2016-09-08 03:23:12 Debug: duration=2 rows=2 DELETE FROM orders_details WHERE orders_id = 74
+2016-09-08 03:23:12 Debug: duration=16 rows=2 INSERT INTO orders_details (orders_id, m_record_types_id, qty, rpm, artist_name, title, track_list) VALUES (74, 5, 1, 33, '1111', '1111', '1111'), (74, 1, 50, 45, '２２２２', '２２２', '２２２２')
+2016-09-08 03:23:12 Debug: duration=0 rows=0 COMMIT
+2016-09-08 03:24:40 Debug: duration=3 rows=0 UPDATE orders SET order_date = '2016/09/06' , desired_delivery_date = '2016/09/01' , estimated_delivery_date = '2016/09/02' , delivery_date = '2016/07/03' WHERE id = 74
+2016-09-08 03:24:40 Debug: duration=1 rows=2 DELETE FROM orders_details WHERE orders_id = 74
+2016-09-08 03:24:40 Debug: duration=38 rows=2 INSERT INTO orders_details (orders_id, m_record_types_id, qty, rpm, artist_name, title, track_list) VALUES (74, 5, 1, 33, '1111', '1111', '1111'), (74, 1, 50, 45, '２２２２', '２２２', '２２２２')
+2016-09-08 03:24:40 Debug: duration=0 rows=0 COMMIT
+2016-09-08 03:25:42 Debug: duration=2 rows=0 UPDATE orders SET order_date = '2016/09/06' , desired_delivery_date = '2016/09/01' , estimated_delivery_date = '2016/09/02' , delivery_date = '2016/07/03' WHERE id = 74
+2016-09-08 03:25:42 Debug: duration=1 rows=2 DELETE FROM orders_details WHERE orders_id = 74
+2016-09-08 03:25:42 Debug: duration=71 rows=2 INSERT INTO orders_details (orders_id, m_record_types_id, qty, rpm, artist_name, title, track_list) VALUES (74, 5, 1, 33, '1111', '1111', '1111'), (74, 1, 50, 45, '２２２２', '２２２', '２２２２')
+2016-09-08 03:25:42 Debug: duration=0 rows=0 COMMIT
+2016-09-08 03:30:15 Debug: duration=3 rows=0 UPDATE orders SET order_date = '2016/09/06' , desired_delivery_date = '2016/09/01' , estimated_delivery_date = '2016/09/02' , delivery_date = '2016/07/03' WHERE id = 74
+2016-09-08 03:30:15 Debug: duration=1 rows=2 DELETE FROM orders_details WHERE orders_id = 74
+2016-09-08 03:30:15 Debug: duration=71 rows=2 INSERT INTO orders_details (orders_id, m_record_types_id, qty, rpm, artist_name, title, track_list) VALUES (74, 5, 1, 33, '1111', '1111', '1111'), (74, 1, 50, 45, '２２２２', '２２２', '２２２２')
+2016-09-08 03:30:15 Debug: duration=0 rows=0 COMMIT
+2016-09-08 03:32:08 Debug: duration=2 rows=0 UPDATE orders SET order_date = '2016/09/06' , desired_delivery_date = '2016/09/01' , estimated_delivery_date = '2016/09/02' , delivery_date = '2016/07/03' WHERE id = 74
+2016-09-08 03:32:08 Debug: duration=1 rows=2 DELETE FROM orders_details WHERE orders_id = 74
+2016-09-08 03:32:08 Debug: duration=24 rows=2 INSERT INTO orders_details (orders_id, m_record_types_id, qty, rpm, artist_name, title, track_list) VALUES (74, 5, 1, 33, '1111', '1111', '1111'), (74, 1, 50, 45, '２２２２', '２２２', '２２２２')
+2016-09-08 03:32:08 Debug: duration=0 rows=0 COMMIT
+2016-09-08 03:32:47 Debug: duration=3 rows=0 UPDATE orders SET order_date = '2016/09/06' , desired_delivery_date = '2016/09/01' , estimated_delivery_date = '2016/09/02' , delivery_date = '2016/07/03' WHERE id = 74
+2016-09-08 03:32:47 Debug: duration=2 rows=2 DELETE FROM orders_details WHERE orders_id = 74
+2016-09-08 03:32:47 Debug: duration=207 rows=2 INSERT INTO orders_details (orders_id, m_record_types_id, qty, rpm, artist_name, title, track_list) VALUES (74, 5, 1, 33, '1111', '1111', '1111'), (74, 1, 50, 45, '２２２２', '２２２', '２２２２')
+2016-09-08 03:32:47 Debug: duration=0 rows=0 COMMIT
+2016-09-08 03:33:19 Debug: duration=2 rows=0 UPDATE orders SET order_date = '2016/09/06' , desired_delivery_date = '2016/09/01' , estimated_delivery_date = '2016/09/02' , delivery_date = '2016/07/03' WHERE id = 74
+2016-09-08 03:33:19 Debug: duration=2 rows=2 DELETE FROM orders_details WHERE orders_id = 74
+2016-09-08 03:33:19 Debug: duration=9 rows=2 INSERT INTO orders_details (orders_id, m_record_types_id, qty, rpm, artist_name, title, track_list) VALUES (74, 5, 1, 33, '1111', '1111', '1111'), (74, 1, 50, 45, '２２２２', '２２２', '２２２２')
+2016-09-08 03:33:19 Debug: duration=0 rows=0 COMMIT
+2016-09-08 03:33:43 Debug: duration=3 rows=0 UPDATE orders SET order_date = '2016/09/06' , desired_delivery_date = '2016/09/01' , estimated_delivery_date = '2016/09/02' , delivery_date = '2016/07/03' WHERE id = 74
+2016-09-08 03:33:43 Debug: duration=1 rows=2 DELETE FROM orders_details WHERE orders_id = 74
+2016-09-08 03:33:43 Debug: duration=355 rows=2 INSERT INTO orders_details (orders_id, m_record_types_id, qty, rpm, artist_name, title, track_list) VALUES (74, 5, 1, 33, '1111', '1111', '1111'), (74, 1, 50, 45, '２２２２', '２２２', '２２２２')
+2016-09-08 03:33:43 Debug: duration=0 rows=0 COMMIT
+2016-09-08 03:34:43 Debug: duration=3 rows=0 UPDATE orders SET order_date = '2016/09/06' , desired_delivery_date = '2016/09/01' , estimated_delivery_date = '2016/09/02' , delivery_date = '2016/07/03' WHERE id = 74
+2016-09-08 03:34:43 Debug: duration=1 rows=2 DELETE FROM orders_details WHERE orders_id = 74
+2016-09-08 03:34:43 Debug: duration=39 rows=2 INSERT INTO orders_details (orders_id, m_record_types_id, qty, rpm, artist_name, title, track_list) VALUES (74, 5, 1, 33, '1111', '1111', '1111'), (74, 1, 50, 45, '２２２２', '２２２', '２２２２')
+2016-09-08 03:34:43 Debug: duration=0 rows=0 COMMIT
+2016-09-08 03:35:18 Debug: duration=3 rows=0 UPDATE orders SET order_date = '2016/09/06' , desired_delivery_date = '2016/09/01' , estimated_delivery_date = '2016/09/02' , delivery_date = '2016/07/03' WHERE id = 74
+2016-09-08 03:35:18 Debug: duration=2 rows=2 DELETE FROM orders_details WHERE orders_id = 74
+2016-09-08 03:35:18 Debug: duration=33 rows=2 INSERT INTO orders_details (orders_id, m_record_types_id, qty, rpm, artist_name, title, track_list) VALUES (74, 5, 1, 33, '1111', '1111', '1111'), (74, 1, 50, 45, '２２２２', '２２２', '２２２２')
+2016-09-08 03:35:18 Debug: duration=0 rows=0 COMMIT
+2016-09-08 03:35:37 Debug: duration=3 rows=0 UPDATE orders SET order_date = '2016/09/06' , desired_delivery_date = '2016/09/01' , estimated_delivery_date = '2016/09/02' , delivery_date = '2016/07/03' WHERE id = 74
+2016-09-08 03:35:37 Debug: duration=2 rows=2 DELETE FROM orders_details WHERE orders_id = 74
+2016-09-08 03:35:37 Debug: duration=90 rows=2 INSERT INTO orders_details (orders_id, m_record_types_id, qty, rpm, artist_name, title, track_list) VALUES (74, 5, 1, 33, '1111', '1111', '1111'), (74, 1, 50, 45, '２２２２', '２２２', '２２２２')
+2016-09-08 03:35:37 Debug: duration=0 rows=0 COMMIT
+2016-09-08 03:36:06 Debug: duration=3 rows=0 UPDATE orders SET order_date = '2016/09/06' , desired_delivery_date = '2016/09/01' , estimated_delivery_date = '2016/09/02' , delivery_date = '2016/07/03' WHERE id = 74
+2016-09-08 03:36:06 Debug: duration=1 rows=2 DELETE FROM orders_details WHERE orders_id = 74
+2016-09-08 03:36:06 Debug: duration=13 rows=2 INSERT INTO orders_details (orders_id, m_record_types_id, qty, rpm, artist_name, title, track_list) VALUES (74, 5, 1, 33, '1111', '1111', '1111'), (74, 1, 50, 45, '２２２２', '２２２', '２２２２')
+2016-09-08 03:36:06 Debug: duration=0 rows=0 COMMIT
+2016-09-08 03:36:17 Debug: duration=3 rows=0 UPDATE orders SET order_date = '2016/09/06' , desired_delivery_date = '2016/09/01' , estimated_delivery_date = '2016/09/02' , delivery_date = '2016/07/03' WHERE id = 74
+2016-09-08 03:36:17 Debug: duration=2 rows=2 DELETE FROM orders_details WHERE orders_id = 74
+2016-09-08 03:36:17 Debug: duration=41 rows=2 INSERT INTO orders_details (orders_id, m_record_types_id, qty, rpm, artist_name, title, track_list) VALUES (74, 5, 1, 33, '1111', '1111', '1111'), (74, 1, 50, 45, '２２２２', '２２２', '２２２２')
+2016-09-08 03:36:17 Debug: duration=0 rows=0 COMMIT
+2016-09-08 03:36:59 Debug: duration=2 rows=0 UPDATE orders SET order_date = '2016/09/06' , desired_delivery_date = '2016/09/01' , estimated_delivery_date = '2016/09/02' , delivery_date = '2016/07/03' WHERE id = 74
+2016-09-08 03:36:59 Debug: duration=1 rows=2 DELETE FROM orders_details WHERE orders_id = 74
+2016-09-08 03:36:59 Debug: duration=77 rows=2 INSERT INTO orders_details (orders_id, m_record_types_id, qty, rpm, artist_name, title, track_list) VALUES (74, 5, 1, 33, '1111', '1111', '1111'), (74, 1, 50, 45, '２２２２', '２２２', '２２２２')
+2016-09-08 03:36:59 Debug: duration=0 rows=0 COMMIT
+2016-09-08 03:37:50 Debug: duration=2 rows=0 UPDATE orders SET order_date = '2016/09/06' , desired_delivery_date = '2016/09/01' , estimated_delivery_date = '2016/09/02' , delivery_date = '2016/07/03' WHERE id = 74
+2016-09-08 03:37:50 Debug: duration=1 rows=2 DELETE FROM orders_details WHERE orders_id = 74
+2016-09-08 03:37:50 Debug: duration=25 rows=2 INSERT INTO orders_details (orders_id, m_record_types_id, qty, rpm, artist_name, title, track_list) VALUES (74, 5, 1, 33, '1111', '1111', '1111'), (74, 1, 50, 45, '２２２２', '２２２', '２２２２')
+2016-09-08 03:37:50 Debug: duration=0 rows=0 COMMIT
+2016-09-08 03:38:13 Debug: duration=3 rows=0 UPDATE orders SET order_date = '2016/09/06' , desired_delivery_date = '2016/09/01' , estimated_delivery_date = '2016/09/02' , delivery_date = '2016/07/03' WHERE id = 74
+2016-09-08 03:38:13 Debug: duration=1 rows=2 DELETE FROM orders_details WHERE orders_id = 74
+2016-09-08 03:38:13 Debug: duration=21 rows=2 INSERT INTO orders_details (orders_id, m_record_types_id, qty, rpm, artist_name, title, track_list) VALUES (74, 5, 1, 33, '1111', '1111', '1111'), (74, 1, 50, 45, '２２２２', '２２２', '２２２２')
+2016-09-08 03:38:13 Debug: duration=0 rows=0 COMMIT
+2016-09-08 03:38:43 Debug: duration=2 rows=0 UPDATE orders SET order_date = '2016/09/06' , desired_delivery_date = '2016/09/01' , estimated_delivery_date = '2016/09/02' , delivery_date = '2016/07/03' WHERE id = 74
+2016-09-08 03:38:43 Debug: duration=1 rows=2 DELETE FROM orders_details WHERE orders_id = 74
+2016-09-08 03:38:43 Debug: duration=334 rows=2 INSERT INTO orders_details (orders_id, m_record_types_id, qty, rpm, artist_name, title, track_list) VALUES (74, 5, 1, 33, '1111', '1111', '1111'), (74, 1, 50, 45, '２２２２', '２２２', '２２２２')
+2016-09-08 03:38:43 Debug: duration=0 rows=0 COMMIT
+2016-09-08 03:39:34 Debug: duration=3 rows=0 UPDATE orders SET order_date = '2016/09/06' , desired_delivery_date = '2016/09/01' , estimated_delivery_date = '2016/09/02' , delivery_date = '2016/07/03' WHERE id = 74
+2016-09-08 03:39:34 Debug: duration=1 rows=2 DELETE FROM orders_details WHERE orders_id = 74
+2016-09-08 03:39:34 Debug: duration=11 rows=2 INSERT INTO orders_details (orders_id, m_record_types_id, qty, rpm, artist_name, title, track_list) VALUES (74, 5, 1, 33, '1111', '1111', '1111'), (74, 1, 50, 45, '２２２２', '２２２', '２２２２')
+2016-09-08 03:39:34 Debug: duration=0 rows=0 COMMIT
+2016-09-08 03:39:49 Debug: duration=3 rows=0 UPDATE orders SET order_date = '2016/09/06' , desired_delivery_date = '2016/09/01' , estimated_delivery_date = '2016/09/02' , delivery_date = '2016/07/03' WHERE id = 74
+2016-09-08 03:39:49 Debug: duration=2 rows=12 SHOW FULL COLUMNS FROM `orders_details`
+2016-09-08 03:39:49 Debug: duration=1 rows=3 SHOW INDEXES FROM `orders_details`
+2016-09-08 03:39:49 Debug: duration=3 rows=2 SELECT * FROM information_schema.key_column_usage AS kcu
+            INNER JOIN information_schema.referential_constraints AS rc
+            ON (
+                kcu.CONSTRAINT_NAME = rc.CONSTRAINT_NAME
+                AND kcu.CONSTRAINT_SCHEMA = rc.CONSTRAINT_SCHEMA
+            )
+            WHERE kcu.TABLE_SCHEMA = 'hl_system' AND kcu.TABLE_NAME = 'orders_details' AND rc.TABLE_NAME = 'orders_details'
+2016-09-08 03:39:49 Debug: duration=1 rows=1 SHOW TABLE STATUS WHERE Name = 'orders_details'
+2016-09-08 03:39:49 Debug: duration=1 rows=2 DELETE FROM orders_details WHERE orders_id = 74
+2016-09-08 03:39:49 Debug: duration=30 rows=2 INSERT INTO orders_details (orders_id, m_record_types_id, qty, rpm, artist_name, title, track_list) VALUES (74, 5, 1, 33, '1111', '1111', '1111'), (74, 1, 50, 45, '２２２２', '２２２', '２２２２')
+2016-09-08 03:39:49 Debug: duration=0 rows=0 COMMIT
+2016-09-08 03:40:04 Debug: duration=3 rows=0 UPDATE orders SET order_date = '2016/09/06' , desired_delivery_date = '2016/09/01' , estimated_delivery_date = '2016/09/02' , delivery_date = '2016/07/03' WHERE id = 74
+2016-09-08 03:40:04 Debug: duration=2 rows=2 DELETE FROM orders_details WHERE orders_id = 74
+2016-09-08 03:40:04 Debug: duration=54 rows=2 INSERT INTO orders_details (orders_id, m_record_types_id, qty, rpm, artist_name, title, track_list) VALUES (74, 5, 1, 33, '1111', '1111', '1111'), (74, 1, 50, 45, '２２２２', '２２２', '２２２２')
+2016-09-08 03:40:04 Debug: duration=0 rows=0 COMMIT
+2016-09-08 03:40:51 Debug: duration=2 rows=0 UPDATE orders SET order_date = '2016/09/06' , desired_delivery_date = '2016/09/01' , estimated_delivery_date = '2016/09/02' , delivery_date = '2016/07/03' WHERE id = 74
+2016-09-08 03:40:51 Debug: duration=2 rows=2 DELETE FROM orders_details WHERE orders_id = 74
+2016-09-08 03:40:51 Debug: duration=28 rows=2 INSERT INTO orders_details (orders_id, m_record_types_id, qty, rpm, artist_name, title, track_list) VALUES (74, 5, 1, 33, '1111', '1111', '1111'), (74, 1, 50, 45, '２２２２', '２２２', '２２２２')
+2016-09-08 03:40:51 Debug: duration=0 rows=0 COMMIT
+2016-09-08 03:42:50 Debug: duration=2 rows=0 UPDATE orders SET order_date = '2016/09/06' , desired_delivery_date = '2016/09/01' , estimated_delivery_date = '2016/09/02' , delivery_date = '2016/07/03' WHERE id = 74
+2016-09-08 03:42:50 Debug: duration=1 rows=2 DELETE FROM orders_details WHERE orders_id = 74
+2016-09-08 03:42:50 Debug: duration=37 rows=2 INSERT INTO orders_details (orders_id, m_record_types_id, qty, rpm, artist_name, title, track_list) VALUES (74, 5, 1, 33, '1111', '1111', '1111'), (74, 1, 50, 45, '２２２２', '２２２', '２２２２')
+2016-09-08 03:42:50 Debug: duration=0 rows=0 COMMIT
+2016-09-08 03:43:41 Debug: duration=3 rows=0 UPDATE orders SET order_date = '2016/09/06' , desired_delivery_date = '2016/09/01' , estimated_delivery_date = '2016/09/02' , delivery_date = '2016/07/03' WHERE id = 74
+2016-09-08 03:43:42 Debug: duration=1 rows=2 DELETE FROM orders_details WHERE orders_id = 74
+2016-09-08 03:43:42 Debug: duration=40 rows=2 INSERT INTO orders_details (orders_id, m_record_types_id, qty, rpm, artist_name, title, track_list) VALUES (74, 5, 1, 33, '1111', '1111', '1111'), (74, 1, 50, 45, '２２２２', '２２２', '２２２２')
+2016-09-08 03:43:42 Debug: duration=0 rows=0 COMMIT
+2016-09-08 03:44:12 Debug: duration=37 rows=0 UPDATE orders SET order_date = '2016/09/06' , desired_delivery_date = '2016/09/01' , estimated_delivery_date = '2016/09/02' , delivery_date = '2016/07/03' WHERE id = 74
+2016-09-08 03:44:12 Debug: duration=1 rows=2 DELETE FROM orders_details WHERE orders_id = 74
+2016-09-08 03:44:12 Debug: duration=9 rows=2 INSERT INTO orders_details (orders_id, m_record_types_id, qty, rpm, artist_name, title, track_list) VALUES (74, 5, 1, 33, '1111', '1111', '1111'), (74, 1, 50, 45, '２２２２', '２２２', '２２２２')
+2016-09-08 03:44:12 Debug: duration=0 rows=0 COMMIT
+2016-09-08 03:44:59 Debug: duration=2 rows=0 UPDATE orders SET order_date = '2016/09/06' , desired_delivery_date = '2016/09/01' , estimated_delivery_date = '2016/09/02' , delivery_date = '2016/07/03' WHERE id = 74
+2016-09-08 03:44:59 Debug: duration=28 rows=2 DELETE FROM orders_details WHERE orders_id = 74
+2016-09-08 03:44:59 Debug: duration=70 rows=2 INSERT INTO orders_details (orders_id, m_record_types_id, qty, rpm, artist_name, title, track_list) VALUES (74, 5, 1, 33, '1111', '1111', '1111'), (74, 1, 50, 45, '２２２２', '２２２', '２２２２')
+2016-09-08 03:44:59 Debug: duration=0 rows=0 COMMIT
+2016-09-08 03:45:23 Debug: duration=36 rows=0 UPDATE orders SET order_date = '2016/09/06' , desired_delivery_date = '2016/09/01' , estimated_delivery_date = '2016/09/02' , delivery_date = '2016/07/03' WHERE id = 74
+2016-09-08 03:45:23 Debug: duration=1 rows=2 DELETE FROM orders_details WHERE orders_id = 74
+2016-09-08 03:45:23 Debug: duration=92 rows=2 INSERT INTO orders_details (orders_id, m_record_types_id, qty, rpm, artist_name, title, track_list) VALUES (74, 5, 1, 33, '1111', '1111', '1111'), (74, 1, 50, 45, '２２２２', '２２２', '２２２２')
+2016-09-08 03:45:23 Debug: duration=0 rows=0 COMMIT
+2016-09-08 03:46:04 Debug: duration=2 rows=0 UPDATE orders SET order_date = '2016/09/06' , desired_delivery_date = '2016/09/01' , estimated_delivery_date = '2016/09/02' , delivery_date = '2016/07/03' WHERE id = 74
+2016-09-08 03:46:04 Debug: duration=1 rows=2 DELETE FROM orders_details WHERE orders_id = 74
+2016-09-08 03:46:04 Debug: duration=36 rows=2 INSERT INTO orders_details (orders_id, m_record_types_id, qty, rpm, artist_name, title, track_list) VALUES (74, 5, 1, 33, '1111', '1111', '1111'), (74, 1, 50, 45, '２２２２', '２２２', '２２２２')
+2016-09-08 03:46:04 Debug: duration=0 rows=0 COMMIT
+2016-09-08 03:46:25 Debug: duration=2 rows=0 UPDATE orders SET order_date = '2016/09/06' , desired_delivery_date = '2016/09/01' , estimated_delivery_date = '2016/09/02' , delivery_date = '2016/07/03' WHERE id = 74
+2016-09-08 03:46:25 Debug: duration=1 rows=2 DELETE FROM orders_details WHERE orders_id = 74
+2016-09-08 03:46:25 Debug: duration=75 rows=2 INSERT INTO orders_details (orders_id, m_record_types_id, qty, rpm, artist_name, title, track_list) VALUES (74, 5, 1, 33, '1111', '1111', '1111'), (74, 1, 50, 45, '２２２２', '２２２', '２２２２')
+2016-09-08 03:46:25 Debug: duration=0 rows=0 COMMIT
+2016-09-08 03:46:57 Debug: duration=2 rows=0 UPDATE orders SET order_date = '2016/09/06' , desired_delivery_date = '2016/09/01' , estimated_delivery_date = '2016/09/02' , delivery_date = '2016/07/03' WHERE id = 74
+2016-09-08 03:46:57 Debug: duration=2 rows=12 SHOW FULL COLUMNS FROM `orders_details`
+2016-09-08 03:46:57 Debug: duration=2 rows=3 SHOW INDEXES FROM `orders_details`
+2016-09-08 03:46:57 Debug: duration=3 rows=2 SELECT * FROM information_schema.key_column_usage AS kcu
+            INNER JOIN information_schema.referential_constraints AS rc
+            ON (
+                kcu.CONSTRAINT_NAME = rc.CONSTRAINT_NAME
+                AND kcu.CONSTRAINT_SCHEMA = rc.CONSTRAINT_SCHEMA
+            )
+            WHERE kcu.TABLE_SCHEMA = 'hl_system' AND kcu.TABLE_NAME = 'orders_details' AND rc.TABLE_NAME = 'orders_details'
+2016-09-08 03:46:57 Debug: duration=3 rows=1 SHOW TABLE STATUS WHERE Name = 'orders_details'
+2016-09-08 03:46:57 Debug: duration=1 rows=2 DELETE FROM orders_details WHERE orders_id = 74
+2016-09-08 03:46:57 Debug: duration=226 rows=2 INSERT INTO orders_details (orders_id, m_record_types_id, qty, rpm, artist_name, title, track_list) VALUES (74, 5, 1, 33, '1111', '1111', '1111'), (74, 1, 50, 45, '２２２２', '２２２', '２２２２')
+2016-09-08 03:46:57 Debug: duration=0 rows=0 COMMIT
+2016-09-08 03:47:41 Debug: duration=2 rows=0 UPDATE orders SET order_date = '2016/09/06' , desired_delivery_date = '2016/09/01' , estimated_delivery_date = '2016/09/02' , delivery_date = '2016/07/03' WHERE id = 74
+2016-09-08 03:47:42 Debug: duration=1 rows=2 DELETE FROM orders_details WHERE orders_id = 74
+2016-09-08 03:47:42 Debug: duration=23 rows=2 INSERT INTO orders_details (orders_id, m_record_types_id, qty, rpm, artist_name, title, track_list) VALUES (74, 5, 1, 33, '1111', '1111', '1111'), (74, 1, 50, 45, '２２２２', '２２２', '２２２２')
+2016-09-08 03:47:42 Debug: duration=0 rows=0 COMMIT
+2016-09-08 03:48:11 Debug: duration=3 rows=0 UPDATE orders SET order_date = '2016/09/06' , desired_delivery_date = '2016/09/01' , estimated_delivery_date = '2016/09/02' , delivery_date = '2016/07/03' WHERE id = 74
+2016-09-08 03:48:11 Debug: duration=2 rows=2 DELETE FROM orders_details WHERE orders_id = 74
+2016-09-08 03:48:11 Debug: duration=272 rows=2 INSERT INTO orders_details (orders_id, m_record_types_id, qty, rpm, artist_name, title, track_list) VALUES (74, 5, 1, 33, '1111', '1111', '1111'), (74, 1, 50, 45, '２２２２', '２２２', '２２２２')
+2016-09-08 03:48:11 Debug: duration=0 rows=0 COMMIT
+2016-09-08 03:50:10 Debug: duration=3 rows=0 UPDATE orders SET order_date = '2016/09/06' , desired_delivery_date = '2016/09/01' , estimated_delivery_date = '2016/09/02' , delivery_date = '2016/07/03' WHERE id = 74
+2016-09-08 03:50:10 Debug: duration=1 rows=2 DELETE FROM orders_details WHERE orders_id = 74
+2016-09-08 03:50:10 Debug: duration=28 rows=2 INSERT INTO orders_details (orders_id, m_record_types_id, qty, rpm, artist_name, title, track_list) VALUES (74, 5, 1, 33, '1111', '1111', '1111'), (74, 1, 50, 45, '２２２２', '２２２', '２２２２')
+2016-09-08 03:50:10 Debug: duration=0 rows=0 COMMIT
+2016-09-08 03:51:28 Debug: duration=3 rows=0 UPDATE orders SET order_date = '2016/09/06' , desired_delivery_date = '2016/09/01' , estimated_delivery_date = '2016/09/02' , delivery_date = '2016/07/03' WHERE id = 74
+2016-09-08 03:51:28 Debug: duration=2 rows=2 DELETE FROM orders_details WHERE orders_id = 74
+2016-09-08 03:51:28 Debug: duration=130 rows=2 INSERT INTO orders_details (orders_id, m_record_types_id, qty, rpm, artist_name, title, track_list) VALUES (74, 5, 1, 33, '1111', '1111', '1111'), (74, 1, 50, 45, '２２２２', '２２２', '２２２２')
+2016-09-08 03:51:28 Debug: duration=0 rows=0 COMMIT
+2016-09-08 03:52:25 Debug: duration=2 rows=0 UPDATE orders SET order_date = '2016/09/06' , desired_delivery_date = '2016/09/01' , estimated_delivery_date = '2016/09/02' , delivery_date = '2016/07/03' WHERE id = 74
+2016-09-08 03:52:25 Debug: duration=2 rows=2 DELETE FROM orders_details WHERE orders_id = 74
+2016-09-08 03:52:25 Debug: duration=21 rows=2 INSERT INTO orders_details (orders_id, m_record_types_id, qty, rpm, artist_name, title, track_list) VALUES (74, 5, 1, 33, '1111', '1111', '1111'), (74, 1, 50, 45, '２２２２', '２２２', '２２２２')
+2016-09-08 03:52:25 Debug: duration=0 rows=0 COMMIT
+2016-09-08 03:52:37 Debug: duration=2 rows=2 DELETE FROM orders_details WHERE orders_id = 74
+2016-09-08 03:52:37 Debug: duration=1 rows=1 SELECT Orders.id AS `Orders__id`, Orders.order_date AS `Orders__order_date`, Orders.m_customers_id AS `Orders__m_customers_id`, Orders.name_sei AS `Orders__name_sei`, Orders.name_mei AS `Orders__name_mei`, Orders.mail_address AS `Orders__mail_address`, Orders.zip_code AS `Orders__zip_code`, Orders.address AS `Orders__address`, Orders.tel AS `Orders__tel`, Orders.note AS `Orders__note`, Orders.delivery_fee AS `Orders__delivery_fee`, Orders.order_amount AS `Orders__order_amount`, Orders.profit AS `Orders__profit`, Orders.desired_delivery_date AS `Orders__desired_delivery_date`, Orders.estimated_delivery_date AS `Orders__estimated_delivery_date`, Orders.delivery_date AS `Orders__delivery_date`, Orders.works_on AS `Orders__works_on`, Orders.entry AS `Orders__entry`, Orders.ins_date AS `Orders__ins_date`, Orders.ins_person AS `Orders__ins_person`, Orders.edt_date AS `Orders__edt_date`, Orders.edit_person AS `Orders__edit_person` FROM orders Orders WHERE Orders.id = 74 LIMIT 1
+2016-09-08 03:52:37 Debug: duration=2 rows=1 DELETE FROM orders WHERE id = 74
+2016-09-08 03:52:37 Debug: duration=0 rows=0 COMMIT
+2016-09-08 04:06:01 Debug: duration=3 rows=0 UPDATE orders SET order_date = '2016/09/07' , desired_delivery_date = '2016/09/30' , estimated_delivery_date = '2016/09/23' WHERE id = 98
+2016-09-08 04:06:01 Debug: duration=2 rows=1 DELETE FROM orders_details WHERE orders_id = 98
+2016-09-08 04:06:01 Debug: duration=236 rows=9 INSERT INTO orders_details (orders_id, m_record_types_id, qty, rpm, artist_name, title, track_list) VALUES (98, 1, 10, 33, 'ｔｔｔ', 'ｔｔｔ', 'ｔｔｔｔ'), (98, 1, 1, 33, '2', '2', '2'), (98, NULL, NULL, NULL, '', '', ''), (98, NULL, NULL, NULL, '', '', ''), (98, NULL, NULL, NULL, '', '', ''), (98, NULL, NULL, NULL, '', '', ''), (98, NULL, NULL, NULL, '', '', ''), (98, NULL, NULL, NULL, '', '', ''), (98, NULL, NULL, NULL, '', '', '')
+2016-09-08 04:06:01 Debug: duration=0 rows=0 COMMIT
+2016-09-08 04:10:00 Debug: duration=2 rows=0 UPDATE orders SET order_date = '2016/09/07' , desired_delivery_date = '2016/09/30' , estimated_delivery_date = '2016/09/23' WHERE id = 98
+2016-09-08 04:10:00 Debug: duration=2 rows=9 DELETE FROM orders_details WHERE orders_id = 98
+2016-09-08 04:10:00 Debug: duration=13 rows=2 INSERT INTO orders_details (orders_id, m_record_types_id, qty, rpm, artist_name, title, track_list) VALUES (98, 1, 10, 33, 'ｔｔｔ', 'ｔｔｔ', 'ｔｔｔｔ'), (98, 1, 1, 33, '2', '2', '2')
+2016-09-08 04:10:00 Debug: duration=0 rows=0 COMMIT
+2016-09-08 05:45:46 Debug: duration=3 rows=0 UPDATE orders SET order_date = '2016/09/07' , desired_delivery_date = '2016/09/30' , estimated_delivery_date = '2016/09/23' WHERE id = 98
+2016-09-08 05:45:46 Debug: duration=11 rows=2 DELETE FROM orders_details WHERE orders_id = 98
+2016-09-08 05:45:46 Debug: duration=79 rows=1 INSERT INTO orders_details (orders_id, m_record_types_id, qty, rpm, artist_name, title, track_list) VALUES (98, 1, 10, 33, 'ｔｔｔ', 'ｔｔｔ', 'ｔｔｔｔ')
+2016-09-08 05:45:46 Debug: duration=0 rows=0 COMMIT

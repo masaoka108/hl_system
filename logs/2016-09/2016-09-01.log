@@ -1,0 +1,580 @@
+2016-09-01 04:39:45 Debug: duration=15 rows=1 INSERT INTO orders (order_date, name_sei, name_mei, mail_address, zip_code, address, tel, note) VALUES ('2016-09-01', '', '', '', '', '', '', '')
+2016-09-01 04:39:45 Debug: duration=13 rows=12 SHOW FULL COLUMNS FROM `orders_details`
+2016-09-01 04:39:45 Debug: duration=1 rows=3 SHOW INDEXES FROM `orders_details`
+2016-09-01 04:39:45 Debug: duration=2 rows=2 SELECT * FROM information_schema.key_column_usage AS kcu
+            INNER JOIN information_schema.referential_constraints AS rc
+            ON (
+                kcu.CONSTRAINT_NAME = rc.CONSTRAINT_NAME
+                AND kcu.CONSTRAINT_SCHEMA = rc.CONSTRAINT_SCHEMA
+            )
+            WHERE kcu.TABLE_SCHEMA = 'hl_system' AND kcu.TABLE_NAME = 'orders_details' AND rc.TABLE_NAME = 'orders_details'
+2016-09-01 04:39:45 Debug: duration=1 rows=1 SHOW TABLE STATUS WHERE Name = 'orders_details'
+2016-09-01 04:39:45 Debug: duration=1 rows=1 INSERT INTO orders_details (orders_id, m_record_types_id, qty, rpm, artist_name, title, track_list) VALUES (76, 4, 1, 33, '1', '1', '1')
+2016-09-01 04:39:45 Debug: duration=0 rows=0 COMMIT
+2016-09-01 04:41:22 Debug: duration=16 rows=1 INSERT INTO orders (order_date, name_sei, name_mei, mail_address, zip_code, address, tel, note) VALUES ('2016-09-01', '', '', '', '', '', '', '')
+2016-09-01 04:41:22 Debug: duration=2 rows=1 INSERT INTO orders_details (orders_id, m_record_types_id, qty, rpm, artist_name, title, track_list) VALUES (77, 1, 0, 33, 'a', 'a', 'a')
+2016-09-01 04:41:22 Debug: duration=0 rows=0 COMMIT
+2016-09-01 04:42:26 Debug: duration=3 rows=1 INSERT INTO orders (order_date, name_sei, name_mei, mail_address, zip_code, address, tel, note) VALUES ('2016-09-01', '', '', '', '', '', '', '')
+2016-09-01 04:42:26 Debug: duration=1 rows=12 SHOW FULL COLUMNS FROM `orders_details`
+2016-09-01 04:42:26 Debug: duration=0 rows=3 SHOW INDEXES FROM `orders_details`
+2016-09-01 04:42:26 Debug: duration=1 rows=2 SELECT * FROM information_schema.key_column_usage AS kcu
+            INNER JOIN information_schema.referential_constraints AS rc
+            ON (
+                kcu.CONSTRAINT_NAME = rc.CONSTRAINT_NAME
+                AND kcu.CONSTRAINT_SCHEMA = rc.CONSTRAINT_SCHEMA
+            )
+            WHERE kcu.TABLE_SCHEMA = 'hl_system' AND kcu.TABLE_NAME = 'orders_details' AND rc.TABLE_NAME = 'orders_details'
+2016-09-01 04:42:26 Debug: duration=1 rows=1 SHOW TABLE STATUS WHERE Name = 'orders_details'
+2016-09-01 04:42:26 Debug: duration=1 rows=0 INSERT INTO orders_details (orders_i, m_record_types_id, qty, rpm, artist_name, title, track_list) VALUES (NULL, 2, 0, 33, 'a', 'a', 'a', 78)
+2016-09-01 04:42:57 Debug: duration=11 rows=1 INSERT INTO orders (order_date, name_sei, name_mei, mail_address, zip_code, address, tel, note) VALUES ('2016-09-01', 'tetete', 'tetete', '', '', '', '', '')
+2016-09-01 04:42:57 Debug: duration=70 rows=0 INSERT INTO orders_details (orders_i, m_record_types_id, qty, rpm, artist_name, title, track_list) VALUES (NULL, 3, 1, 33, '1', '1', '1', 79)
+2016-09-01 04:49:11 Debug: duration=2 rows=22 SHOW FULL COLUMNS FROM `orders`
+2016-09-01 04:49:11 Debug: duration=1 rows=2 SHOW INDEXES FROM `orders`
+2016-09-01 04:49:11 Debug: duration=1 rows=1 SELECT * FROM information_schema.key_column_usage AS kcu
+            INNER JOIN information_schema.referential_constraints AS rc
+            ON (
+                kcu.CONSTRAINT_NAME = rc.CONSTRAINT_NAME
+                AND kcu.CONSTRAINT_SCHEMA = rc.CONSTRAINT_SCHEMA
+            )
+            WHERE kcu.TABLE_SCHEMA = 'hl_system' AND kcu.TABLE_NAME = 'orders' AND rc.TABLE_NAME = 'orders'
+2016-09-01 04:49:11 Debug: duration=1 rows=1 SHOW TABLE STATUS WHERE Name = 'orders'
+2016-09-01 04:49:11 Debug: duration=13 rows=1 INSERT INTO orders (order_date, name_sei, name_mei, mail_address, zip_code, address, tel, note) VALUES ('2016-09-01', '', '', '', '', '', '', '')
+2016-09-01 04:49:11 Debug: duration=1 rows=12 SHOW FULL COLUMNS FROM `orders_details`
+2016-09-01 04:49:11 Debug: duration=0 rows=3 SHOW INDEXES FROM `orders_details`
+2016-09-01 04:49:11 Debug: duration=2 rows=2 SELECT * FROM information_schema.key_column_usage AS kcu
+            INNER JOIN information_schema.referential_constraints AS rc
+            ON (
+                kcu.CONSTRAINT_NAME = rc.CONSTRAINT_NAME
+                AND kcu.CONSTRAINT_SCHEMA = rc.CONSTRAINT_SCHEMA
+            )
+            WHERE kcu.TABLE_SCHEMA = 'hl_system' AND kcu.TABLE_NAME = 'orders_details' AND rc.TABLE_NAME = 'orders_details'
+2016-09-01 04:49:11 Debug: duration=1 rows=1 SHOW TABLE STATUS WHERE Name = 'orders_details'
+2016-09-01 04:49:11 Debug: duration=1 rows=0 INSERT INTO orders_details (orders_i, m_record_types_id, qty, rpm, artist_name, title, track_list) VALUES (NULL, 5, 1, 33, '1', '1', '1', 80)
+2016-09-01 04:49:58 Debug: duration=1 rows=1 INSERT INTO orders (order_date, name_sei, name_mei, mail_address, zip_code, address, tel, note) VALUES ('2016-09-01', '', '', '', '', '', '', '')
+2016-09-01 04:55:04 Debug: duration=2 rows=22 SHOW FULL COLUMNS FROM `orders`
+2016-09-01 04:55:04 Debug: duration=0 rows=2 SHOW INDEXES FROM `orders`
+2016-09-01 04:55:04 Debug: duration=2 rows=1 SELECT * FROM information_schema.key_column_usage AS kcu
+            INNER JOIN information_schema.referential_constraints AS rc
+            ON (
+                kcu.CONSTRAINT_NAME = rc.CONSTRAINT_NAME
+                AND kcu.CONSTRAINT_SCHEMA = rc.CONSTRAINT_SCHEMA
+            )
+            WHERE kcu.TABLE_SCHEMA = 'hl_system' AND kcu.TABLE_NAME = 'orders' AND rc.TABLE_NAME = 'orders'
+2016-09-01 04:55:04 Debug: duration=1 rows=1 SHOW TABLE STATUS WHERE Name = 'orders'
+2016-09-01 04:55:04 Debug: duration=14 rows=1 INSERT INTO orders (order_date, name_sei, name_mei, mail_address, zip_code, address, tel, note) VALUES ('2016-09-01', '', '', '', '', '', '', '')
+2016-09-01 04:55:04 Debug: duration=1 rows=12 SHOW FULL COLUMNS FROM `orders_details`
+2016-09-01 04:55:04 Debug: duration=0 rows=3 SHOW INDEXES FROM `orders_details`
+2016-09-01 04:55:04 Debug: duration=2 rows=2 SELECT * FROM information_schema.key_column_usage AS kcu
+            INNER JOIN information_schema.referential_constraints AS rc
+            ON (
+                kcu.CONSTRAINT_NAME = rc.CONSTRAINT_NAME
+                AND kcu.CONSTRAINT_SCHEMA = rc.CONSTRAINT_SCHEMA
+            )
+            WHERE kcu.TABLE_SCHEMA = 'hl_system' AND kcu.TABLE_NAME = 'orders_details' AND rc.TABLE_NAME = 'orders_details'
+2016-09-01 04:55:04 Debug: duration=1 rows=1 SHOW TABLE STATUS WHERE Name = 'orders_details'
+2016-09-01 04:55:04 Debug: duration=0 rows=0 INSERT INTO orders_details (orders_i, m_record_types_id, qty, rpm, artist_name, title, track_list) VALUES (NULL, 4, 1, 33, '1', '1', '1', 82)
+2016-09-01 04:55:55 Debug: duration=1 rows=1 INSERT INTO orders (order_date, name_sei, name_mei, mail_address, zip_code, address, tel, note) VALUES ('2016-09-01', '', '', '', '', '', '', '')
+2016-09-01 04:55:55 Debug: duration=0 rows=0 INSERT INTO orders_details (orders_i, m_record_types_id, qty, rpm, artist_name, title, track_list) VALUES (NULL, 1, 1, 33, '2', '2', '2', 83)
+2016-09-01 04:57:24 Debug: duration=2 rows=22 SHOW FULL COLUMNS FROM `orders`
+2016-09-01 04:57:24 Debug: duration=1 rows=2 SHOW INDEXES FROM `orders`
+2016-09-01 04:57:24 Debug: duration=2 rows=1 SELECT * FROM information_schema.key_column_usage AS kcu
+            INNER JOIN information_schema.referential_constraints AS rc
+            ON (
+                kcu.CONSTRAINT_NAME = rc.CONSTRAINT_NAME
+                AND kcu.CONSTRAINT_SCHEMA = rc.CONSTRAINT_SCHEMA
+            )
+            WHERE kcu.TABLE_SCHEMA = 'hl_system' AND kcu.TABLE_NAME = 'orders' AND rc.TABLE_NAME = 'orders'
+2016-09-01 04:57:24 Debug: duration=1 rows=1 SHOW TABLE STATUS WHERE Name = 'orders'
+2016-09-01 04:57:24 Debug: duration=11 rows=1 INSERT INTO orders (order_date, name_sei, name_mei, mail_address, zip_code, address, tel, note) VALUES ('2016-09-01', '', '', '', '', '', '', '')
+2016-09-01 04:57:24 Debug: duration=1 rows=12 SHOW FULL COLUMNS FROM `orders_details`
+2016-09-01 04:57:24 Debug: duration=0 rows=3 SHOW INDEXES FROM `orders_details`
+2016-09-01 04:57:24 Debug: duration=1 rows=2 SELECT * FROM information_schema.key_column_usage AS kcu
+            INNER JOIN information_schema.referential_constraints AS rc
+            ON (
+                kcu.CONSTRAINT_NAME = rc.CONSTRAINT_NAME
+                AND kcu.CONSTRAINT_SCHEMA = rc.CONSTRAINT_SCHEMA
+            )
+            WHERE kcu.TABLE_SCHEMA = 'hl_system' AND kcu.TABLE_NAME = 'orders_details' AND rc.TABLE_NAME = 'orders_details'
+2016-09-01 04:57:24 Debug: duration=0 rows=1 SHOW TABLE STATUS WHERE Name = 'orders_details'
+2016-09-01 04:57:24 Debug: duration=0 rows=0 INSERT INTO orders_details (orders_i, m_record_types_id, qty, rpm, artist_name, title, track_list) VALUES (NULL, 1, 1, 33, '2', '2', '2', 84)
+2016-09-01 04:57:40 Debug: duration=1 rows=1 INSERT INTO orders (order_date, name_sei, name_mei, mail_address, zip_code, address, tel, note) VALUES ('2016-09-01', '', '', '', '', '', '', '')
+2016-09-01 04:57:40 Debug: duration=268 rows=0 INSERT INTO orders_details (orders_i, m_record_types_id, qty, rpm, artist_name, title, track_list) VALUES (NULL, 1, 1, 33, '2', '2', '2', 85)
+2016-09-01 04:57:40 Debug: duration=0 rows=0 ROLLBACK
+2016-09-01 04:58:00 Debug: duration=10 rows=1 INSERT INTO orders (order_date, name_sei, name_mei, mail_address, zip_code, address, tel, note) VALUES ('2016-09-01', '', '', '', '', '', '', '')
+2016-09-01 04:58:00 Debug: duration=2 rows=0 INSERT INTO orders_details (orders_i, m_record_types_id, qty, rpm, artist_name, title, track_list) VALUES (NULL, 1, 1, 33, '2', '2', '2', 86)
+2016-09-01 04:58:00 Debug: duration=0 rows=0 ROLLBACK
+2016-09-01 04:58:04 Debug: duration=1 rows=1 INSERT INTO orders (order_date, name_sei, name_mei, mail_address, zip_code, address, tel, note) VALUES ('2016-09-01', '', '', '', '', '', '', '')
+2016-09-01 04:58:04 Debug: duration=93 rows=0 INSERT INTO orders_details (orders_i, m_record_types_id, qty, rpm, artist_name, title, track_list) VALUES (NULL, 1, 1, 33, '2', '2', '2', 87)
+2016-09-01 04:58:04 Debug: duration=0 rows=0 ROLLBACK
+2016-09-01 04:58:22 Debug: duration=1 rows=1 INSERT INTO orders (order_date, name_sei, name_mei, mail_address, zip_code, address, tel, note) VALUES ('2016-09-01', '', '', '', '', '', '', '')
+2016-09-01 04:58:22 Debug: duration=0 rows=0 INSERT INTO orders_details (orders_i, m_record_types_id, qty, rpm, artist_name, title, track_list) VALUES (NULL, 1, 1, 33, '2', '2', '2', 88)
+2016-09-01 04:58:22 Debug: duration=0 rows=0 ROLLBACK
+2016-09-01 04:58:37 Debug: duration=1 rows=1 INSERT INTO orders (order_date, name_sei, name_mei, mail_address, zip_code, address, tel, note) VALUES ('2016-09-01', '', '', '', '', '', '', '')
+2016-09-01 04:58:37 Debug: duration=1 rows=0 INSERT INTO orders_details (orders_i, m_record_types_id, qty, rpm, artist_name, title, track_list) VALUES (NULL, 4, 0, 33, '１', '１', '１', 89)
+2016-09-01 04:58:37 Debug: duration=0 rows=0 ROLLBACK
+2016-09-01 05:00:01 Debug: duration=9 rows=1 INSERT INTO orders (order_date, name_sei, name_mei, mail_address, zip_code, address, tel, note) VALUES ('2016-09-01', '', '', '', '', '', '', '')
+2016-09-01 05:00:01 Debug: duration=1 rows=12 SHOW FULL COLUMNS FROM `orders_details`
+2016-09-01 05:00:01 Debug: duration=1 rows=3 SHOW INDEXES FROM `orders_details`
+2016-09-01 05:00:01 Debug: duration=2 rows=2 SELECT * FROM information_schema.key_column_usage AS kcu
+            INNER JOIN information_schema.referential_constraints AS rc
+            ON (
+                kcu.CONSTRAINT_NAME = rc.CONSTRAINT_NAME
+                AND kcu.CONSTRAINT_SCHEMA = rc.CONSTRAINT_SCHEMA
+            )
+            WHERE kcu.TABLE_SCHEMA = 'hl_system' AND kcu.TABLE_NAME = 'orders_details' AND rc.TABLE_NAME = 'orders_details'
+2016-09-01 05:00:01 Debug: duration=1 rows=1 SHOW TABLE STATUS WHERE Name = 'orders_details'
+2016-09-01 05:00:01 Debug: duration=1 rows=0 INSERT INTO orders_details (orders_i, m_record_types_id, qty, rpm, artist_name, title, track_list) VALUES (NULL, 1, 0, 33, '１', '１', '１', 90)
+2016-09-01 05:00:01 Debug: duration=0 rows=0 ROLLBACK
+2016-09-01 05:22:01 Debug: duration=1 rows=1 INSERT INTO orders (order_date, name_sei, name_mei, mail_address, zip_code, address, tel, note) VALUES ('2016-09-01', '', '', '', '', '', '', '')
+2016-09-01 05:22:01 Debug: duration=65 rows=12 SHOW FULL COLUMNS FROM `orders_details`
+2016-09-01 05:22:01 Debug: duration=1 rows=3 SHOW INDEXES FROM `orders_details`
+2016-09-01 05:22:01 Debug: duration=2 rows=2 SELECT * FROM information_schema.key_column_usage AS kcu
+            INNER JOIN information_schema.referential_constraints AS rc
+            ON (
+                kcu.CONSTRAINT_NAME = rc.CONSTRAINT_NAME
+                AND kcu.CONSTRAINT_SCHEMA = rc.CONSTRAINT_SCHEMA
+            )
+            WHERE kcu.TABLE_SCHEMA = 'hl_system' AND kcu.TABLE_NAME = 'orders_details' AND rc.TABLE_NAME = 'orders_details'
+2016-09-01 05:22:01 Debug: duration=0 rows=1 SHOW TABLE STATUS WHERE Name = 'orders_details'
+2016-09-01 05:22:01 Debug: duration=0 rows=0 INSERT INTO orders_details (orders_i, m_record_types_id, qty, rpm, artist_name, title, track_list) VALUES (NULL, 4, 1, 33, '1', '1', '1', 91)
+2016-09-01 05:22:01 Debug: duration=0 rows=0 ROLLBACK
+2016-09-01 05:22:33 Debug: duration=9 rows=1 INSERT INTO orders (order_date, name_sei, name_mei, mail_address, zip_code, address, tel, note) VALUES ('2016-09-01', '', '', '', '', '', '', '')
+2016-09-01 05:22:33 Debug: duration=1 rows=0 INSERT INTO orders_details (orders_i, m_record_types_id, qty, rpm, artist_name, title, track_list) VALUES (NULL, 5, 1, 33, '1', '1', '1', 92)
+2016-09-01 05:22:33 Debug: duration=0 rows=0 ROLLBACK
+2016-09-01 05:24:36 Debug: duration=2 rows=22 SHOW FULL COLUMNS FROM `orders`
+2016-09-01 05:24:36 Debug: duration=0 rows=2 SHOW INDEXES FROM `orders`
+2016-09-01 05:24:36 Debug: duration=2 rows=1 SELECT * FROM information_schema.key_column_usage AS kcu
+            INNER JOIN information_schema.referential_constraints AS rc
+            ON (
+                kcu.CONSTRAINT_NAME = rc.CONSTRAINT_NAME
+                AND kcu.CONSTRAINT_SCHEMA = rc.CONSTRAINT_SCHEMA
+            )
+            WHERE kcu.TABLE_SCHEMA = 'hl_system' AND kcu.TABLE_NAME = 'orders' AND rc.TABLE_NAME = 'orders'
+2016-09-01 05:24:36 Debug: duration=1 rows=1 SHOW TABLE STATUS WHERE Name = 'orders'
+2016-09-01 05:24:36 Debug: duration=12 rows=1 INSERT INTO orders (order_date, name_sei, name_mei, mail_address, zip_code, address, tel, note) VALUES ('2016-09-01', '', '', '', '', '', '', '')
+2016-09-01 05:24:36 Debug: duration=56 rows=12 SHOW FULL COLUMNS FROM `orders_details`
+2016-09-01 05:24:36 Debug: duration=0 rows=3 SHOW INDEXES FROM `orders_details`
+2016-09-01 05:24:36 Debug: duration=1 rows=2 SELECT * FROM information_schema.key_column_usage AS kcu
+            INNER JOIN information_schema.referential_constraints AS rc
+            ON (
+                kcu.CONSTRAINT_NAME = rc.CONSTRAINT_NAME
+                AND kcu.CONSTRAINT_SCHEMA = rc.CONSTRAINT_SCHEMA
+            )
+            WHERE kcu.TABLE_SCHEMA = 'hl_system' AND kcu.TABLE_NAME = 'orders_details' AND rc.TABLE_NAME = 'orders_details'
+2016-09-01 05:24:36 Debug: duration=1 rows=1 SHOW TABLE STATUS WHERE Name = 'orders_details'
+2016-09-01 05:24:36 Debug: duration=1 rows=0 INSERT INTO orders_details (orders_i, m_record_types_id, qty, rpm, artist_name, title, track_list) VALUES (NULL, 5, 1, 33, '1', '1', '1', 93)
+2016-09-01 05:24:36 Debug: duration=0 rows=0 ROLLBACK
+2016-09-01 05:25:08 Debug: duration=1 rows=1 SELECT 1 AS `existing` FROM m_customers m_customers WHERE m_customers.id = 1 LIMIT 1
+2016-09-01 05:25:08 Debug: duration=11 rows=1 INSERT INTO orders (order_date, m_customers_id, name_sei, name_mei, mail_address, zip_code, address, tel, note, delivery_fee, profit, estimated_delivery_date) VALUES ('2016-09-01', 1, '', '', '１', '１', '１', '09061041792', '', 1, 1, '2012-12-18')
+2016-09-01 05:25:08 Debug: duration=1 rows=0 INSERT INTO orders_details (orders_i, m_record_types_id, qty, rpm, artist_name, title, track_list) VALUES (NULL, 4, 0, 33, '１', '１', '１', 94)
+2016-09-01 05:25:08 Debug: duration=0 rows=0 ROLLBACK
+2016-09-01 05:25:40 Debug: duration=1 rows=1 SELECT 1 AS `existing` FROM m_customers m_customers WHERE m_customers.id = 1 LIMIT 1
+2016-09-01 05:25:40 Debug: duration=1 rows=1 INSERT INTO orders (order_date, m_customers_id, name_sei, name_mei, mail_address, zip_code, address, tel, note, delivery_fee, order_amount, profit, desired_delivery_date, estimated_delivery_date, delivery_date, works_on) VALUES ('2016-09-01', 1, '１', '１', '１', '１', '１', '09061041792', '１', 1, 1, 1, '2021-01-15', '2012-12-18', '2021-02-19', 1)
+2016-09-01 05:25:40 Debug: duration=0 rows=0 INSERT INTO orders_details (orders_i, m_record_types_id, qty, rpm, artist_name, title, track_list) VALUES (NULL, 5, 0, 33, '１', '１', '１', 95)
+2016-09-01 05:25:40 Debug: duration=0 rows=0 ROLLBACK
+2016-09-01 05:26:03 Debug: duration=1 rows=1 SELECT 1 AS `existing` FROM m_customers m_customers WHERE m_customers.id = 1 LIMIT 1
+2016-09-01 05:26:03 Debug: duration=0 rows=1 INSERT INTO orders (order_date, m_customers_id, name_sei, name_mei, mail_address, zip_code, address, tel, note, delivery_fee, order_amount, profit, desired_delivery_date, estimated_delivery_date, delivery_date, works_on) VALUES ('2016-09-01', 1, '', '', '１', '１', '１', '09061041792', '１', 1, 1, 1, '2021-01-15', '2012-12-18', '2021-02-19', 1)
+2016-09-01 05:26:03 Debug: duration=0 rows=0 INSERT INTO orders_details (orders_i, m_record_types_id, qty, rpm, artist_name, title, track_list) VALUES (NULL, 5, 0, 33, '１', '１', '１', 96)
+2016-09-01 05:26:03 Debug: duration=0 rows=0 ROLLBACK
+2016-09-01 05:27:13 Debug: duration=0 rows=1 SELECT 1 AS `existing` FROM m_customers m_customers WHERE m_customers.id = 1 LIMIT 1
+2016-09-01 05:27:13 Debug: duration=1 rows=1 INSERT INTO orders (order_date, m_customers_id, name_sei, name_mei, mail_address, zip_code, address, tel, note, delivery_fee, order_amount, profit, desired_delivery_date, estimated_delivery_date, delivery_date, works_on) VALUES ('2016-09-01', 1, '', '', '１', '１', '１', '09061041792', '１', 1, 1, 1, '2021-01-15', '2012-12-18', '2021-02-19', 1)
+2016-09-01 05:27:13 Debug: duration=44 rows=12 SHOW FULL COLUMNS FROM `orders_details`
+2016-09-01 05:27:13 Debug: duration=1 rows=3 SHOW INDEXES FROM `orders_details`
+2016-09-01 05:27:13 Debug: duration=1 rows=2 SELECT * FROM information_schema.key_column_usage AS kcu
+            INNER JOIN information_schema.referential_constraints AS rc
+            ON (
+                kcu.CONSTRAINT_NAME = rc.CONSTRAINT_NAME
+                AND kcu.CONSTRAINT_SCHEMA = rc.CONSTRAINT_SCHEMA
+            )
+            WHERE kcu.TABLE_SCHEMA = 'hl_system' AND kcu.TABLE_NAME = 'orders_details' AND rc.TABLE_NAME = 'orders_details'
+2016-09-01 05:27:13 Debug: duration=1 rows=1 SHOW TABLE STATUS WHERE Name = 'orders_details'
+2016-09-01 05:27:13 Debug: duration=0 rows=0 INSERT INTO orders_details (orders_i, m_record_types_id, qty, rpm, artist_name, title, track_list) VALUES (NULL, 5, NULL, NULL, '', '', '', 97)
+2016-09-01 05:27:13 Debug: duration=0 rows=0 ROLLBACK
+2016-09-01 05:27:43 Debug: duration=1 rows=1 SELECT 1 AS `existing` FROM m_customers m_customers WHERE m_customers.id = 1 LIMIT 1
+2016-09-01 05:27:43 Debug: duration=1 rows=1 INSERT INTO orders (order_date, m_customers_id, name_sei, name_mei, mail_address, zip_code, address, tel, note, delivery_fee, order_amount, profit, desired_delivery_date, estimated_delivery_date, delivery_date, works_on) VALUES ('2016-09-01', 1, '', '', '１', '１', '１', '09061041792', '１', 1, 1, 1, '2021-01-15', '2012-12-18', '2021-02-19', 1)
+2016-09-01 05:27:43 Debug: duration=1 rows=0 INSERT INTO orders_details (orders_i, m_record_types_id, qty, rpm, artist_name, title, track_list) VALUES (NULL, 5, NULL, NULL, '', '', '', 98)
+2016-09-01 05:27:43 Debug: duration=0 rows=0 ROLLBACK
+2016-09-01 05:27:51 Debug: duration=1 rows=1 INSERT INTO orders (order_date, name_sei, name_mei, mail_address, zip_code, address, tel, note) VALUES ('2016-09-01', '', '', '', '', '', '', '')
+2016-09-01 05:27:51 Debug: duration=0 rows=0 INSERT INTO orders_details (orders_i, m_record_types_id, qty, rpm, artist_name, title, track_list) VALUES (NULL, 4, NULL, NULL, '', '', '', 99)
+2016-09-01 05:27:51 Debug: duration=0 rows=0 ROLLBACK
+2016-09-01 05:28:34 Debug: duration=1 rows=1 INSERT INTO orders (order_date, name_sei, name_mei, mail_address, zip_code, address, tel, note) VALUES ('2016-09-01', '', '', '', '', '', '', '')
+2016-09-01 05:28:47 Debug: duration=1 rows=1 INSERT INTO orders (order_date, name_sei, name_mei, mail_address, zip_code, address, tel, note) VALUES ('2016-09-01', '', '', '', '', '', '', '')
+2016-09-01 05:28:47 Debug: duration=0 rows=0 INSERT INTO orders_details (orders_i, m_record_types_id, qty, rpm, artist_name, title, track_list) VALUES (NULL, 1, NULL, NULL, '', '', '', 101)
+2016-09-01 05:28:47 Debug: duration=0 rows=0 ROLLBACK
+2016-09-01 05:29:01 Debug: duration=14 rows=1 INSERT INTO orders (order_date, name_sei, name_mei, mail_address, zip_code, address, tel, note) VALUES ('2016-09-01', '', '', '', '', '', '', '')
+2016-09-01 05:29:01 Debug: duration=1 rows=0 INSERT INTO orders_details (orders_i, m_record_types_id, qty, rpm, artist_name, title, track_list) VALUES (NULL, 1, NULL, NULL, '', '', '', 102)
+2016-09-01 05:29:01 Debug: duration=0 rows=0 ROLLBACK
+2016-09-01 05:29:13 Debug: duration=2 rows=22 SHOW FULL COLUMNS FROM `orders`
+2016-09-01 05:29:13 Debug: duration=1 rows=2 SHOW INDEXES FROM `orders`
+2016-09-01 05:29:13 Debug: duration=2 rows=1 SELECT * FROM information_schema.key_column_usage AS kcu
+            INNER JOIN information_schema.referential_constraints AS rc
+            ON (
+                kcu.CONSTRAINT_NAME = rc.CONSTRAINT_NAME
+                AND kcu.CONSTRAINT_SCHEMA = rc.CONSTRAINT_SCHEMA
+            )
+            WHERE kcu.TABLE_SCHEMA = 'hl_system' AND kcu.TABLE_NAME = 'orders' AND rc.TABLE_NAME = 'orders'
+2016-09-01 05:29:13 Debug: duration=0 rows=1 SHOW TABLE STATUS WHERE Name = 'orders'
+2016-09-01 05:29:13 Debug: duration=7 rows=1 INSERT INTO orders (order_date, name_sei, name_mei, mail_address, zip_code, address, tel, note) VALUES ('2016-09-01', '', '', '', '', '', '', '')
+2016-09-01 05:29:59 Debug: duration=10 rows=1 INSERT INTO orders (order_date, name_sei, name_mei, mail_address, zip_code, address, tel, note) VALUES ('2016-09-01', '', '', '', '', '', '', '')
+2016-09-01 05:29:59 Debug: duration=1 rows=12 SHOW FULL COLUMNS FROM `orders_details`
+2016-09-01 05:29:59 Debug: duration=1 rows=3 SHOW INDEXES FROM `orders_details`
+2016-09-01 05:29:59 Debug: duration=1 rows=2 SELECT * FROM information_schema.key_column_usage AS kcu
+            INNER JOIN information_schema.referential_constraints AS rc
+            ON (
+                kcu.CONSTRAINT_NAME = rc.CONSTRAINT_NAME
+                AND kcu.CONSTRAINT_SCHEMA = rc.CONSTRAINT_SCHEMA
+            )
+            WHERE kcu.TABLE_SCHEMA = 'hl_system' AND kcu.TABLE_NAME = 'orders_details' AND rc.TABLE_NAME = 'orders_details'
+2016-09-01 05:29:59 Debug: duration=1 rows=1 SHOW TABLE STATUS WHERE Name = 'orders_details'
+2016-09-01 05:29:59 Debug: duration=1 rows=0 INSERT INTO orders_details (orders_i, m_record_types_id, qty, rpm, artist_name, title, track_list) VALUES (NULL, 1, NULL, NULL, '', '', '', 104)
+2016-09-01 05:29:59 Debug: duration=0 rows=0 ROLLBACK
+2016-09-01 05:31:02 Debug: duration=17 rows=1 INSERT INTO orders (order_date, name_sei, name_mei, mail_address, zip_code, address, tel, note) VALUES ('2016-09-01', '', '', '', '', '', '', '')
+2016-09-01 05:31:02 Debug: duration=1 rows=0 INSERT INTO orders_details (orders_i, m_record_types_id, qty, rpm, artist_name, title, track_list) VALUES (NULL, 1, NULL, NULL, '', '', '', 105)
+2016-09-01 05:31:02 Debug: duration=0 rows=0 ROLLBACK
+2016-09-01 05:31:16 Debug: duration=11 rows=1 INSERT INTO orders (order_date, name_sei, name_mei, mail_address, zip_code, address, tel, note) VALUES ('2016-09-01', '', '', '', '', '', '', '')
+2016-09-01 05:31:16 Debug: duration=1 rows=0 INSERT INTO orders_details (orders_i, m_record_types_id, qty, rpm, artist_name, title, track_list) VALUES (NULL, NULL, NULL, NULL, '', '', '', 106)
+2016-09-01 05:31:16 Debug: duration=0 rows=0 ROLLBACK
+2016-09-01 05:31:57 Debug: duration=1 rows=1 INSERT INTO orders (order_date, name_sei, name_mei, mail_address, zip_code, address, tel, note) VALUES ('2016-09-01', '', '', '', '', '', '', '')
+2016-09-01 05:31:57 Debug: duration=1 rows=0 INSERT INTO orders_details (orders_i, m_record_types_id, qty, rpm, artist_name, title, track_list) VALUES (NULL, 3, NULL, NULL, '', '', '', 107)
+2016-09-01 05:31:57 Debug: duration=0 rows=0 ROLLBACK
+2016-09-01 05:32:19 Debug: duration=1 rows=1 INSERT INTO orders (order_date, name_sei, name_mei, mail_address, zip_code, address, tel, note) VALUES ('2016-09-01', '', '', '', '', '', '', '')
+2016-09-01 05:32:19 Debug: duration=1 rows=12 SHOW FULL COLUMNS FROM `orders_details`
+2016-09-01 05:32:19 Debug: duration=0 rows=3 SHOW INDEXES FROM `orders_details`
+2016-09-01 05:32:19 Debug: duration=2 rows=2 SELECT * FROM information_schema.key_column_usage AS kcu
+            INNER JOIN information_schema.referential_constraints AS rc
+            ON (
+                kcu.CONSTRAINT_NAME = rc.CONSTRAINT_NAME
+                AND kcu.CONSTRAINT_SCHEMA = rc.CONSTRAINT_SCHEMA
+            )
+            WHERE kcu.TABLE_SCHEMA = 'hl_system' AND kcu.TABLE_NAME = 'orders_details' AND rc.TABLE_NAME = 'orders_details'
+2016-09-01 05:32:19 Debug: duration=1 rows=1 SHOW TABLE STATUS WHERE Name = 'orders_details'
+2016-09-01 05:32:19 Debug: duration=0 rows=0 INSERT INTO orders_details (orders_i, m_record_types_id, qty, rpm, artist_name, title, track_list) VALUES (NULL, 3, NULL, NULL, '', '', '', 108)
+2016-09-01 05:32:19 Debug: duration=0 rows=0 ROLLBACK
+2016-09-01 05:32:42 Debug: duration=1 rows=1 INSERT INTO orders (order_date, name_sei, name_mei, mail_address, zip_code, address, tel, note) VALUES ('2016-09-01', '', '', '', '', '', '', '')
+2016-09-01 05:32:42 Debug: duration=0 rows=0 INSERT INTO orders_details (orders_i, m_record_types_id, qty, rpm, artist_name, title, track_list) VALUES (NULL, 4, NULL, NULL, '', '', '', 109)
+2016-09-01 05:32:42 Debug: duration=0 rows=0 ROLLBACK
+2016-09-01 05:38:00 Debug: duration=18 rows=1 INSERT INTO orders (order_date, name_sei, name_mei, mail_address, zip_code, address, tel, note) VALUES ('2016-09-01', '', '', '', '', '', '', '')
+2016-09-01 05:38:00 Debug: duration=1 rows=12 SHOW FULL COLUMNS FROM `orders_details`
+2016-09-01 05:38:00 Debug: duration=1 rows=3 SHOW INDEXES FROM `orders_details`
+2016-09-01 05:38:00 Debug: duration=1 rows=2 SELECT * FROM information_schema.key_column_usage AS kcu
+            INNER JOIN information_schema.referential_constraints AS rc
+            ON (
+                kcu.CONSTRAINT_NAME = rc.CONSTRAINT_NAME
+                AND kcu.CONSTRAINT_SCHEMA = rc.CONSTRAINT_SCHEMA
+            )
+            WHERE kcu.TABLE_SCHEMA = 'hl_system' AND kcu.TABLE_NAME = 'orders_details' AND rc.TABLE_NAME = 'orders_details'
+2016-09-01 05:38:00 Debug: duration=1 rows=1 SHOW TABLE STATUS WHERE Name = 'orders_details'
+2016-09-01 05:38:00 Debug: duration=1 rows=0 INSERT INTO orders_details (orders_i, m_record_types_id, qty, rpm, artist_name, title, track_list) VALUES (NULL, 1, 0, 33, '１', '１', '１', 110)
+2016-09-01 05:38:00 Debug: duration=0 rows=0 ROLLBACK
+2016-09-01 05:38:12 Debug: duration=15 rows=1 INSERT INTO orders (order_date, name_sei, name_mei, mail_address, zip_code, address, tel, note) VALUES ('2016-09-01', '', '', '', '', '', '', '')
+2016-09-01 05:38:12 Debug: duration=0 rows=0 INSERT INTO orders_details (orders_i, m_record_types_id, qty, rpm, artist_name, title, track_list) VALUES (NULL, 1, 0, 33, '１', '１', '１', 111)
+2016-09-01 05:38:12 Debug: duration=0 rows=0 ROLLBACK
+2016-09-01 05:41:18 Debug: duration=16 rows=1 INSERT INTO orders (order_date, name_sei, name_mei, mail_address, zip_code, address, tel, note) VALUES ('2016-09-01', '', '', '', '', '', '', '')
+2016-09-01 05:41:18 Debug: duration=1 rows=12 SHOW FULL COLUMNS FROM `orders_details`
+2016-09-01 05:41:18 Debug: duration=0 rows=3 SHOW INDEXES FROM `orders_details`
+2016-09-01 05:41:18 Debug: duration=2 rows=2 SELECT * FROM information_schema.key_column_usage AS kcu
+            INNER JOIN information_schema.referential_constraints AS rc
+            ON (
+                kcu.CONSTRAINT_NAME = rc.CONSTRAINT_NAME
+                AND kcu.CONSTRAINT_SCHEMA = rc.CONSTRAINT_SCHEMA
+            )
+            WHERE kcu.TABLE_SCHEMA = 'hl_system' AND kcu.TABLE_NAME = 'orders_details' AND rc.TABLE_NAME = 'orders_details'
+2016-09-01 05:41:18 Debug: duration=1 rows=1 SHOW TABLE STATUS WHERE Name = 'orders_details'
+2016-09-01 05:41:18 Debug: duration=1 rows=0 INSERT INTO orders_details (orders_i, m_record_types_id, qty, rpm, artist_name, title, track_list) VALUES (NULL, 4, NULL, NULL, '', '', '', 112)
+2016-09-01 05:41:18 Debug: duration=0 rows=0 ROLLBACK
+2016-09-01 05:41:52 Debug: duration=8 rows=1 INSERT INTO orders (order_date, name_sei, name_mei, mail_address, zip_code, address, tel, note) VALUES ('2016-09-01', '', '', '', '', '', '', '')
+2016-09-01 05:41:52 Debug: duration=0 rows=0 INSERT INTO orders_details (orders_i, m_record_types_id, qty, rpm, artist_name, title, track_list) VALUES (NULL, 4, NULL, NULL, '', '', '', 113)
+2016-09-01 05:41:52 Debug: duration=0 rows=0 ROLLBACK
+2016-09-01 05:43:07 Debug: duration=2 rows=1 INSERT INTO orders (order_date, name_sei, name_mei, mail_address, zip_code, address, tel, note) VALUES ('2016-09-01', '', '', '', '', '', '', '')
+2016-09-01 05:43:07 Debug: duration=1 rows=0 INSERT INTO orders_details (orders_i, m_record_types_id, qty, rpm, artist_name, title, track_list) VALUES (NULL, 5, NULL, NULL, '', '', '', 114)
+2016-09-01 05:43:07 Debug: duration=0 rows=0 ROLLBACK
+2016-09-01 05:43:30 Debug: duration=1 rows=1 INSERT INTO orders (order_date, name_sei, name_mei, mail_address, zip_code, address, tel, note) VALUES ('2016-09-01', '', '', '', '', '', '', '')
+2016-09-01 05:43:30 Debug: duration=65 rows=12 SHOW FULL COLUMNS FROM `orders_details`
+2016-09-01 05:43:30 Debug: duration=0 rows=3 SHOW INDEXES FROM `orders_details`
+2016-09-01 05:43:30 Debug: duration=2 rows=2 SELECT * FROM information_schema.key_column_usage AS kcu
+            INNER JOIN information_schema.referential_constraints AS rc
+            ON (
+                kcu.CONSTRAINT_NAME = rc.CONSTRAINT_NAME
+                AND kcu.CONSTRAINT_SCHEMA = rc.CONSTRAINT_SCHEMA
+            )
+            WHERE kcu.TABLE_SCHEMA = 'hl_system' AND kcu.TABLE_NAME = 'orders_details' AND rc.TABLE_NAME = 'orders_details'
+2016-09-01 05:43:30 Debug: duration=0 rows=1 SHOW TABLE STATUS WHERE Name = 'orders_details'
+2016-09-01 05:43:30 Debug: duration=0 rows=0 INSERT INTO orders_details (orders_i, m_record_types_id, qty, rpm, artist_name, title, track_list) VALUES (NULL, 3, NULL, NULL, '', '', '', 115)
+2016-09-01 05:43:30 Debug: duration=0 rows=0 ROLLBACK
+2016-09-01 05:44:01 Debug: duration=1 rows=1 INSERT INTO orders (order_date, name_sei, name_mei, mail_address, zip_code, address, tel, note) VALUES ('2016-09-01', '', '', '', '', '', '', '')
+2016-09-01 05:44:01 Debug: duration=0 rows=0 INSERT INTO orders_details (orders_i, m_record_types_id, qty, rpm, artist_name, title, track_list) VALUES (NULL, 1, NULL, NULL, '', '', '', 116)
+2016-09-01 05:44:01 Debug: duration=0 rows=0 ROLLBACK
+2016-09-01 05:44:28 Debug: duration=1 rows=1 INSERT INTO orders (order_date, name_sei, name_mei, mail_address, zip_code, address, tel, note) VALUES ('2016-09-01', '', '', '', '', '', '', '')
+2016-09-01 05:44:28 Debug: duration=0 rows=0 INSERT INTO orders_details (orders_i, m_record_types_id, qty, rpm, artist_name, title, track_list) VALUES (NULL, 3, NULL, NULL, '', '', '', 117)
+2016-09-01 05:44:28 Debug: duration=0 rows=0 ROLLBACK
+2016-09-01 05:44:56 Debug: duration=1 rows=1 INSERT INTO orders (order_date, name_sei, name_mei, mail_address, zip_code, address, tel, note) VALUES ('2016-09-01', '', '', '', '', '', '', '')
+2016-09-01 05:44:56 Debug: duration=0 rows=0 INSERT INTO orders_details (orders_i, m_record_types_id, qty, rpm, artist_name, title, track_list) VALUES (NULL, 3, NULL, NULL, '', '', '', 118)
+2016-09-01 05:44:56 Debug: duration=0 rows=0 ROLLBACK
+2016-09-01 05:45:07 Debug: duration=1 rows=1 INSERT INTO orders (order_date, name_sei, name_mei, mail_address, zip_code, address, tel, note) VALUES ('2016-09-01', '', '', '', '', '', '', '')
+2016-09-01 05:45:07 Debug: duration=0 rows=0 INSERT INTO orders_details (orders_i, m_record_types_id, qty, rpm, artist_name, title, track_list) VALUES (NULL, 4, NULL, NULL, '', '', '', 119)
+2016-09-01 05:45:07 Debug: duration=0 rows=0 ROLLBACK
+2016-09-01 05:45:21 Debug: duration=28 rows=1 INSERT INTO orders (order_date, name_sei, name_mei, mail_address, zip_code, address, tel, note) VALUES ('2016-09-01', '', '', '', '', '', '', '')
+2016-09-01 05:45:21 Debug: duration=0 rows=0 INSERT INTO orders_details (orders_i, m_record_types_id, qty, rpm, artist_name, title, track_list) VALUES (NULL, 5, NULL, NULL, '', '', '', 120)
+2016-09-01 05:45:21 Debug: duration=0 rows=0 ROLLBACK
+2016-09-01 05:47:27 Debug: duration=12 rows=1 INSERT INTO orders (order_date, name_sei, name_mei, mail_address, zip_code, address, tel, note) VALUES ('2016-09-01', '', '', '', '', '', '', '')
+2016-09-01 05:47:27 Debug: duration=99 rows=12 SHOW FULL COLUMNS FROM `orders_details`
+2016-09-01 05:47:27 Debug: duration=0 rows=3 SHOW INDEXES FROM `orders_details`
+2016-09-01 05:47:27 Debug: duration=2 rows=2 SELECT * FROM information_schema.key_column_usage AS kcu
+            INNER JOIN information_schema.referential_constraints AS rc
+            ON (
+                kcu.CONSTRAINT_NAME = rc.CONSTRAINT_NAME
+                AND kcu.CONSTRAINT_SCHEMA = rc.CONSTRAINT_SCHEMA
+            )
+            WHERE kcu.TABLE_SCHEMA = 'hl_system' AND kcu.TABLE_NAME = 'orders_details' AND rc.TABLE_NAME = 'orders_details'
+2016-09-01 05:47:27 Debug: duration=1 rows=1 SHOW TABLE STATUS WHERE Name = 'orders_details'
+2016-09-01 05:47:27 Debug: duration=0 rows=0 INSERT INTO orders_details (orders_i, m_record_types_id, qty, rpm, artist_name, title, track_list) VALUES (NULL, 2, NULL, NULL, '', '', '', 121)
+2016-09-01 05:47:27 Debug: duration=0 rows=0 ROLLBACK
+2016-09-01 05:47:59 Debug: duration=28 rows=1 INSERT INTO orders (order_date, name_sei, name_mei, mail_address, zip_code, address, tel, note) VALUES ('2016-09-01', '', '', '', '', '', '', '')
+2016-09-01 05:47:59 Debug: duration=1 rows=0 INSERT INTO orders_details (orders_i, m_record_types_id, qty, rpm, artist_name, title, track_list) VALUES (NULL, 4, NULL, NULL, '', '', '', 122)
+2016-09-01 05:47:59 Debug: duration=0 rows=0 ROLLBACK
+2016-09-01 05:56:55 Debug: duration=1 rows=22 SHOW FULL COLUMNS FROM `orders`
+2016-09-01 05:56:55 Debug: duration=1 rows=2 SHOW INDEXES FROM `orders`
+2016-09-01 05:56:55 Debug: duration=2 rows=1 SELECT * FROM information_schema.key_column_usage AS kcu
+            INNER JOIN information_schema.referential_constraints AS rc
+            ON (
+                kcu.CONSTRAINT_NAME = rc.CONSTRAINT_NAME
+                AND kcu.CONSTRAINT_SCHEMA = rc.CONSTRAINT_SCHEMA
+            )
+            WHERE kcu.TABLE_SCHEMA = 'hl_system' AND kcu.TABLE_NAME = 'orders' AND rc.TABLE_NAME = 'orders'
+2016-09-01 05:56:55 Debug: duration=1 rows=1 SHOW TABLE STATUS WHERE Name = 'orders'
+2016-09-01 05:56:56 Debug: duration=13 rows=1 INSERT INTO orders (order_date, name_sei, name_mei, mail_address, zip_code, address, tel, note) VALUES ('2016-09-01', '', '', '', '', '', '', '')
+2016-09-01 05:56:56 Debug: duration=70 rows=12 SHOW FULL COLUMNS FROM `orders_details`
+2016-09-01 05:56:56 Debug: duration=1 rows=3 SHOW INDEXES FROM `orders_details`
+2016-09-01 05:56:56 Debug: duration=1 rows=2 SELECT * FROM information_schema.key_column_usage AS kcu
+            INNER JOIN information_schema.referential_constraints AS rc
+            ON (
+                kcu.CONSTRAINT_NAME = rc.CONSTRAINT_NAME
+                AND kcu.CONSTRAINT_SCHEMA = rc.CONSTRAINT_SCHEMA
+            )
+            WHERE kcu.TABLE_SCHEMA = 'hl_system' AND kcu.TABLE_NAME = 'orders_details' AND rc.TABLE_NAME = 'orders_details'
+2016-09-01 05:56:56 Debug: duration=0 rows=1 SHOW TABLE STATUS WHERE Name = 'orders_details'
+2016-09-01 05:56:56 Debug: duration=0 rows=0 INSERT INTO orders_details (orders_i, m_record_types_id, qty, rpm, artist_name, title, track_list) VALUES (NULL, 1, NULL, NULL, '', '', '', 123)
+2016-09-01 05:56:56 Debug: duration=0 rows=0 ROLLBACK
+2016-09-01 05:57:31 Debug: duration=1 rows=1 INSERT INTO orders (order_date, name_sei, name_mei, mail_address, zip_code, address, tel, note) VALUES ('2016-09-01', '', '', '', '', '', '', '')
+2016-09-01 05:57:31 Debug: duration=0 rows=0 INSERT INTO orders_details (orders_i, m_record_types_id, qty, rpm, artist_name, title, track_list) VALUES (NULL, 1, NULL, NULL, '', '', '', 124)
+2016-09-01 05:57:31 Debug: duration=0 rows=0 ROLLBACK
+2016-09-01 05:58:01 Debug: duration=13 rows=1 INSERT INTO orders (order_date, name_sei, name_mei, mail_address, zip_code, address, tel, note) VALUES ('2016-09-01', '', '', '', '', '', '', '')
+2016-09-01 05:58:01 Debug: duration=0 rows=0 INSERT INTO orders_details (orders_i, m_record_types_id, qty, rpm, artist_name, title, track_list) VALUES (NULL, NULL, NULL, NULL, '', '', '', 125)
+2016-09-01 05:58:01 Debug: duration=0 rows=0 ROLLBACK
+2016-09-01 05:58:10 Debug: duration=1 rows=1 INSERT INTO orders (order_date, name_sei, name_mei, mail_address, zip_code, address, tel, note) VALUES ('2016-09-01', '', '', '', '', '', '', '')
+2016-09-01 05:58:10 Debug: duration=1 rows=0 INSERT INTO orders_details (orders_i, m_record_types_id, qty, rpm, artist_name, title, track_list) VALUES (NULL, 1, NULL, NULL, '', '', '', 126)
+2016-09-01 05:58:10 Debug: duration=0 rows=0 ROLLBACK
+2016-09-01 05:58:27 Debug: duration=1 rows=1 INSERT INTO orders (order_date, name_sei, name_mei, mail_address, zip_code, address, tel, note) VALUES ('2016-09-01', '', '', '', '', '', '', '')
+2016-09-01 05:58:27 Debug: duration=0 rows=0 INSERT INTO orders_details (orders_i, m_record_types_id, qty, rpm, artist_name, title, track_list) VALUES (NULL, 1, NULL, NULL, '', '', '', 127)
+2016-09-01 05:58:27 Debug: duration=0 rows=0 ROLLBACK
+2016-09-01 06:04:02 Debug: duration=14 rows=1 INSERT INTO orders (order_date, name_sei, name_mei, mail_address, zip_code, address, tel, note, delivery_fee) VALUES ('2016-09-01', '', '', 'happycokebag@hotmail.com', '1800014', '関前2-4-4', '09061041792', '', 444)
+2016-09-01 06:04:02 Debug: duration=1 rows=12 SHOW FULL COLUMNS FROM `orders_details`
+2016-09-01 06:04:02 Debug: duration=1 rows=3 SHOW INDEXES FROM `orders_details`
+2016-09-01 06:04:02 Debug: duration=1 rows=2 SELECT * FROM information_schema.key_column_usage AS kcu
+            INNER JOIN information_schema.referential_constraints AS rc
+            ON (
+                kcu.CONSTRAINT_NAME = rc.CONSTRAINT_NAME
+                AND kcu.CONSTRAINT_SCHEMA = rc.CONSTRAINT_SCHEMA
+            )
+            WHERE kcu.TABLE_SCHEMA = 'hl_system' AND kcu.TABLE_NAME = 'orders_details' AND rc.TABLE_NAME = 'orders_details'
+2016-09-01 06:04:02 Debug: duration=1 rows=1 SHOW TABLE STATUS WHERE Name = 'orders_details'
+2016-09-01 06:04:02 Debug: duration=1 rows=0 INSERT INTO orders_details (orders_i, m_record_types_id, qty, rpm, artist_name, title, track_list) VALUES (NULL, 1, NULL, NULL, '', '', '', 128)
+2016-09-01 06:04:02 Debug: duration=0 rows=0 ROLLBACK
+2016-09-01 06:04:25 Debug: duration=11 rows=1 INSERT INTO orders (order_date, name_sei, name_mei, mail_address, zip_code, address, tel, note, delivery_fee) VALUES ('2016-09-01', '', '', 'happycokebag@hotmail.com', '1800014', '関前2-4-4', '09061041792', '', 444)
+2016-09-01 06:04:25 Debug: duration=0 rows=0 INSERT INTO orders_details (orders_i, m_record_types_id, qty, rpm, artist_name, title, track_list) VALUES (NULL, NULL, NULL, NULL, '', '', '', 129)
+2016-09-01 06:04:25 Debug: duration=0 rows=0 ROLLBACK
+2016-09-01 06:04:38 Debug: duration=1 rows=1 INSERT INTO orders (order_date, name_sei, name_mei, mail_address, zip_code, address, tel, note, delivery_fee) VALUES ('2016-09-01', '', '', 'happycokebag@hotmail.com', '1800014', '関前2-4-4', '09061041792', '', 444)
+2016-09-01 06:04:38 Debug: duration=0 rows=0 INSERT INTO orders_details (orders_i, m_record_types_id, qty, rpm, artist_name, title, track_list) VALUES (NULL, 1, NULL, NULL, '', '', '', 130)
+2016-09-01 06:04:38 Debug: duration=0 rows=0 ROLLBACK
+2016-09-01 06:05:25 Debug: duration=12 rows=1 INSERT INTO orders (order_date, name_sei, name_mei, mail_address, zip_code, address, tel, note, delivery_fee) VALUES ('2016-09-01', '', '', 'happycokebag@hotmail.com', '1800014', '関前2-4-4', '09061041792', '', 444)
+2016-09-01 06:05:25 Debug: duration=1 rows=0 INSERT INTO orders_details (orders_i, m_record_types_id, qty, rpm, artist_name, title, track_list) VALUES (NULL, 2, NULL, NULL, '', '', '', 131)
+2016-09-01 06:05:25 Debug: duration=0 rows=0 ROLLBACK
+2016-09-01 06:05:29 Debug: duration=2 rows=1 INSERT INTO orders (order_date, name_sei, name_mei, mail_address, zip_code, address, tel, note, delivery_fee) VALUES ('2016-09-01', '', '', 'happycokebag@hotmail.com', '1800014', '関前2-4-4', '09061041792', '', 444)
+2016-09-01 06:05:29 Debug: duration=1 rows=0 INSERT INTO orders_details (orders_i, m_record_types_id, qty, rpm, artist_name, title, track_list) VALUES (NULL, 1, NULL, NULL, '', '', '', 132)
+2016-09-01 06:05:29 Debug: duration=0 rows=0 ROLLBACK
+2016-09-01 06:08:27 Debug: duration=2 rows=22 SHOW FULL COLUMNS FROM `orders`
+2016-09-01 06:08:27 Debug: duration=1 rows=2 SHOW INDEXES FROM `orders`
+2016-09-01 06:08:27 Debug: duration=1 rows=1 SELECT * FROM information_schema.key_column_usage AS kcu
+            INNER JOIN information_schema.referential_constraints AS rc
+            ON (
+                kcu.CONSTRAINT_NAME = rc.CONSTRAINT_NAME
+                AND kcu.CONSTRAINT_SCHEMA = rc.CONSTRAINT_SCHEMA
+            )
+            WHERE kcu.TABLE_SCHEMA = 'hl_system' AND kcu.TABLE_NAME = 'orders' AND rc.TABLE_NAME = 'orders'
+2016-09-01 06:08:27 Debug: duration=1 rows=1 SHOW TABLE STATUS WHERE Name = 'orders'
+2016-09-01 06:08:28 Debug: duration=15 rows=1 INSERT INTO orders (order_date, name_sei, name_mei, mail_address, zip_code, address, tel, note, delivery_fee) VALUES ('2016-09-01', '', '', 'happycokebag@hotmail.com', '1800014', '関前2-4-4', '09061041792', '', 444)
+2016-09-01 06:08:28 Debug: duration=45 rows=12 SHOW FULL COLUMNS FROM `orders_details`
+2016-09-01 06:08:28 Debug: duration=1 rows=3 SHOW INDEXES FROM `orders_details`
+2016-09-01 06:08:28 Debug: duration=2 rows=2 SELECT * FROM information_schema.key_column_usage AS kcu
+            INNER JOIN information_schema.referential_constraints AS rc
+            ON (
+                kcu.CONSTRAINT_NAME = rc.CONSTRAINT_NAME
+                AND kcu.CONSTRAINT_SCHEMA = rc.CONSTRAINT_SCHEMA
+            )
+            WHERE kcu.TABLE_SCHEMA = 'hl_system' AND kcu.TABLE_NAME = 'orders_details' AND rc.TABLE_NAME = 'orders_details'
+2016-09-01 06:08:28 Debug: duration=1 rows=1 SHOW TABLE STATUS WHERE Name = 'orders_details'
+2016-09-01 06:08:28 Debug: duration=0 rows=0 INSERT INTO orders_details (orders_i, m_record_types_id, qty, rpm, artist_name, title, track_list) VALUES (NULL, 1, NULL, NULL, '', '', '', 133), (NULL, 2, NULL, NULL, '', '', '', 133), (NULL, 4, NULL, NULL, '', '', '', 133)
+2016-09-01 06:08:28 Debug: duration=0 rows=0 ROLLBACK
+2016-09-01 06:08:36 Debug: duration=1 rows=1 INSERT INTO orders (order_date, name_sei, name_mei, mail_address, zip_code, address, tel, note, delivery_fee) VALUES ('2016-09-01', '', '', 'happycokebag@hotmail.com', '1800014', '関前2-4-4', '09061041792', '', 444)
+2016-09-01 06:08:36 Debug: duration=0 rows=0 INSERT INTO orders_details (orders_i, m_record_types_id, qty, rpm, artist_name, title, track_list) VALUES (NULL, 1, NULL, NULL, '', '', '', 134), (NULL, 2, NULL, NULL, '', '', '', 134), (NULL, 5, NULL, NULL, '', '', '', 134), (NULL, 4, NULL, NULL, '', '', '', 134)
+2016-09-01 06:08:36 Debug: duration=0 rows=0 ROLLBACK
+2016-09-01 06:08:43 Debug: duration=1 rows=1 SELECT 1 AS `existing` FROM m_customers m_customers WHERE m_customers.id = 1 LIMIT 1
+2016-09-01 06:08:43 Debug: duration=1 rows=1 INSERT INTO orders (order_date, m_customers_id, name_sei, name_mei, mail_address, zip_code, address, tel, note, delivery_fee) VALUES ('2016-09-01', 1, '', '', 'happycokebag@hotmail.com', '1800014', '関前2-4-4', '09061041792', '', 444)
+2016-09-01 06:08:43 Debug: duration=0 rows=0 INSERT INTO orders_details (orders_i, m_record_types_id, qty, rpm, artist_name, title, track_list) VALUES (NULL, 1, NULL, NULL, '', '', '', 135), (NULL, 2, NULL, NULL, '', '', '', 135), (NULL, 5, NULL, NULL, '', '', '', 135), (NULL, 4, NULL, NULL, '', '', '', 135)
+2016-09-01 06:08:43 Debug: duration=0 rows=0 ROLLBACK
+2016-09-01 06:09:12 Debug: duration=0 rows=1 SELECT 1 AS `existing` FROM m_customers m_customers WHERE m_customers.id = 1 LIMIT 1
+2016-09-01 06:09:12 Debug: duration=16 rows=1 INSERT INTO orders (order_date, m_customers_id, name_sei, name_mei, mail_address, zip_code, address, tel, note, delivery_fee) VALUES ('2016-09-01', 1, '', '', 'happycokebag@hotmail.com', '1800014', '関前2-4-4', '09061041792', '', 444)
+2016-09-01 06:09:12 Debug: duration=1 rows=0 INSERT INTO orders_details (orders_i, m_record_types_id, qty, rpm, artist_name, title, track_list) VALUES (NULL, 1, NULL, NULL, '', '', '', 136), (NULL, 2, NULL, NULL, '', '', '', 136), (NULL, 5, NULL, NULL, '', '', '', 136), (NULL, 4, NULL, NULL, '', '', '', 136)
+2016-09-01 06:09:12 Debug: duration=0 rows=0 ROLLBACK
+2016-09-01 06:10:32 Debug: duration=2 rows=22 SHOW FULL COLUMNS FROM `orders`
+2016-09-01 06:10:32 Debug: duration=0 rows=2 SHOW INDEXES FROM `orders`
+2016-09-01 06:10:32 Debug: duration=1 rows=1 SELECT * FROM information_schema.key_column_usage AS kcu
+            INNER JOIN information_schema.referential_constraints AS rc
+            ON (
+                kcu.CONSTRAINT_NAME = rc.CONSTRAINT_NAME
+                AND kcu.CONSTRAINT_SCHEMA = rc.CONSTRAINT_SCHEMA
+            )
+            WHERE kcu.TABLE_SCHEMA = 'hl_system' AND kcu.TABLE_NAME = 'orders' AND rc.TABLE_NAME = 'orders'
+2016-09-01 06:10:32 Debug: duration=1 rows=1 SHOW TABLE STATUS WHERE Name = 'orders'
+2016-09-01 06:10:32 Debug: duration=1 rows=12 SHOW FULL COLUMNS FROM `m_customers`
+2016-09-01 06:10:32 Debug: duration=0 rows=1 SHOW INDEXES FROM `m_customers`
+2016-09-01 06:10:32 Debug: duration=1 rows=0 SELECT * FROM information_schema.key_column_usage AS kcu
+            INNER JOIN information_schema.referential_constraints AS rc
+            ON (
+                kcu.CONSTRAINT_NAME = rc.CONSTRAINT_NAME
+                AND kcu.CONSTRAINT_SCHEMA = rc.CONSTRAINT_SCHEMA
+            )
+            WHERE kcu.TABLE_SCHEMA = 'hl_system' AND kcu.TABLE_NAME = 'm_customers' AND rc.TABLE_NAME = 'm_customers'
+2016-09-01 06:10:32 Debug: duration=0 rows=1 SHOW TABLE STATUS WHERE Name = 'm_customers'
+2016-09-01 06:10:32 Debug: duration=0 rows=1 SELECT 1 AS `existing` FROM m_customers m_customers WHERE m_customers.id = 1 LIMIT 1
+2016-09-01 06:10:32 Debug: duration=9 rows=1 INSERT INTO orders (order_date, m_customers_id, name_sei, name_mei, mail_address, zip_code, address, tel, note, delivery_fee) VALUES ('2016-09-01', 1, '', '', 'happycokebag@hotmail.com', '1800014', '関前2-4-4', '09061041792', '', 444)
+2016-09-01 06:10:32 Debug: duration=96 rows=12 SHOW FULL COLUMNS FROM `orders_details`
+2016-09-01 06:10:32 Debug: duration=1 rows=3 SHOW INDEXES FROM `orders_details`
+2016-09-01 06:10:32 Debug: duration=2 rows=2 SELECT * FROM information_schema.key_column_usage AS kcu
+            INNER JOIN information_schema.referential_constraints AS rc
+            ON (
+                kcu.CONSTRAINT_NAME = rc.CONSTRAINT_NAME
+                AND kcu.CONSTRAINT_SCHEMA = rc.CONSTRAINT_SCHEMA
+            )
+            WHERE kcu.TABLE_SCHEMA = 'hl_system' AND kcu.TABLE_NAME = 'orders_details' AND rc.TABLE_NAME = 'orders_details'
+2016-09-01 06:10:32 Debug: duration=0 rows=1 SHOW TABLE STATUS WHERE Name = 'orders_details'
+2016-09-01 06:10:32 Debug: duration=38 rows=4 INSERT INTO orders_details (orders_id, m_record_types_id, qty, rpm, artist_name, title, track_list) VALUES (137, 1, 1, NULL, '', '', ''), (137, 2, 2, NULL, '', '', ''), (137, 5, 3, NULL, '', '', ''), (137, 4, 4, NULL, '', '', '')
+2016-09-01 06:10:32 Debug: duration=0 rows=0 COMMIT
+2016-09-01 06:17:11 Debug: duration=1 rows=1 SELECT 1 AS `existing` FROM m_customers m_customers WHERE m_customers.id = 2 LIMIT 1
+2016-09-01 06:17:11 Debug: duration=11 rows=1 INSERT INTO orders (order_date, m_customers_id, name_sei, name_mei, mail_address, zip_code, address, tel, note) VALUES ('2016-09-01', 2, '１', '１', '', '', '', '', '')
+2016-09-01 06:17:11 Debug: duration=1 rows=12 SHOW FULL COLUMNS FROM `orders_details`
+2016-09-01 06:17:11 Debug: duration=0 rows=3 SHOW INDEXES FROM `orders_details`
+2016-09-01 06:17:11 Debug: duration=1 rows=2 SELECT * FROM information_schema.key_column_usage AS kcu
+            INNER JOIN information_schema.referential_constraints AS rc
+            ON (
+                kcu.CONSTRAINT_NAME = rc.CONSTRAINT_NAME
+                AND kcu.CONSTRAINT_SCHEMA = rc.CONSTRAINT_SCHEMA
+            )
+            WHERE kcu.TABLE_SCHEMA = 'hl_system' AND kcu.TABLE_NAME = 'orders_details' AND rc.TABLE_NAME = 'orders_details'
+2016-09-01 06:17:11 Debug: duration=1 rows=1 SHOW TABLE STATUS WHERE Name = 'orders_details'
+2016-09-01 06:17:11 Debug: duration=1 rows=1 INSERT INTO orders_details (orders_id, m_record_types_id, qty, rpm, artist_name, title, track_list) VALUES (138, 5, 0, 33, '１', '１', '１')
+2016-09-01 06:22:57 Debug: duration=1 rows=4 DELETE FROM orders_details WHERE orders_id = 137
+2016-09-01 06:22:57 Debug: duration=47 rows=3 INSERT INTO orders_details (orders_id, m_record_types_id, qty, rpm, artist_name, title, track_list) VALUES (137, 1, 1, NULL, '', '', ''), (137, 5, 3, NULL, '', '', ''), (137, 4, 4, NULL, '', '', '')
+2016-09-01 06:22:57 Debug: duration=0 rows=0 COMMIT
+2016-09-01 06:23:18 Debug: duration=20 rows=3 DELETE FROM orders_details WHERE orders_id = 137
+2016-09-01 06:23:18 Debug: duration=182 rows=3 INSERT INTO orders_details (orders_id, m_record_types_id, qty, rpm, artist_name, title, track_list) VALUES (137, 1, 1, NULL, '', '', ''), (137, 4, 4, NULL, '', '', ''), (137, 5, 5, 45, '5', '5', '5')
+2016-09-01 06:23:18 Debug: duration=0 rows=0 COMMIT
+2016-09-01 06:27:41 Debug: duration=1 rows=12 SHOW FULL COLUMNS FROM `orders_details`
+2016-09-01 06:27:41 Debug: duration=1 rows=3 SHOW INDEXES FROM `orders_details`
+2016-09-01 06:27:41 Debug: duration=1 rows=2 SELECT * FROM information_schema.key_column_usage AS kcu
+            INNER JOIN information_schema.referential_constraints AS rc
+            ON (
+                kcu.CONSTRAINT_NAME = rc.CONSTRAINT_NAME
+                AND kcu.CONSTRAINT_SCHEMA = rc.CONSTRAINT_SCHEMA
+            )
+            WHERE kcu.TABLE_SCHEMA = 'hl_system' AND kcu.TABLE_NAME = 'orders_details' AND rc.TABLE_NAME = 'orders_details'
+2016-09-01 06:27:41 Debug: duration=0 rows=1 SHOW TABLE STATUS WHERE Name = 'orders_details'
+2016-09-01 06:27:41 Debug: duration=0 rows=3 DELETE FROM orders_details WHERE orders_id = 137
+2016-09-01 06:27:41 Debug: duration=83 rows=3 INSERT INTO orders_details (orders_id, m_record_types_id, qty, rpm, artist_name, title, track_list) VALUES (137, 1, 1, NULL, '1', '1', '1'), (137, 4, 4, NULL, '4', '4', '4'), (137, 5, 5, 45, '5', '5', '5')
+2016-09-01 06:27:41 Debug: duration=0 rows=0 COMMIT
+2016-09-01 06:28:17 Debug: duration=1 rows=3 DELETE FROM orders_details WHERE orders_id = 137
+2016-09-01 06:28:17 Debug: duration=0 rows=0 INSERT INTO orders_details (orders_i, m_record_types_id, qty, rpm, artist_name, title, track_list) VALUES (NULL, 1, 1, NULL, '1', '1', '1', 137), (NULL, 4, 4, NULL, '4', '4', '4', 137), (NULL, 5, 5, 45, '5', '5', '5', 137)
+2016-09-01 06:28:17 Debug: duration=0 rows=0 ROLLBACK
+2016-09-01 06:31:46 Debug: duration=2 rows=12 SHOW FULL COLUMNS FROM `orders_details`
+2016-09-01 06:31:46 Debug: duration=0 rows=3 SHOW INDEXES FROM `orders_details`
+2016-09-01 06:31:46 Debug: duration=2 rows=2 SELECT * FROM information_schema.key_column_usage AS kcu
+            INNER JOIN information_schema.referential_constraints AS rc
+            ON (
+                kcu.CONSTRAINT_NAME = rc.CONSTRAINT_NAME
+                AND kcu.CONSTRAINT_SCHEMA = rc.CONSTRAINT_SCHEMA
+            )
+            WHERE kcu.TABLE_SCHEMA = 'hl_system' AND kcu.TABLE_NAME = 'orders_details' AND rc.TABLE_NAME = 'orders_details'
+2016-09-01 06:31:46 Debug: duration=0 rows=1 SHOW TABLE STATUS WHERE Name = 'orders_details'
+2016-09-01 06:31:46 Debug: duration=20 rows=0 DELETE FROM orders_details WHERE orders_i = '137'
+2016-09-01 06:31:46 Debug: duration=0 rows=0 ROLLBACK
+2016-09-01 06:33:14 Debug: duration=1 rows=0 DELETE FROM orders_details WHERE orders_i = '137'
+2016-09-01 06:33:14 Debug: duration=0 rows=0 ROLLBACK
+2016-09-01 06:34:39 Debug: duration=2 rows=12 SHOW FULL COLUMNS FROM `orders_details`
+2016-09-01 06:34:39 Debug: duration=0 rows=3 SHOW INDEXES FROM `orders_details`
+2016-09-01 06:34:39 Debug: duration=1 rows=2 SELECT * FROM information_schema.key_column_usage AS kcu
+            INNER JOIN information_schema.referential_constraints AS rc
+            ON (
+                kcu.CONSTRAINT_NAME = rc.CONSTRAINT_NAME
+                AND kcu.CONSTRAINT_SCHEMA = rc.CONSTRAINT_SCHEMA
+            )
+            WHERE kcu.TABLE_SCHEMA = 'hl_system' AND kcu.TABLE_NAME = 'orders_details' AND rc.TABLE_NAME = 'orders_details'
+2016-09-01 06:34:39 Debug: duration=1 rows=1 SHOW TABLE STATUS WHERE Name = 'orders_details'
+2016-09-01 06:34:39 Debug: duration=1 rows=3 DELETE FROM orders_details WHERE orders_id = 137
+2016-09-01 06:34:39 Debug: duration=101 rows=4 INSERT INTO orders_details (orders_id, m_record_types_id, qty, rpm, artist_name, title, track_list) VALUES (137, 1, 1, NULL, '1', '1', '1'), (137, 4, 4, NULL, '4', '4', '4'), (137, 5, 5, 45, '5', '5', '5'), (137, 5, 6, 33, '6', '6', '6')
+2016-09-01 06:34:39 Debug: duration=0 rows=0 COMMIT
+2016-09-01 06:54:03 Debug: duration=2 rows=4 DELETE FROM orders_details WHERE orders_id = 137
+2016-09-01 06:54:03 Debug: duration=48 rows=3 INSERT INTO orders_details (orders_id, m_record_types_id, qty, rpm, artist_name, title, track_list) VALUES (137, 1, 1, NULL, '1', '1', '1'), (137, 5, 5, 45, '5', '5', '5'), (137, 5, 6, 33, '6', '6', '6')
+2016-09-01 06:54:03 Debug: duration=0 rows=0 COMMIT
+2016-09-01 07:15:05 Debug: duration=2 rows=12 SHOW FULL COLUMNS FROM `orders_details`
+2016-09-01 07:15:05 Debug: duration=1 rows=3 SHOW INDEXES FROM `orders_details`
+2016-09-01 07:15:05 Debug: duration=1 rows=2 SELECT * FROM information_schema.key_column_usage AS kcu
+            INNER JOIN information_schema.referential_constraints AS rc
+            ON (
+                kcu.CONSTRAINT_NAME = rc.CONSTRAINT_NAME
+                AND kcu.CONSTRAINT_SCHEMA = rc.CONSTRAINT_SCHEMA
+            )
+            WHERE kcu.TABLE_SCHEMA = 'hl_system' AND kcu.TABLE_NAME = 'orders_details' AND rc.TABLE_NAME = 'orders_details'
+2016-09-01 07:15:05 Debug: duration=1 rows=1 SHOW TABLE STATUS WHERE Name = 'orders_details'
+2016-09-01 07:15:05 Debug: duration=1 rows=3 DELETE FROM orders_details WHERE orders_id = 137
+2016-09-01 07:15:05 Debug: duration=101 rows=2 INSERT INTO orders_details (orders_id, m_record_types_id, qty, rpm, artist_name, title, track_list) VALUES (137, 1, 1, NULL, '1', '1', '1'), (137, 5, 5, 45, '5', '5', '5')
+2016-09-01 07:15:05 Debug: duration=0 rows=0 COMMIT
+2016-09-01 07:23:55 Debug: duration=1 rows=2 DELETE FROM orders_details WHERE orders_id = 137
+2016-09-01 07:23:55 Debug: duration=1 rows=1 SELECT Orders.id AS `Orders__id`, Orders.order_date AS `Orders__order_date`, Orders.m_customers_id AS `Orders__m_customers_id`, Orders.name_sei AS `Orders__name_sei`, Orders.name_mei AS `Orders__name_mei`, Orders.mail_address AS `Orders__mail_address`, Orders.zip_code AS `Orders__zip_code`, Orders.address AS `Orders__address`, Orders.tel AS `Orders__tel`, Orders.note AS `Orders__note`, Orders.delivery_fee AS `Orders__delivery_fee`, Orders.order_amount AS `Orders__order_amount`, Orders.profit AS `Orders__profit`, Orders.desired_delivery_date AS `Orders__desired_delivery_date`, Orders.estimated_delivery_date AS `Orders__estimated_delivery_date`, Orders.delivery_date AS `Orders__delivery_date`, Orders.works_on AS `Orders__works_on`, Orders.entry AS `Orders__entry`, Orders.ins_date AS `Orders__ins_date`, Orders.ins_person AS `Orders__ins_person`, Orders.edt_date AS `Orders__edt_date`, Orders.edit_person AS `Orders__edit_person` FROM orders Orders WHERE Orders.id = 137 LIMIT 1
+2016-09-01 07:23:55 Debug: duration=30 rows=1 DELETE FROM orders WHERE id = 137
+2016-09-01 07:23:55 Debug: duration=0 rows=0 COMMIT
+2016-09-01 08:07:32 Debug: duration=2 rows=8 SHOW FULL COLUMNS FROM `users`
+2016-09-01 08:07:32 Debug: duration=0 rows=1 SHOW INDEXES FROM `users`
+2016-09-01 08:07:32 Debug: duration=1 rows=0 SELECT * FROM information_schema.key_column_usage AS kcu
+            INNER JOIN information_schema.referential_constraints AS rc
+            ON (
+                kcu.CONSTRAINT_NAME = rc.CONSTRAINT_NAME
+                AND kcu.CONSTRAINT_SCHEMA = rc.CONSTRAINT_SCHEMA
+            )
+            WHERE kcu.TABLE_SCHEMA = 'hl_system' AND kcu.TABLE_NAME = 'users' AND rc.TABLE_NAME = 'users'
+2016-09-01 08:07:32 Debug: duration=1 rows=1 SHOW TABLE STATUS WHERE Name = 'users'
+2016-09-01 08:09:40 Debug: duration=1 rows=8 SHOW FULL COLUMNS FROM `users`
+2016-09-01 08:09:40 Debug: duration=1 rows=1 SHOW INDEXES FROM `users`
+2016-09-01 08:09:40 Debug: duration=2 rows=0 SELECT * FROM information_schema.key_column_usage AS kcu
+            INNER JOIN information_schema.referential_constraints AS rc
+            ON (
+                kcu.CONSTRAINT_NAME = rc.CONSTRAINT_NAME
+                AND kcu.CONSTRAINT_SCHEMA = rc.CONSTRAINT_SCHEMA
+            )
+            WHERE kcu.TABLE_SCHEMA = 'hl_system' AND kcu.TABLE_NAME = 'users' AND rc.TABLE_NAME = 'users'
+2016-09-01 08:09:40 Debug: duration=1 rows=1 SHOW TABLE STATUS WHERE Name = 'users'
+2016-09-01 08:09:45 Debug: duration=0 rows=0 BEGIN
+2016-09-01 08:09:45 Debug: duration=1 rows=0 SELECT 1 AS `existing` FROM users Users WHERE Users.username = 'admin' LIMIT 1
+2016-09-01 08:09:45 Debug: duration=11 rows=1 INSERT INTO users (username, password, del_flg) VALUES ('admin', 'yCBw6W8PgELH5QNyrfaW..nYnPIWbpRFDnp1MTO0X.3NN5dristym', 1)
+2016-09-01 08:09:45 Debug: duration=0 rows=0 COMMIT
+2016-09-01 08:10:41 Debug: duration=0 rows=0 BEGIN
+2016-09-01 08:10:41 Debug: duration=0 rows=0 SELECT 1 AS `existing` FROM users Users WHERE Users.username = 'admin3' LIMIT 1
+2016-09-01 08:10:41 Debug: duration=16 rows=1 INSERT INTO users (username, password, del_flg) VALUES ('admin3', 'y:c1RYMt6ipEmJXBGVwluhFm.5g9gJ6D5G5qA0/.sQz4QB3H92qDSmse', 1)
+2016-09-01 08:10:41 Debug: duration=0 rows=0 COMMIT
+2016-09-01 13:59:48 Debug: duration=12 rows=1 UPDATE orders SET name_sei = '山田' , name_mei = '太郎' WHERE id = 74
+2016-09-01 13:59:48 Debug: duration=0 rows=1 DELETE FROM orders_details WHERE orders_id = 74
+2016-09-01 13:59:48 Debug: duration=9 rows=1 INSERT INTO orders_details (orders_id, m_record_types_id, qty, rpm, artist_name, title, track_list) VALUES (74, 5, 1, 33, '1111', '1111', '1111')
+2016-09-01 13:59:48 Debug: duration=0 rows=0 COMMIT
+2016-09-01 13:59:57 Debug: duration=15 rows=1 UPDATE orders SET name_sei = 'DU' WHERE id = 1
+2016-09-01 13:59:57 Debug: duration=2 rows=1 DELETE FROM orders_details WHERE orders_id = 1
+2016-09-01 13:59:57 Debug: duration=0 rows=1 INSERT INTO orders_details (orders_id, m_record_types_id, qty, rpm, artist_name, title, track_list) VALUES (1, NULL, NULL, NULL, '', '', '')
+2016-09-01 13:59:57 Debug: duration=0 rows=0 COMMIT

@@ -1,0 +1,59 @@
+<?php
+namespace App\Model\Entity;
+
+use Cake\ORM\Entity;
+
+use Cake\Auth\DefaultPasswordHasher;
+
+/**
+ * User Entity
+ *
+ * @property int $id
+ * @property string $username
+ * @property string $password
+ * @property int $del_flg
+ * @property \Cake\I18n\Time $ins_date
+ * @property int $ins_person
+ * @property \Cake\I18n\Time $edt_date
+ * @property int $edt_person
+ */
+class User extends Entity
+{
+
+      /**
+       * パスワード保存時のハッシュ化
+       * @param  string $password パスワード文字列
+       * @return string           ハッシュ化されたパスワード
+       */
+      protected function _setPassword($password)
+      {
+        echo (new DefaultPasswordHasher)->hash($password);
+        end;
+          return (new DefaultPasswordHasher)->hash($password);
+      }
+
+
+
+    /**
+     * Fields that can be mass assigned using newEntity() or patchEntity().
+     *
+     * Note that when '*' is set to true, this allows all unspecified fields to
+     * be mass assigned. For security purposes, it is advised to set '*' to false
+     * (or remove it), and explicitly make individual fields accessible as needed.
+     *
+     * @var array
+     */
+    protected $_accessible = [
+        '*' => true,
+        'id' => false
+    ];
+
+    /**
+     * Fields that are excluded from JSON versions of the entity.
+     *
+     * @var array
+     */
+    protected $_hidden = [
+        'password'
+    ];
+}

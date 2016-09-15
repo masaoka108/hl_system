@@ -1,0 +1,123 @@
+2016-08-27 15:01:04 Debug: duration=0 rows=0 BEGIN
+2016-08-27 15:01:04 Debug: duration=23 rows=0 INSERT INTO orders (order_date, name_sei, name_mei, mail_address, zip_code, address, tel, note) VALUES ('2016-08-27', '', '', '', '', '', '', '')
+2016-08-27 15:01:04 Debug: duration=0 rows=0 ROLLBACK
+2016-08-27 15:06:00 Debug: duration=0 rows=0 BEGIN
+2016-08-27 15:06:00 Debug: duration=103 rows=1 INSERT INTO orders (order_date, name_sei, name_mei, mail_address, zip_code, address, tel, note) VALUES ('2016-08-27', '', '', '', '', '', '', '')
+2016-08-27 15:06:00 Debug: duration=0 rows=0 COMMIT
+2016-08-27 15:09:51 Debug: duration=31 rows=1 INSERT INTO orders (order_date, name_sei, name_mei, mail_address, zip_code, address, tel, note) VALUES ('2016-08-27', '', '', '', '', '', '', '')
+2016-08-27 15:09:51 Debug: duration=2 rows=12 SHOW FULL COLUMNS FROM `orders_details`
+2016-08-27 15:09:51 Debug: duration=0 rows=3 SHOW INDEXES FROM `orders_details`
+2016-08-27 15:09:52 Debug: duration=144 rows=2 SELECT * FROM information_schema.key_column_usage AS kcu
+            INNER JOIN information_schema.referential_constraints AS rc
+            ON (
+                kcu.CONSTRAINT_NAME = rc.CONSTRAINT_NAME
+                AND kcu.CONSTRAINT_SCHEMA = rc.CONSTRAINT_SCHEMA
+            )
+            WHERE kcu.TABLE_SCHEMA = 'hl_system' AND kcu.TABLE_NAME = 'orders_details' AND rc.TABLE_NAME = 'orders_details'
+2016-08-27 15:09:52 Debug: duration=1 rows=1 SHOW TABLE STATUS WHERE Name = 'orders_details'
+2016-08-27 15:09:52 Debug: duration=1 rows=1 SELECT 1 AS `existing` FROM orders Orders WHERE Orders.id = 46 LIMIT 1
+2016-08-27 15:09:52 Debug: duration=1 rows=1 SELECT 1 AS `existing` FROM m_record_types MRecordTypes WHERE MRecordTypes.id = 1 LIMIT 1
+2016-08-27 15:09:52 Debug: duration=8 rows=1 INSERT INTO orders_details (orders_id, m_record_types_id) VALUES (46, 1)
+2016-08-27 15:09:52 Debug: duration=0 rows=0 COMMIT
+2016-08-27 15:09:52 Debug: duration=0 rows=0 BEGIN
+2016-08-27 15:09:52 Debug: duration=0 rows=0 COMMIT
+2016-08-27 15:40:23 Debug: duration=10 rows=1 INSERT INTO orders (order_date, name_sei, name_mei, mail_address, zip_code, address, tel, note) VALUES ('2016-08-27', '', '', '', '', '', '', '')
+2016-08-27 15:41:15 Debug: duration=16 rows=1 INSERT INTO orders (order_date, name_sei, name_mei, mail_address, zip_code, address, tel, note) VALUES ('2016-08-27', '', '', '', '', '', '', '')
+2016-08-27 15:41:15 Debug: duration=15 rows=12 SHOW FULL COLUMNS FROM `orders_details`
+2016-08-27 15:41:15 Debug: duration=0 rows=3 SHOW INDEXES FROM `orders_details`
+2016-08-27 15:41:15 Debug: duration=6 rows=2 SELECT * FROM information_schema.key_column_usage AS kcu
+            INNER JOIN information_schema.referential_constraints AS rc
+            ON (
+                kcu.CONSTRAINT_NAME = rc.CONSTRAINT_NAME
+                AND kcu.CONSTRAINT_SCHEMA = rc.CONSTRAINT_SCHEMA
+            )
+            WHERE kcu.TABLE_SCHEMA = 'hl_system' AND kcu.TABLE_NAME = 'orders_details' AND rc.TABLE_NAME = 'orders_details'
+2016-08-27 15:41:15 Debug: duration=15 rows=1 SHOW TABLE STATUS WHERE Name = 'orders_details'
+2016-08-27 15:41:15 Debug: duration=104 rows=0 INSERT INTO orders_details (orders_id, m_record_types_id)
+2016-08-27 15:41:52 Debug: duration=22 rows=1 INSERT INTO orders (order_date, name_sei, name_mei, mail_address, zip_code, address, tel, note) VALUES ('2016-08-27', '', '', '', '', '', '', '')
+2016-08-27 15:41:52 Debug: duration=1 rows=0 INSERT INTO orders_details (orders_id, m_record_types_id)
+2016-08-27 15:42:24 Debug: duration=3 rows=22 SHOW FULL COLUMNS FROM `orders`
+2016-08-27 15:42:24 Debug: duration=1 rows=2 SHOW INDEXES FROM `orders`
+2016-08-27 15:42:24 Debug: duration=2 rows=1 SELECT * FROM information_schema.key_column_usage AS kcu
+            INNER JOIN information_schema.referential_constraints AS rc
+            ON (
+                kcu.CONSTRAINT_NAME = rc.CONSTRAINT_NAME
+                AND kcu.CONSTRAINT_SCHEMA = rc.CONSTRAINT_SCHEMA
+            )
+            WHERE kcu.TABLE_SCHEMA = 'hl_system' AND kcu.TABLE_NAME = 'orders' AND rc.TABLE_NAME = 'orders'
+2016-08-27 15:42:24 Debug: duration=1 rows=1 SHOW TABLE STATUS WHERE Name = 'orders'
+2016-08-27 15:42:24 Debug: duration=18 rows=1 INSERT INTO orders (order_date, name_sei, name_mei, mail_address, zip_code, address, tel, note) VALUES ('2016-08-27', '', '', '', '', '', '', '')
+2016-08-27 15:42:51 Debug: duration=16 rows=1 INSERT INTO orders (order_date, name_sei, name_mei, mail_address, zip_code, address, tel, note) VALUES ('2016-08-27', '', '', '', '', '', '', '')
+2016-08-27 15:43:24 Debug: duration=1 rows=1 INSERT INTO orders (order_date, name_sei, name_mei, mail_address, zip_code, address, tel, note) VALUES ('2016-08-27', '', '', '', '', '', '', '')
+2016-08-27 15:43:24 Debug: duration=1 rows=12 SHOW FULL COLUMNS FROM `orders_details`
+2016-08-27 15:43:24 Debug: duration=1 rows=3 SHOW INDEXES FROM `orders_details`
+2016-08-27 15:43:24 Debug: duration=2 rows=2 SELECT * FROM information_schema.key_column_usage AS kcu
+            INNER JOIN information_schema.referential_constraints AS rc
+            ON (
+                kcu.CONSTRAINT_NAME = rc.CONSTRAINT_NAME
+                AND kcu.CONSTRAINT_SCHEMA = rc.CONSTRAINT_SCHEMA
+            )
+            WHERE kcu.TABLE_SCHEMA = 'hl_system' AND kcu.TABLE_NAME = 'orders_details' AND rc.TABLE_NAME = 'orders_details'
+2016-08-27 15:43:24 Debug: duration=0 rows=1 SHOW TABLE STATUS WHERE Name = 'orders_details'
+2016-08-27 15:43:42 Debug: duration=1 rows=1 INSERT INTO orders (order_date, name_sei, name_mei, mail_address, zip_code, address, tel, note) VALUES ('2016-08-27', '', '', '', '', '', '', '')
+2016-08-27 15:44:19 Debug: duration=15 rows=1 INSERT INTO orders (order_date, name_sei, name_mei, mail_address, zip_code, address, tel, note) VALUES ('2016-08-27', '', '', '', '', '', '', '')
+2016-08-27 15:44:30 Debug: duration=1 rows=22 SHOW FULL COLUMNS FROM `orders`
+2016-08-27 15:44:30 Debug: duration=1 rows=2 SHOW INDEXES FROM `orders`
+2016-08-27 15:44:30 Debug: duration=15 rows=1 SELECT * FROM information_schema.key_column_usage AS kcu
+            INNER JOIN information_schema.referential_constraints AS rc
+            ON (
+                kcu.CONSTRAINT_NAME = rc.CONSTRAINT_NAME
+                AND kcu.CONSTRAINT_SCHEMA = rc.CONSTRAINT_SCHEMA
+            )
+            WHERE kcu.TABLE_SCHEMA = 'hl_system' AND kcu.TABLE_NAME = 'orders' AND rc.TABLE_NAME = 'orders'
+2016-08-27 15:44:30 Debug: duration=0 rows=1 SHOW TABLE STATUS WHERE Name = 'orders'
+2016-08-27 15:44:30 Debug: duration=1 rows=1 INSERT INTO orders (order_date, name_sei, name_mei, mail_address, zip_code, address, tel, note) VALUES ('2016-08-27', '', '', '', '', '', '', '')
+2016-08-27 15:45:09 Debug: duration=1 rows=1 INSERT INTO orders (order_date, name_sei, name_mei, mail_address, zip_code, address, tel, note) VALUES ('2016-08-27', '', '', '', '', '', '', '')
+2016-08-27 15:45:39 Debug: duration=1 rows=1 INSERT INTO orders (order_date, name_sei, name_mei, mail_address, zip_code, address, tel, note) VALUES ('2016-08-27', '', '', '', '', '', '', '')
+2016-08-27 15:45:39 Debug: duration=98 rows=12 SHOW FULL COLUMNS FROM `orders_details`
+2016-08-27 15:45:39 Debug: duration=1 rows=3 SHOW INDEXES FROM `orders_details`
+2016-08-27 15:45:39 Debug: duration=2 rows=2 SELECT * FROM information_schema.key_column_usage AS kcu
+            INNER JOIN information_schema.referential_constraints AS rc
+            ON (
+                kcu.CONSTRAINT_NAME = rc.CONSTRAINT_NAME
+                AND kcu.CONSTRAINT_SCHEMA = rc.CONSTRAINT_SCHEMA
+            )
+            WHERE kcu.TABLE_SCHEMA = 'hl_system' AND kcu.TABLE_NAME = 'orders_details' AND rc.TABLE_NAME = 'orders_details'
+2016-08-27 15:45:39 Debug: duration=2 rows=1 SHOW TABLE STATUS WHERE Name = 'orders_details'
+2016-08-27 15:46:12 Debug: duration=12 rows=1 INSERT INTO orders (order_date, name_sei, name_mei, mail_address, zip_code, address, tel, note) VALUES ('2016-08-27', '', '', '', '', '', '', '')
+2016-08-27 15:46:48 Debug: duration=2 rows=22 SHOW FULL COLUMNS FROM `orders`
+2016-08-27 15:46:48 Debug: duration=0 rows=2 SHOW INDEXES FROM `orders`
+2016-08-27 15:46:48 Debug: duration=6 rows=1 SELECT * FROM information_schema.key_column_usage AS kcu
+            INNER JOIN information_schema.referential_constraints AS rc
+            ON (
+                kcu.CONSTRAINT_NAME = rc.CONSTRAINT_NAME
+                AND kcu.CONSTRAINT_SCHEMA = rc.CONSTRAINT_SCHEMA
+            )
+            WHERE kcu.TABLE_SCHEMA = 'hl_system' AND kcu.TABLE_NAME = 'orders' AND rc.TABLE_NAME = 'orders'
+2016-08-27 15:46:48 Debug: duration=1 rows=1 SHOW TABLE STATUS WHERE Name = 'orders'
+2016-08-27 15:46:48 Debug: duration=12 rows=1 INSERT INTO orders (order_date, name_sei, name_mei, mail_address, zip_code, address, tel, note) VALUES ('2016-08-27', '', '', '', '', '', '', '')
+2016-08-27 15:47:03 Debug: duration=15 rows=1 INSERT INTO orders (order_date, name_sei, name_mei, mail_address, zip_code, address, tel, note) VALUES ('2016-08-27', '', '', '', '', '', '', '')
+2016-08-27 15:47:03 Debug: duration=0 rows=1 INSERT INTO orders_details (orders_id, m_record_types_id) VALUES (60, 2)
+2016-08-27 15:47:03 Debug: duration=0 rows=0 COMMIT
+2016-08-27 15:47:03 Debug: duration=0 rows=0 BEGIN
+2016-08-27 15:47:03 Debug: duration=0 rows=0 COMMIT
+2016-08-27 15:47:36 Debug: duration=13 rows=1 INSERT INTO orders (order_date, name_sei, name_mei, mail_address, zip_code, address, tel, note) VALUES ('2016-08-27', '', '', '', '', '', '', '')
+2016-08-27 15:47:36 Debug: duration=153 rows=3 INSERT INTO orders_details (orders_id, m_record_types_id) VALUES (61, 1), (61, 2), (61, 3)
+2016-08-27 15:47:36 Debug: duration=0 rows=0 COMMIT
+2016-08-27 15:47:36 Debug: duration=0 rows=0 BEGIN
+2016-08-27 15:47:36 Debug: duration=0 rows=0 COMMIT
+2016-08-27 15:51:36 Debug: duration=27 rows=1 INSERT INTO orders (order_date, name_sei, name_mei, mail_address, zip_code, address, tel, note) VALUES ('2016-08-27', '', '', '', '', '', '', '')
+2016-08-27 15:51:36 Debug: duration=1 rows=12 SHOW FULL COLUMNS FROM `orders_details`
+2016-08-27 15:51:36 Debug: duration=1 rows=3 SHOW INDEXES FROM `orders_details`
+2016-08-27 15:51:36 Debug: duration=4 rows=2 SELECT * FROM information_schema.key_column_usage AS kcu
+            INNER JOIN information_schema.referential_constraints AS rc
+            ON (
+                kcu.CONSTRAINT_NAME = rc.CONSTRAINT_NAME
+                AND kcu.CONSTRAINT_SCHEMA = rc.CONSTRAINT_SCHEMA
+            )
+            WHERE kcu.TABLE_SCHEMA = 'hl_system' AND kcu.TABLE_NAME = 'orders_details' AND rc.TABLE_NAME = 'orders_details'
+2016-08-27 15:51:36 Debug: duration=1 rows=1 SHOW TABLE STATUS WHERE Name = 'orders_details'
+2016-08-27 15:51:36 Debug: duration=1 rows=2 INSERT INTO orders_details (orders_id, m_record_types_id) VALUES (62, 5), (62, 4)
+2016-08-27 15:51:36 Debug: duration=0 rows=0 COMMIT
+2016-08-27 15:51:36 Debug: duration=0 rows=0 BEGIN
+2016-08-27 15:51:36 Debug: duration=0 rows=0 COMMIT

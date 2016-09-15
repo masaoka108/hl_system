@@ -1,0 +1,20 @@
+2016-09-06 05:54:22 Debug: duration=442 rows=1 UPDATE orders SET order_date = '2016/08/06' WHERE id = 74
+2016-09-06 05:54:22 Debug: duration=49 rows=1 DELETE FROM orders_details WHERE orders_id = 74
+2016-09-06 05:54:22 Debug: duration=33 rows=1 INSERT INTO orders_details (orders_id, m_record_types_id, qty, rpm, artist_name, title, track_list) VALUES (74, 5, 1, 33, '1111', '1111', '1111')
+2016-09-06 05:54:22 Debug: duration=0 rows=0 COMMIT
+2016-09-06 05:54:43 Debug: duration=6 rows=1 UPDATE orders SET order_date = '2016/09/04' WHERE id = 74
+2016-09-06 05:54:43 Debug: duration=1 rows=1 DELETE FROM orders_details WHERE orders_id = 74
+2016-09-06 05:54:43 Debug: duration=50 rows=1 INSERT INTO orders_details (orders_id, m_record_types_id, qty, rpm, artist_name, title, track_list) VALUES (74, 5, 1, 33, '1111', '1111', '1111')
+2016-09-06 05:54:43 Debug: duration=0 rows=0 COMMIT
+2016-09-06 05:55:11 Debug: duration=7 rows=1 UPDATE orders SET order_date = '2016/09/30' WHERE id = 74
+2016-09-06 05:55:11 Debug: duration=1 rows=1 DELETE FROM orders_details WHERE orders_id = 74
+2016-09-06 05:55:11 Debug: duration=2 rows=1 INSERT INTO orders_details (orders_id, m_record_types_id, qty, rpm, artist_name, title, track_list) VALUES (74, 5, 1, 33, '1111', '1111', '1111')
+2016-09-06 05:55:11 Debug: duration=0 rows=0 COMMIT
+2016-09-06 05:56:26 Debug: duration=21 rows=1 UPDATE orders SET order_date = '2016/09/21' WHERE id = 89
+2016-09-06 05:56:26 Debug: duration=2 rows=1 DELETE FROM orders_details WHERE orders_id = 89
+2016-09-06 05:56:26 Debug: duration=110 rows=1 INSERT INTO orders_details (orders_id, m_record_types_id, qty, rpm, artist_name, title, track_list) VALUES (89, 1, NULL, NULL, '', '', '')
+2016-09-06 05:56:26 Debug: duration=0 rows=0 COMMIT
+2016-09-06 05:57:35 Debug: duration=12 rows=1 UPDATE orders SET order_date = '2016/09/06' WHERE id = 74
+2016-09-06 05:57:35 Debug: duration=1 rows=1 DELETE FROM orders_details WHERE orders_id = 74
+2016-09-06 05:57:35 Debug: duration=2 rows=1 INSERT INTO orders_details (orders_id, m_record_types_id, qty, rpm, artist_name, title, track_list) VALUES (74, 5, 1, 33, '1111', '1111', '1111')
+2016-09-06 05:57:35 Debug: duration=0 rows=0 COMMIT

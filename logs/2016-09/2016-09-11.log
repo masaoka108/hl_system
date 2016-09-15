@@ -1,0 +1,61 @@
+2016-09-11 08:59:01 Debug: duration=3 rows=22 SHOW FULL COLUMNS FROM `orders`
+2016-09-11 08:59:01 Debug: duration=1 rows=3 SHOW INDEXES FROM `orders`
+2016-09-11 08:59:01 Debug: duration=2 rows=1 SELECT * FROM information_schema.key_column_usage AS kcu
+            INNER JOIN information_schema.referential_constraints AS rc
+            ON (
+                kcu.CONSTRAINT_NAME = rc.CONSTRAINT_NAME
+                AND kcu.CONSTRAINT_SCHEMA = rc.CONSTRAINT_SCHEMA
+            )
+            WHERE kcu.TABLE_SCHEMA = 'hl_system' AND kcu.TABLE_NAME = 'orders' AND rc.TABLE_NAME = 'orders'
+2016-09-11 08:59:01 Debug: duration=1 rows=1 SHOW TABLE STATUS WHERE Name = 'orders'
+2016-09-11 08:59:01 Debug: duration=2 rows=12 SHOW FULL COLUMNS FROM `m_customers`
+2016-09-11 08:59:01 Debug: duration=2 rows=1 SHOW INDEXES FROM `m_customers`
+2016-09-11 08:59:01 Debug: duration=2 rows=0 SELECT * FROM information_schema.key_column_usage AS kcu
+            INNER JOIN information_schema.referential_constraints AS rc
+            ON (
+                kcu.CONSTRAINT_NAME = rc.CONSTRAINT_NAME
+                AND kcu.CONSTRAINT_SCHEMA = rc.CONSTRAINT_SCHEMA
+            )
+            WHERE kcu.TABLE_SCHEMA = 'hl_system' AND kcu.TABLE_NAME = 'm_customers' AND rc.TABLE_NAME = 'm_customers'
+2016-09-11 08:59:01 Debug: duration=1 rows=1 SHOW TABLE STATUS WHERE Name = 'm_customers'
+2016-09-11 08:59:01 Debug: duration=1 rows=1 SELECT 1 AS `existing` FROM m_customers m_customers WHERE m_customers.id = 1 LIMIT 1
+2016-09-11 08:59:01 Debug: duration=31 rows=1 INSERT INTO orders (order_date, m_customers_id, name_sei, name_mei, mail_address, zip_code, address, tel, note, delivery_fee, order_amount, works_on) VALUES ('2016/06/01', 1, '岡村', '匡洋', 'oka@aaa.com', '180-0014', '東京都東京市東京町1-1-1 東京ビルディング306', '09077777777', '', 1500, 15700, 1)
+2016-09-11 08:59:01 Debug: duration=2 rows=12 SHOW FULL COLUMNS FROM `orders_details`
+2016-09-11 08:59:01 Debug: duration=1 rows=3 SHOW INDEXES FROM `orders_details`
+2016-09-11 08:59:01 Debug: duration=2 rows=2 SELECT * FROM information_schema.key_column_usage AS kcu
+            INNER JOIN information_schema.referential_constraints AS rc
+            ON (
+                kcu.CONSTRAINT_NAME = rc.CONSTRAINT_NAME
+                AND kcu.CONSTRAINT_SCHEMA = rc.CONSTRAINT_SCHEMA
+            )
+            WHERE kcu.TABLE_SCHEMA = 'hl_system' AND kcu.TABLE_NAME = 'orders_details' AND rc.TABLE_NAME = 'orders_details'
+2016-09-11 08:59:01 Debug: duration=1 rows=1 SHOW TABLE STATUS WHERE Name = 'orders_details'
+2016-09-11 08:59:01 Debug: duration=1 rows=1 INSERT INTO orders_details (orders_id, m_record_types_id, qty, rpm, artist_name, title, track_list) VALUES (104, 1, 10, 45, 'TEST ARTIST', 'TEST ARTIST', 'TEST ARTIST')
+2016-09-11 08:59:01 Debug: duration=0 rows=0 COMMIT
+2016-09-11 08:59:02 Debug: duration=3 rows=1 SELECT 1 AS `existing` FROM m_customers m_customers WHERE m_customers.id = 1 LIMIT 1
+2016-09-11 08:59:02 Debug: duration=1 rows=1 INSERT INTO orders (order_date, m_customers_id, name_sei, name_mei, mail_address, zip_code, address, tel, note, delivery_fee, order_amount, works_on) VALUES ('2016/06/01', 1, '岡村', '匡洋', 'oka@aaa.com', '180-0014', '東京都東京市東京町1-1-1 東京ビルディング306', '09077777777', '', 1500, 15700, 1)
+2016-09-11 08:59:02 Debug: duration=66 rows=1 INSERT INTO orders_details (orders_id, m_record_types_id, qty, rpm, artist_name, title, track_list) VALUES (105, 1, 10, 45, 'TEST ARTIST', 'TEST ARTIST', 'TEST ARTIST')
+2016-09-11 08:59:02 Debug: duration=0 rows=0 COMMIT
+2016-09-11 09:01:42 Debug: duration=99 rows=1 UPDATE orders SET order_date = '2016/06/01' , m_customers_id = NULL , name_sei = '西川' , name_mei = '康人' , mail_address = 'nishi@aaa.com' , zip_code = '160-999' , address = '大阪府大阪市大阪町1-1-1 大阪ビルディング306' , tel = '09088888888' , order_amount = 37600 , profit = 25000 WHERE id = 105
+2016-09-11 09:01:42 Debug: duration=2 rows=12 SHOW FULL COLUMNS FROM `orders_details`
+2016-09-11 09:01:42 Debug: duration=2 rows=3 SHOW INDEXES FROM `orders_details`
+2016-09-11 09:01:42 Debug: duration=3 rows=2 SELECT * FROM information_schema.key_column_usage AS kcu
+            INNER JOIN information_schema.referential_constraints AS rc
+            ON (
+                kcu.CONSTRAINT_NAME = rc.CONSTRAINT_NAME
+                AND kcu.CONSTRAINT_SCHEMA = rc.CONSTRAINT_SCHEMA
+            )
+            WHERE kcu.TABLE_SCHEMA = 'hl_system' AND kcu.TABLE_NAME = 'orders_details' AND rc.TABLE_NAME = 'orders_details'
+2016-09-11 09:01:42 Debug: duration=2 rows=1 SHOW TABLE STATUS WHERE Name = 'orders_details'
+2016-09-11 09:01:42 Debug: duration=1 rows=1 DELETE FROM orders_details WHERE orders_id = 105
+2016-09-11 09:01:42 Debug: duration=37 rows=1 INSERT INTO orders_details (orders_id, m_record_types_id, qty, rpm, artist_name, title, track_list) VALUES (105, 2, 30, 33, 'TEST ARTIST', 'TEST ARTIST', 'TEST ARTIST')
+2016-09-11 09:01:42 Debug: duration=0 rows=0 COMMIT
+2016-09-11 09:06:04 Debug: duration=0 rows=0 ROLLBACK
+2016-09-11 09:06:13 Debug: duration=2 rows=1 SELECT 1 AS `existing` FROM m_customers m_customers WHERE m_customers.id = 2 LIMIT 1
+2016-09-11 09:06:13 Debug: duration=16 rows=1 INSERT INTO orders (order_date, m_customers_id, name_sei, name_mei, mail_address, zip_code, address, tel, note, order_amount, profit, works_on) VALUES ('2016/09/01', 2, 'aaa', 'vvv', 'aaa@aaa.com', 'a', 'a', '', '', 68000, 40000, 1)
+2016-09-11 09:06:13 Debug: duration=32 rows=1 INSERT INTO orders_details (orders_id, m_record_types_id, qty, rpm, artist_name, title, track_list) VALUES (106, 3, 100, 45, '1111', '1111', '1111')
+2016-09-11 09:06:13 Debug: duration=0 rows=0 COMMIT
+2016-09-11 09:07:05 Debug: duration=2 rows=1 UPDATE orders SET order_date = '2016/09/01' , delivery_date = '2016/09/05' WHERE id = 106
+2016-09-11 09:07:05 Debug: duration=1 rows=1 DELETE FROM orders_details WHERE orders_id = 106
+2016-09-11 09:07:05 Debug: duration=32 rows=1 INSERT INTO orders_details (orders_id, m_record_types_id, qty, rpm, artist_name, title, track_list) VALUES (106, 3, 100, 45, '1111', '1111', '1111')
+2016-09-11 09:07:05 Debug: duration=0 rows=0 COMMIT
