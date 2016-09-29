@@ -1,6 +1,7 @@
 <?php
 namespace App\Test\TestCase\Controller;
 
+use Cake\ORM\TableRegistry;
 use App\Controller\UsersController;
 use Cake\TestSuite\IntegrationTestCase;
 
@@ -10,60 +11,71 @@ use Cake\TestSuite\IntegrationTestCase;
 class UsersControllerTest extends IntegrationTestCase
 {
 
-    /**
-     * Fixtures
-     *
-     * @var array
-     */
-    public $fixtures = [
-        'app.users'
-    ];
+    //****** Fixtures
+    public $fixtures = ['app.users'];
 
-    /**
-     * Test index method
-     *
-     * @return void
-     */
-    public function testIndex()
+    //****** Test Login method
+
+	//**** ページが表示される
+    public function testLogin()
     {
-        $this->markTestIncomplete('Not implemented yet.');
+		$this->get('/users/login');
+
+		//ページが表示されるか？
+        $this->assertResponseOk();
     }
 
-    /**
-     * Test view method
-     *
-     * @return void
-     */
+	//**** 正しいPASSWORDを入力したら画面遷移する
+    public function testRightPass()
+    {
+        $data = [
+            'username' => 'admin3',
+            'password' => 'admin3'
+        ];
+        
+        $this->post('/users/login', $data);
+
+        $this->assertResponseSuccess();
+        $this->assertRedirect(['controller' => 'Orders', 'action' => 'index']);
+	}
+
+	//**** 間違ったPASSWORDを入力したら画面遷移しない
+    public function testWrongPass()
+    {
+        $data = [
+            'username' => 'admin3',
+            'password' => '123456'
+        ];
+        
+        $this->post('/users/login', $data);
+
+        $this->assertResponseSuccess();
+        $this->assertResponseContains('usernameかpasswordが間違っています。');
+	}
+
+
+
+
+
+    //****** Test view method
     public function testView()
     {
         $this->markTestIncomplete('Not implemented yet.');
     }
 
-    /**
-     * Test add method
-     *
-     * @return void
-     */
+    //****** Test add method
     public function testAdd()
     {
         $this->markTestIncomplete('Not implemented yet.');
     }
 
-    /**
-     * Test edit method
-     *
-     * @return void
-     */
+    //****** Test edit method
     public function testEdit()
     {
         $this->markTestIncomplete('Not implemented yet.');
     }
 
-    /**
-     * Test delete method
-     *
-     * @return void
-     */
+    //****** Test delete method
     public function testDelete()
     {
         $this->markTestIncomplete('Not implemented yet.');

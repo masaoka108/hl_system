@@ -26,7 +26,7 @@ class OrdersDetailsTableTest extends TestCase
     public $fixtures = [
         'app.orders_details',
         'app.orders',
-        'app.m_users',
+//        'app.m_users',
         'app.m_record_types'
     ];
 

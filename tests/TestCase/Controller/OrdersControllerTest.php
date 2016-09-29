@@ -3,6 +3,7 @@ namespace App\Test\TestCase\Controller;
 
 use App\Controller\OrdersController;
 use Cake\TestSuite\IntegrationTestCase;
+use Cake\ORM\TableRegistry;
 
 /**
  * App\Controller\OrdersController Test Case
@@ -10,25 +11,37 @@ use Cake\TestSuite\IntegrationTestCase;
 class OrdersControllerTest extends IntegrationTestCase
 {
 
-    /**
-     * Fixtures
-     *
-     * @var array
-     */
-    public $fixtures = [
-        'app.orders',
-        'app.users'
-    ];
+    //******** Fixtures
+    public $fixtures = ['app.orders','app.users','app.MCustomers'];
 
-    /**
-     * Test index method
-     *
-     * @return void
-     */
-    public function testIndex()
+	//******** index method
+
+	//****** ログイン前の場合はアクセス出来ない
+    public function testIndexBeforeLogin()
     {
-        $this->markTestIncomplete('Not implemented yet.');
+		 // セッションデータの未設定
+	    $this->get('/orders/index');
+
+	    $this->assertRedirect(['controller' => 'Users', 'action' => 'login']);
     }
+
+	//****** ログイン後はアクセス可能
+    public function testIndexAfterLogin()
+    {
+		// セッションデータのセット
+	    $this->session([
+		        'Auth' => [
+		            'User' => [
+		                'id' => 1,
+		                'username' => 'admin3'
+		            ]
+		        ]
+	    ]);
+	    
+	    $this->get('/orders/index');
+	    $this->assertResponseOk();
+    }
+
 
     /**
      * Test view method

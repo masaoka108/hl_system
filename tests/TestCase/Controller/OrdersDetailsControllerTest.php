@@ -18,7 +18,7 @@ class OrdersDetailsControllerTest extends IntegrationTestCase
     public $fixtures = [
         'app.orders_details',
         'app.orders',
-        'app.m_users',
+//        'app.m_users',
         'app.m_record_types'
     ];
 
