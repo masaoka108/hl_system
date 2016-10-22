@@ -54,7 +54,9 @@ class AppController extends Controller
                             'fields' => [ // ユーザー名とパスワードに使うカラムの指定。省略した場合はusernameとpasswordになる
                                 'username' => 'username', // ユーザー名のカラムを指定
                                 'password' => 'password' //パスワードに使うカラムを指定
-                            ]
+                            ],
+                            //'passwordHasher' => 'Blowfish',
+                            'passwordHasher' => ['className' => 'None'],
                         ]
                     ],
                     'loginRedirect' => [ // ログイン後に遷移するアクションを指定
