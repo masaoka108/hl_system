@@ -88,4 +88,54 @@ class MCustomersTable extends Table
 
         return $validator;
     }
+
+    public function validationAddUpd(Validator $validator)
+    {
+        // $validator
+        //     ->integer('id')
+        //     ->allowEmpty('id', 'create');
+
+        $validator
+          ->notEmpty('name_sei', 'ユーザー姓を入力して下さい。');
+//            ->allowEmpty('name_sei');
+
+        $validator
+          ->notEmpty('name_mei', 'ユーザー名を入力して下さい。');
+          //  ->allowEmpty('name_mei');
+
+        $validator
+            ->allowEmpty('mail_address');
+
+        $validator
+            ->allowEmpty('zip_code');
+
+        $validator
+            ->allowEmpty('address');
+
+        $validator
+            ->allowEmpty('tel');
+
+        $validator
+            ->integer('del_flg')
+            ->allowEmpty('del_flg');
+
+        // $validator
+        //     ->dateTime('ins_date')
+        //     ->allowEmpty('ins_date');
+        //
+        // $validator
+        //     ->integer('ins_person')
+        //     ->allowEmpty('ins_person');
+        //
+        // $validator
+        //     ->dateTime('edt_date')
+        //     ->allowEmpty('edt_date');
+        //
+        // $validator
+        //     ->integer('edt_person')
+        //     ->allowEmpty('edt_person');
+
+        return $validator;
+    }
+
 }

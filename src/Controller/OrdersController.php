@@ -1,7 +1,7 @@
 <?php
 namespace App\Controller;
 
-use App\Controller\AppController;
+use App\Controller\AppController2;
 use Cake\ORM\TableRegistry;               //複数テーブルを扱う為に追記
 use Cake\Datasource\ConnectionManager;    //トランザクションを使う為に追記
 use \Exception;                           //try-catch を有効にする為に追記
