@@ -51,6 +51,7 @@ class AppController extends Controller
         $this->loadComponent('Auth', [ // Authコンポーネントの読み込み
                     'authenticate' => [
                         'Form' => [ // 認証の種類を指定。Form,Basic,Digestが使える。デフォルトはForm
+                            'userModel' => 'Users', //認証に使用するテーブル名
                             'fields' => [ // ユーザー名とパスワードに使うカラムの指定。省略した場合はusernameとpasswordになる
                                 'username' => 'username', // ユーザー名のカラムを指定
                                 'password' => 'password' //パスワードに使うカラムを指定

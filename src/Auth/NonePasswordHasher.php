@@ -8,7 +8,7 @@ class NonePasswordHasher extends AbstractPasswordHasher {
     protected $_config = array('hashType' => null);
 
     public function hash($password) {
-        return $password;
+        return sha1($password);
     }
 
     public function check($password, $hashedPassword) {

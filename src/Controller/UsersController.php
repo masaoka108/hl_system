@@ -54,6 +54,9 @@ class UsersController extends AppController
      */
     public function login()
     {
+// throw new exception ('test');
+
+
       $this->viewBuilder()->layout('hl_login');
 
       if($this->request->is('post')){
