@@ -6,9 +6,9 @@ Thumbs.db
 
 # CakePHP 3
 
-/vendor/*
-/tmp/*
-/logs/*
+vendor/*
+tmp/*
+logs/*
 composer.lock
 
 
