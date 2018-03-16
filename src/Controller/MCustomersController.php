@@ -79,19 +79,70 @@ class MCustomersController extends AppController
      */
     public function add()
     {
-        $mCustomer = $this->MCustomers->newEntity();
-        if ($this->request->is('post')) {
-            $mCustomer = $this->MCustomers->patchEntity($mCustomer, $this->request->data);
-            if ($this->MCustomers->save($mCustomer)) {
+         $mCustomer = $this->MCustomers->newEntity();
+
+         //$mCustomer2 = $this->MCustomers->newEntities();
+         $mCustomer2 = $this->MCustomers->find()->where(['or' => [ ['id' => 1],['id' => 3] ] ]);
+
+
+
+
+         //debug($mCustomer2->toArray());
+
+         //debug($this->request);
+
+         if ($this->request->is('post') || $this->request->is('put')) {
+
+           debug('bbbb');
+
+
+//             $mCustomer = $this->MCustomers->patchEntity($mCustomer, $this->request->data, ['validate' => 'AddUpd']);
+//             if ($this->MCustomers->save($mCustomer)) {
+//                 $this->Flash->success(__('登録が完了しました'));
+//
+//                 return $this->redirect(['action' => 'index']);
+//             } else {
+// //debug($mCustomer);
+//                 $this->set('mCustomerErr', $mCustomer);
+//
+//                 $this->Flash->error(__('The m customer could not be saved. Please, try again.'));
+//             }
+
+            // $mCustomer2 = $this->MCustomers->find()->where(['or' => [ ['id' => 1],['id' => 3] ] ]);
+debug($this->request->data('MCustomers'));
+            //$mCustomer2 = $this->MCustomers->newEntities($this->request->data('MCustomers'));
+            $mCustomer2 = $this->MCustomers->patchEntities($mCustomer2->toArray(),$this->request->data('MCustomers'), ['validate' => 'AddUpd']);
+
+
+            if ($this->MCustomers->saveMany($mCustomer2)) {
                 $this->Flash->success(__('登録が完了しました'));
 
-                return $this->redirect(['action' => 'index']);
+                //return $this->redirect(['action' => 'index']);
             } else {
+                //$this->set('mCustomerErr', $mCustomer);
+
                 $this->Flash->error(__('The m customer could not be saved. Please, try again.'));
             }
+
+
+
         }
+
+        debug('cccc');
+
+
         $this->set(compact('mCustomer'));
         $this->set('_serialize', ['mCustomer']);
+
+        $this->set('mCustomerErr', $mCustomer);
+
+
+
+        //debug($mCustomer2);
+
+        $this->set(compact('mCustomer2'));
+
+
     }
 
     /**

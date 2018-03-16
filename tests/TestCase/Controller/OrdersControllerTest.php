@@ -12,9 +12,20 @@ class OrdersControllerTest extends IntegrationTestCase
 {
 
     //******** Fixtures
-    public $fixtures = ['app.orders','app.users','app.MCustomers'];
+    //public $fixtures = ['app.orders','app.users','app.MCustomers'];
+    public $fixtures = ['app.orders'];
 
-	//******** index method
+    public function testMultiFixture()
+    {
+      $this->Orders = TableRegistry::get('orders');
+
+      debug($this->Orders->find()->all()->count());
+      debug($this->fixtures);
+
+      $this->assertEquals(2, $this->Orders->find()->all()->count());
+    }
+
+
 
 	//****** ログイン前の場合はアクセス出来ない
     public function testIndexBeforeLogin()
@@ -37,10 +48,23 @@ class OrdersControllerTest extends IntegrationTestCase
 		            ]
 		        ]
 	    ]);
-	    
+
+      //debug($this->session);
+
 	    $this->get('/orders/index');
-	    $this->assertResponseOk();
+	    //$this->assertResponseOk();
+
+      $this->assertSession('9999', 'works');
+      $this->session(['works' => '9999']);
+
+      $this->get('/orders/index');
+      //$this->post('/orders/index',['test' => 'aaaa']);
+
+      $this->assertSession('8888', 'works');
+
+
     }
+
 
 
     /**

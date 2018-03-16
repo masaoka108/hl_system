@@ -159,6 +159,8 @@ return [
     'Error' => [
         'errorLevel' => E_ALL,
         'exceptionRenderer' => 'Cake\Error\ExceptionRenderer',
+//        'exceptionRenderer' => 'App\Error\AppExceptionRenderer',
+//        'exceptionRenderer' => 'App\Error\AppError',
         'skipLog' => [],
         'log' => true,
         'trace' => true,
@@ -235,21 +237,9 @@ return [
              * MySQL on MAMP uses port 8889, MAMP users will want to uncomment
              * the following line and set the port accordingly
              */
-            //'port' => 'non_standard_port_number',
-
-/*
+            'port' => '8889',
             'username' => 'root',
-            'password' => 'admin',
-            'database' => 'cakephp',
-            'encoding' => 'utf8',
-            'timezone' => 'UTC',
-            'flags' => [],
-            'cacheMetadata' => true,
-            'log' => false,
-*/
-
-            'username' => 'root',
-            'password' => 'admin',
+            'password' => 'root',
             'database' => 'hl_system',
             'encoding' => 'utf8',
             'timezone' => 'UTC',
@@ -289,9 +279,10 @@ return [
             'persistent' => false,
             'host' => 'localhost',
             //'port' => 'non_standard_port_number',
-            'username' => 'my_app',
-            'password' => 'secret',
-            'database' => 'test_myapp',
+            'port' => '8889',
+            'username' => 'root',
+            'password' => 'root',
+            'database' => 'test_hl_system',
             'encoding' => 'utf8',
             'timezone' => 'UTC',
             'cacheMetadata' => true,
@@ -364,3 +355,5 @@ return [
         'defaults' => 'php',
     ],
 ];
+
+//コメント追記 3

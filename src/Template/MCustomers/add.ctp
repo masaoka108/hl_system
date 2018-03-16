@@ -7,8 +7,30 @@
     <?= $this->Html->link(__('カスタマーマスタ一覧へ'), ['action' => 'index']) ?>
   </div>
 
+  <?= $this->Form->create($mCustomerErr) ?>
+
+  <?php echo $this->Form->error('name_sei');?>
+  <?php echo $this->Form->error('name_mei');?>
+
+  <?= $this->Form->end() ?>
+
+
     <?= $this->Form->create($mCustomer) ?>
       <?php echo $this->element('MCustomer_edit');?>
     <?= $this->Form->button(__('登録')) ?>
     <?= $this->Form->end() ?>
+
+
+    <?= $this->Form->create($mCustomer2) ?>
+        <?= $this->Form->hidden('MCustomers.0.id') ?>
+        <?= $this->Form->input('MCustomers.0.name_sei');?>
+      	<?= $this->Form->input('MCustomers.0.name_mei');?>
+        <?= $this->Form->hidden('MCustomers.1.id') ?>
+      	<?= $this->Form->input('MCustomers.1.name_sei');?>
+      	<?= $this->Form->input('MCustomers.1.name_mei');?>
+
+        <?= $this->Form->button(__('登録')) ?>
+    <?= $this->Form->end() ?>
+
+
 </div>
